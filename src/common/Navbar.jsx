@@ -1,28 +1,37 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import Language from './Language'
-import { ChevronDown } from 'lucide-react'
-import { DropdownIcon } from '../../public/icons/icons'
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import Language from "./Language";
+import { DropdownIcon } from "../../public/icons/icons";
+import { usePathname } from "next/navigation";
+import Mobile from "@/app/components/home/Mobile";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   const serviceLinks = [
-    { name: 'Business Strategy', href: '/services/business-strategy' },
-    { name: 'Business Angel', href: '/services/business-angel' },
-    { name: 'Digital Marketing 360', href: '/services/digital-marketing' },
-    { name: 'Company Formation', href: '/services/company-formation' },
-    { name: 'HR & Payroll', href: '/services/hr-payroll' },
-    { name: 'Finance', href: '/services/finance' },
-  ]
+    { name: "Business Strategy", href: "/business-strategy" },
+    { name: "Business Angel", href: "/business-angel" },
+    { name: "Digital Marketing 360", href: "/digital-marketing" },
+    { name: "Company Formation", href: "/company-formation" },
+    { name: "HR & Payroll", href: "/hr-payroll" },
+    { name: "Finance", href: "/finance" },
+  ];
+
+  const isServicesActive = serviceLinks.some((link) => pathname === link.href);
+
+  const activeLine =
+    "after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-18.5px] after:h-[5px] after:w-[125px] after:rounded-t-[20px] after:bg-[#ECD29A]";
 
   return (
-    <>
-      {/* Changed 'absolute' to 'fixed' to keep it at the top during scroll */}
-      <header className="fixed top-0 left-0 w-full z-50">
-        <div className='container-1200 px-5 mt-6'>
-          <div className='bg-[#0E0F22] rounded-xl py-2.5 px-30'>
-            <div className='flex items-center justify-between'>
-              {/* logo */}
+    <header className="fixed top-0 left-0 w-full z-50">
+      <div className="container-1200 px-5 mt-3 md:mt-6">
+        <div className="lg:bg-[#0E0F22] lg:rounded-xl lg:py-2.5 lg:px-16 xl:px-30">
+          <div className="flex items-center justify-between">
+            {/* logo */}
+            <div className="flex items-center gap-4">
               <Link href="/">
                 <Image
                   src="/images/logoo.png"
@@ -30,50 +39,64 @@ const Navbar = () => {
                   width={105}
                   height={74}
                   priority
-                  className="h-18.5 w-26.25 object-cover"
+                  className="h-15 md:h-18.5 w-15 md:w-26.25 object-cover"
                 />
               </Link>
+              <Mobile />
+            </div>
+            {/* Links */}
+            <nav className="hidden lg:flex items-center gap-8 xl:gap-10 font-normal capitalize text-white text-base leading-[160%]">
+              <div className={`relative flex h-full items-center justify-center ${pathname === "/" ? activeLine : ""}`}>
+                <Link href="/" className="hover:text-gray-300 transition-colors px-2 py-4">
+                  Home
+                </Link>
+              </div>
 
-              {/* Links */}
-              <nav className="hidden lg:flex items-center gap-6 font-normal capitalize text-white text-base leading-[160%]">
-                <Link href="/" className="hover:text-gray-300 transition-colors">Home</Link>
-                <Link href="/about" className="hover:text-gray-300 transition-colors">About Us</Link>
+              <div className={`relative flex h-full items-center justify-center ${pathname === "/about" ? activeLine : ""}`}>
+                <Link href="/about" className="hover:text-gray-300 transition-colors px-2 py-4">
+                  About Us
+                </Link>
+              </div>
 
-                {/* Our Services Dropdown */}
-                <div className="relative group">
-                  <button className="flex items-center gap-2.5  cursor-pointer">
-                    Our Services
-                    <DropdownIcon className="group-hover:rotate-180 transition-transform duration-300" />
-                  </button>
+              <div className={`relative group flex h-full items-center justify-center ${isServicesActive ? activeLine : ""}`}>
+                <button className="flex items-center gap-2.5 cursor-pointer px-2 py-4 hover:text-gray-300 transition-colors">
+                  Our Services
+                  <span className="inline-flex transition-transform duration-300 group-hover:rotate-180">
+                    <DropdownIcon />
+                  </span>
+                </button>
 
-                  {/* Dropdown */}
-                  <div className="absolute left-0 top-full hidden group-hover:block w-60 pt-5 animate-in fade-in slide-in-from-top-2 duration-300">
-                    <div className="bg-white/22 backdrop-blur-md rounded-2xl  overflow-hidden">
-                      {serviceLinks.map((link, index) => (
-                        <Link
-                          key={index}
-                          href={link.href}
-                          className={`block px-5 py-4 text-base text-black capitalize font-normal hover:bg-white/10 transition-colors border-[#0000001F] ${index !== serviceLinks.length - 1 ? 'border-b' : ''
-                            }`}
-                        >
-                          {link.name}
-                        </Link>
-                      ))}
-                    </div>
+                {/* Dropdown */}
+                <div className="absolute left-1/2 top-full hidden -translate-x-1/2 w-60 pt-5 group-hover:block animate-in fade-in slide-in-from-top-2 duration-300">
+                  <div className="bg-white/22 backdrop-blur-md rounded-2xl overflow-hidden">
+                    {serviceLinks.map((link, index) => (
+                      <Link
+                        key={index}
+                        href={link.href}
+                        className={`block px-5 py-4 text-base text-black capitalize font-normal hover:bg-white/10 transition-colors border-[#0000001F] ${index !== serviceLinks.length - 1 ? "border-b" : ""
+                          }`}
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
                   </div>
                 </div>
+              </div>
 
-                <Link href="/contact" className="hover:text-gray-300 transition-colors">Contact Us</Link>
-              </nav>
+              <div className={`relative flex h-full items-center justify-center ${pathname === "/contact" ? activeLine : ""}`}>
+                <Link href="/contact" className="hover:text-gray-300 transition-colors px-2 py-4">
+                  Contact Us
+                </Link>
+              </div>
+            </nav>
 
-              {/* Language */}
-              <Language />
-            </div>
+            {/* Language */}
+            <Language />
           </div>
         </div>
-      </header>
-    </>
-  )
-}
+      </div>
+    </header>
+  );
+};
 
-export default Navbar
+export default Navbar;

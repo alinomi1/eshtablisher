@@ -1,3 +1,4 @@
+import BusinessConsultationSlider from "@/common/BusinessConsultationSlider";
 import AboutBanner from "../components/pages/about/AboutBanner";
 import Commitment from "../components/pages/about/Commitment";
 import Growth from "../components/pages/about/Growth";
@@ -11,6 +12,9 @@ export default function AboutPage() {
             <Growth />
             <Partners />
             <Solutions />
+            <div className="py-30">
+                <BusinessConsultationSlider />
+            </div>
             <Commitment />
         </>
     )

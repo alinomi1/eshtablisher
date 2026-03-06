@@ -155,20 +155,48 @@
 /* slider */
 @keyframes slideLR {
   0% {
-    transform: translateX(-30%);
+    transform: translateX(-18%);
   }
   50% {
-    transform: translateX(30%);
+    transform: translateX(8%);
   }
   100% {
-    transform: translateX(-30%);
+    transform: translateX(-18%);
   }
 }
 
 .animate-slideLR {
   animation: slideLR 18s ease-in-out infinite;
+  will-change: transform;
 }
 
+@media (min-width: 640px) {
+  @keyframes slideLR {
+    0% {
+      transform: translateX(-20%);
+    }
+    50% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(-20%);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  @keyframes slideLR {
+    0% {
+      transform: translateX(-30%);
+    }
+    50% {
+      transform: translateX(30%);
+    }
+    100% {
+      transform: translateX(-30%);
+    }
+  }
+}
 /* Global CSS */
 .custom-glass-card {
   position: relative;

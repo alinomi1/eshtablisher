@@ -4,7 +4,7 @@ import React from 'react'
 const AboutBanner = () => {
     return (
         <>
-            <section className="relative w-full h-[620px] verflow-hidden">
+            <section className="relative w-full overflow-hidden h-70 sm:h-90 md:h-110 lg:h-135 xl:h-155">
                 <Image
                     src="/images/about-banner.png"
                     alt=""
@@ -13,14 +13,15 @@ const AboutBanner = () => {
                     className="object-cover"
                 />
                 {/* Gradient overlay */}
-                {/* <div className="absolute inset-0 bg-[linear-gradient(115.66deg,rgba(0,0,0,0.4)_45.67%,rgba(0,0,0,0)_100%)]">
-                </div> */}
+                <div className="absolute inset-0 bg-black/10" />
                 {/* Content */}
-                <div className="absolute  bottom-12 left-[43%]">
-                    <div className="container-1200 h-full flex justify-center items-center">
-                        <button className="rounded-full bg-white/18 text-white  backdrop-blur-[17px] px-6 py-2.5 text-xl font-extrabold capitalize">
-                            About Establisher
-                        </button>
+                <div className="absolute inset-0">
+                    <div className="container-1200 h-full px-5">
+                        <div className="flex h-full items-end justify-center pb-5 sm:pb-8 md:pb-10 lg:pb-12">
+                            <button className="rounded-full bg-white/18 backdrop-blur-[17px] text-white font-extrabold capitalize px-5 py-3  text-lg lg:text-xl">
+                                about establisher
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
