@@ -26,27 +26,27 @@ const data = [
 const Commitment = () => {
     return (
         <>
-            <section className="pb-14 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-30">
-                <div className="container-1200 px-4 sm:px-5 md:px-6 lg:px-5">
+            <section className="pb-12 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-30">
+                <div className="container-1200 px-5">
                     {/* Top Title */}
-                    <div className="text-center">
+                    <div className="text-center" data-aos="zoom-in-down">
                         <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
                             Our Commitment
                         </span>
 
-                        <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[1.2] lg:leading-16 font-extrabold text-black">
+                        <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[1.2] lg:leading-16 font-extrabold text-black">
                             Driven By Purpose And Excellence
                         </h2>
                     </div>
 
                     {/* Grid */}
-                    <div className="mt-10 sm:mt-12 md:mt-14 lg:mt-16 grid grid-cols-1 md:grid-cols-2">
+                    <div className="mt-10 sm:mt-12 md:mt-14 lg:mt-16 grid grid-cols-1 md:grid-cols-2" data-aos="fade-up">
                         {data.map((item, index) => (
                             <div
                                 key={index}
                                 className={`py-8 sm:py-9 lg:py-10 ${index % 2 === 0
-                                        ? "md:pr-8 lg:pr-12 md:border-r border-[#D9DBDF]"
-                                        : "md:pl-8 lg:pl-12"
+                                    ? "md:pr-8 lg:pr-12 md:border-r border-[#D9DBDF]"
+                                    : "md:pl-8 lg:pl-12"
                                     } ${index >= 2 ? "border-t border-[#D9DBDF]" : ""}`}
                             >
                                 <span className="text-base sm:text-lg font-extrabold text-black leading-5">

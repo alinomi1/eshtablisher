@@ -11,29 +11,29 @@ import { TestimonialsIcon } from "../../../../public/icons/icons";
 
 const testimonials = [
     {
-        text: "We have helped firms of all sizes compete and win internationally.",
-        name: "Keri, UK",
-        role: "CEO at PakDevStudio",
+        text: "Their team's expertise was instrumental in navigating complex international markets and achieving remarkable growth.",
+        name: "Nantes, France",
+        role: "Ingrid, Director at Svenson Group",
     },
     {
-        text: "Exceptional consultancy services! Business Consultancy provided clear insights, tailored solutions, and hands-on support that transformed our operations.",
-        name: "Keri, UK",
-        role: "CEO at PakDevStudio",
+        text: "Exceptional consultancy services! Business Consultancy provided clear insights, tailored solutions, and hands-on support that transformed our operations. Their expertise in strategy, HR, and digital growth is unmatched.",
+        name: "Muscat, Oman",
+        role: "Kenji, Founder at Tokyo Systems",
     },
     {
-        text: "They helped us expand internationally with seamless strategy and expert guidance. Their team simplified complex processes and delivered results.",
-        name: "Keri, UK",
-        role: "CEO at PakDevStudio",
+        text: "They helped us expand internationally with seamless strategy and expert guidance. Their team simplified complex processes, improved efficiency, and delivered measurable results.",
+        name: "Doha, Qatar",
+        role: "Pavel, Owner at Prague Investments",
     },
     {
-        text: "A fantastic experience. Their comprehensive approach to strategy, HR, and recruitment empowered our business to grow with confidence.",
-        name: "Keri, UK",
-        role: "CEO at PakDevStudio",
+        text: "A fantastic experience working with Business Consultancy. Their comprehensive 360-degree approach to business growth, recruitment, and digital strategy empowered our team",
+        name: "Dubai, UAE",
+        role: "Soraya, CEO at Cairo Dynamics",
     },
     {
-        text: "Professional, responsive, and genuinely invested in results. The clarity and structure they brought to our roadmap made a huge difference.",
-        name: "Keri, UK",
-        role: "CEO at PakDevStudio",
+        text: "Their team provided invaluable insights and strategies that propelled our company to new heights in the global market.",
+        name: "Durban, South Africa",
+        role: "Rajesh, CEO at Bharat Innovations",
     },
 ];
 
@@ -70,17 +70,19 @@ export default function Testimonials() {
     }, [api]);
 
     return (
-        <section className="bg-[#F6F0E3] py-12 sm:py-14 md:py-16 overflow-hidden">
-            <div className="px-4 sm:px-5 md:px-6 lg:px-5 flex flex-col items-center">
-                <span className="inline-flex items-center rounded-full bg-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-sm sm:text-base lg:text-lg font-bold text-black shadow-sm">
-                    Service Countries
-                </span>
+        <section className="bg-[#F6F0E3] py-12  md:py-14 lg:py-16 overflow-hidden">
+            <div className=":px-5 flex flex-col items-center">
+                {/* heading */}
+                <div className="text-center" data-aos="zoom-in-down">
+                    <span className="inline-flex items-center rounded-full bg-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-sm sm:text-base lg:text-lg font-bold text-black shadow-sm">
+                        Service Countries
+                    </span>
 
-                <h2 className="capitalize font-extrabold text-black leading-[1.15] text-[30px] sm:text-[36px] md:text-[44px] lg:text-[56px] pt-5 sm:pt-6 lg:pt-8 text-center">
-                    Our Global Service Coverage
-                </h2>
-
-                <div className="mt-6 sm:mt-8 w-full">
+                    <h2 className="capitalize font-extrabold text-black leading-[1.15] text-[30px] sm:text-[36px] md:text-[44px] lg:text-[56px] pt-5 sm:pt-6 lg:pt-8 text-center">
+                        What Our Clients Say About Us
+                    </h2>
+                </div>
+                <div className="mt-6 sm:mt-8 w-full" data-aos="fade-up">
                     <Carousel
                         setApi={setApi}
                         plugins={[autoplay]}

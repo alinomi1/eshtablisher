@@ -3,8 +3,8 @@ import React from 'react'
 
 const Partners = () => {
     return (
-        <section className="bg-white pb-14 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-30">
-            <div className="container-1200 px-4 sm:px-5 md:px-6 lg:px-5 grid items-center gap-10 sm:gap-12 lg:grid-cols-2">
+        <section className="bg-white pb-12 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-30">
+            <div className="container-1200 px-5 grid items-center gap-10 sm:gap-12 lg:grid-cols-2">
                 {/* Left */}
                 <div className="relative w-full lg:max-w-xl aspect-576/624 overflow-hidden order-2 lg:order-1">
                     <Image
@@ -12,16 +12,17 @@ const Partners = () => {
                         alt="Team meeting"
                         fill
                         className="object-cover w-full"
+                        data-aos="fade-up-left"
                     />
                 </div>
 
                 {/* Right */}
-                <div className='w-full order-1 lg:order-2 '>
+                <div className='w-full order-1 lg:order-2 ' data-aos="fade-up-right">
                     <span className="inline-flex items-center capitalize rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
                         who we are
                     </span>
 
-                    <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[1.2] lg:leading-16 font-extrabold text-black max-w-133.25">
+                    <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  lg:leading-16 font-extrabold text-black max-w-133.25">
                         Your Partners In Business Growth
                     </h2>
 

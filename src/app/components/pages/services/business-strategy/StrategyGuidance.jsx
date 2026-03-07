@@ -13,30 +13,30 @@ const features = [
 const StrategyGuidance = () => {
     return (
         <>
-            <section className="bg-white py-14 sm:py-18 md:py-22 lg:py-30">
-                <div className="container-1200 px-4 sm:px-5 md:px-6 lg:px-5">
+            <section className="bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30">
+                <div className="container-1200 px-5">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
-                        <div>
+                        <div data-aos="fade-up-left">
                             <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 py-2.5 sm:px-5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
                                 Service No 1
                             </span>
 
-                            <h2 className="text-black font-extrabold text-[32px] leading-[1.2] sm:text-[40px] md:text-[46px] lg:text-[56px] lg:leading-16 pt-5 sm:pt-6 lg:pt-8">
+                            <h2 className="text-black font-extrabold text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  lg:leading-16 pt-5 sm:pt-6 lg:pt-8">
                                 Smart, Scalable Business Strategy
                             </h2>
                         </div>
 
-                        <div>
+                        <div data-aos="fade-up-right">
                             <p className="pb-8 sm:pb-9 lg:pb-10 font-[350] text-sm sm:text-base leading-6 sm:leading-7 text-black">
                                 <span className="font-extrabold">Establisher</span> helps founders and growing companies make confident decisions with a clear strategy built on real market insight. We assess your current position, define your target segments, sharpen your value proposition, and design an actionable roadmap for growth. From pricing and positioning to revenue forecasting and execution priorities, we create a practical plan your team can follow—and investors can trust—so you move faster, reduce risk, and scale sustainably.
                             </p>
 
-                            <Cta />
+                            <Cta text='learn more' href='business-setup-uae' />
                         </div>
                     </div>
 
                     {/* advantages */}
-                    <div className="grid w-full grid-cols-1 md:grid-cols-3 mt-10 sm:mt-12 md:mt-14 lg:mt-16">
+                    <div className="grid w-full grid-cols-1 md:grid-cols-3 mt-10 sm:mt-12 md:mt-14 lg:mt-16" data-aos="fade-up">
                         {features.map((feature) => (
                             <div
                                 key={feature.id}

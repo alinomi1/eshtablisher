@@ -11,8 +11,8 @@ const HowWeWork = () => {
     ];
 
     return (
-        <section className='bg-white pb-14 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-30'>
-            <div className='container-1200 px-4 sm:px-5 md:px-6 lg:px-5'>
+        <section className='bg-white'>
+            <div className='container-1200 px-5' data-aos="zoom-out-up">
                 {/* Top Header Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
                     <div>
@@ -20,7 +20,7 @@ const HowWeWork = () => {
                             our process
                         </span>
 
-                        <h2 className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] capitalize font-extrabold text-black leading-[1.15] lg:leading-18 pt-5 sm:pt-6 lg:pt-8 max-w-133.25">
+                        <h2 className="text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]   capitalize font-extrabold text-black leading-[1.15] lg:leading-18 pt-5 sm:pt-6 lg:pt-8 max-w-133.25">
                             How We Work – Simple, Clear, Effective
                         </h2>
                     </div>

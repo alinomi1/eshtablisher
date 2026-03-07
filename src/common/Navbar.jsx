@@ -76,7 +76,7 @@ const Navbar = () => {
                       <Link
                         key={index}
                         href={link.href}
-                        className={`block px-5 py-4 text-base text-black capitalize font-normal hover:bg-white/10 transition-colors border-[#0000001F] ${index !== serviceLinks.length - 1 ? "border-b" : ""
+                        className={`block p-4 text-base text-black capitalize font-normal hover:bg-white/10 transition-colors border-[#0000001F] ${index !== serviceLinks.length - 1 ? "border-b" : ""
                           }`}
                       >
                         {link.name}

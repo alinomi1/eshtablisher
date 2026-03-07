@@ -6,10 +6,11 @@ import Cta from '@/common/Cta';
 const Connect = () => {
     return (
         <>
-            <section className='bg-white py-14 sm:py-18 md:py-24 lg:py-30'>
-                <div className="container-1200 px-4 sm:px-5 md:px-6 lg:px-5">
+            <section className='bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30'>
+                <div className="container-1200 px-5">
                     {/* Top Info */}
-                    <div className="bg-[#F7F1E5] rounded-xl p-4 sm:p-5 md:p-6 flex flex-col md:flex-row md:flex-wrap justify-between items-stretch md:items-center">
+                    <div className="bg-[#F7F1E5] rounded-xl p-4 sm:p-5 md:p-6 flex flex-col md:flex-row md:flex-wrap justify-between items-stretch md:items-center" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
                         <div className="flex flex-col items-center justify-center flex-1 py-4 sm:py-5 md:py-0 border-b md:border-b-0 md:border-r border-[#E5C999]/50 last:border-0">
                             <span className="text-base sm:text-lg md:text-xl text-black font-extrabold capitalize">Email</span>
                             <a href="mailto:julie@gmail.com" className="font-[350] text-sm text-black pt-2 sm:pt-3 break-all text-center">julie@gmail.com</a>
@@ -28,7 +29,7 @@ const Connect = () => {
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-12 items-start mt-10 sm:mt-12 md:mt-14 lg:mt-16">
                         {/* Left */}
-                        <div>
+                        <div data-aos="fade-up-right">
                             <span className="inline-block rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black capitalize">
                                 Contact Us
                             </span>
@@ -73,7 +74,7 @@ const Connect = () => {
                         </div>
 
                         {/* Right */}
-                        <div>
+                        <div data-aos="fade-up-left">
                             <h3 className="text-[20px] sm:text-[22px] leading-[1.2] font-extrabold text-black capitalize">
                                 Schedule A Consultation Now
                             </h3>

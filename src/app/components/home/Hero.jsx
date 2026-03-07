@@ -15,7 +15,7 @@ const Hero = () => {
 
     const id = setInterval(() => {
       api.scrollNext();
-    }, 4000);
+    }, 2500);
 
     return () => clearInterval(id);
   }, [api]);
@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="w-full grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 sm:gap-10 lg:gap-12 items-start lg:items-center">
             {/* Left */}
             <div className="pointer-events-auto max-w-155">
-              <div className="relative w-28 h-20 sm:w-44 sm:h-31 lg:w-88.5 lg:h-62">
+              <div className="relative w-28 h-20 sm:w-44 sm:h-31 lg:w-88.5 lg:h-62" data-aos="fade-down">
                 <Image
                   src="/images/logoo.png"
                   alt="Establisher"
@@ -61,17 +61,20 @@ const Hero = () => {
                 />
               </div>
 
-              <h1 className="text-white font-extrabold leading-[1.05] my-8 lg:my-12 text-[36px] md:text-[52px] lg:text-[60px] max-w-[520px]">
+              <h1 className="text-white font-extrabold leading-[1.05] my-8 lg:my-12 text-[36px] md:text-[52px] lg:text-[60px] max-w-[520px]" data-aos="zoom-in-right">
                 Global Business <br className="hidden sm:block" /> Consultancy
               </h1>
 
-              <div>
+              <div data-aos="fade-up">
                 <Cta />
               </div>
             </div>
 
             {/* Right */}
-            <div className="pointer-events-auto justify-self-start md:justify-self-end lg:justify-self-end  md:mt-44 lg:mt-52">
+            <div className="pointer-events-auto justify-self-start md:justify-self-end lg:justify-self-end  md:mt-44 lg:mt-52"
+              data-aos="fade-left"
+              data-aos-anchor="#example-anchor"
+            >
               <div className="custom-glass-card bg-white/22 backdrop-blur-[80px] w-[160px] sm:w-[220px] md:w-[240px] lg:w-[340px] min-h-[160px] sm:min-h-[220px] md:min-h-[240px] lg:min-h-[300px]">
                 <div className="p-4 sm:p-6 lg:p-10">
                   <p className="text-white font-medium text-[12px] sm:text-[15px] lg:text-[18px] leading-[1.35]">

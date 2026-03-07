@@ -48,23 +48,25 @@ const Process = () => {
   );
 
   return (
-    <section className="bg-white py-24">
-      <div className="container-1200 px-5 mx-auto">
-        <span className="block text-center text-lg font-bold capitalize text-black">
-          Our Process
-        </span>
-        <h2 className="mt-4 text-center capitalize text-[56px] font-extrabold leading-[1.1] text-black">
-          The Process Of Business Setup
-        </h2>
+    <section className="bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30">
+      <div className="container-1200 px-5 ">
+        <div className="text-center" data-aos="zoom-in-down">
+          <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
+            our process
+          </span>
+          <h2 className="mt-4 text-center capitalize text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  font-extrabold leading-[1.1] text-black">
+            The Process Of Business Setup
+          </h2>
+        </div>
 
-        <div className="mt-16">
+        <div className="mt-16" data-aos="fade-up-right">
           <h3 className="text-[32px] leading-16 font-extrabold text-black">
             Required Documents
           </h3>
           {renderStepList(requiredDocs, "grid-cols-5")}
         </div>
 
-        <div className="mt-16">
+        <div className="mt-16" data-aos="fade-up-left">
           <h3 className="text-[32px] font-extrabold leading-16  text-black">
             Incorporation Steps
           </h3>

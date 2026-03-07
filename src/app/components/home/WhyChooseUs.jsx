@@ -25,18 +25,21 @@ const items = [
 
 const WhyChooseUs = () => {
     return (
-        <section className="bg-white pb-14 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-30">
-            <div className="container-1200 px-4 sm:px-5 md:px-6 lg:px-5">
-                <span className="block text-center text-sm sm:text-base lg:text-lg font-bold capitalize text-black">
-                    why choose us
-                </span>
+        <section className="bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30">
+            <div className="container-1200 px-5">
+                {/* heading */}
+                <div className="text-center" data-aos="zoom-in-down">
+                    <span className="inline-flex  rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
+                        why choose us
+                    </span>
 
-                <h2 className="mt-3 sm:mt-4 text-center capitalize text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] font-extrabold leading-[1.1] text-black">
-                    Your Strategic Growth Partner
-                </h2>
+                    <h2 className="mt-3 sm:mt-4  capitalize text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  font-extrabold leading-[1.1] text-black">
+                        Your Strategic Growth Partner
+                    </h2>
+                </div>
 
                 {/* cards */}
-                <div className="mt-10 sm:mt-12 md:mt-14 lg:mt-16 grid grid-cols-1 gap-5 sm:gap-6 lg:gap-8 md:grid-cols-2">
+                <div className="mt-10 sm:mt-12 md:mt-14 lg:mt-16 grid grid-cols-1 gap-5 sm:gap-6 lg:gap-8 md:grid-cols-2" data-aos="zoom-in-up">
                     {items.map((item) => (
                         <div
                             key={item.no}

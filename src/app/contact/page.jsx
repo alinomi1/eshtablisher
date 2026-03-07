@@ -8,7 +8,7 @@ const page = () => {
         <>
             <ContactBanner />
             <Connect />
-            <div className='pb-30'>
+            <div className='pb-12 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-30'>
                 <BusinessConsultationSlider />
             </div>
         </>

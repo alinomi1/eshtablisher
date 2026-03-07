@@ -16,39 +16,45 @@ const features = [
 const Advantages = () => {
     return (
         <>
-            <section className='bg-[#F6F6F6] py-16'>
-                <div className='container-1200 px-5'>
-                    <div className='grid grid-cols-2 gap-12 items-center'>
-                        <div>
-                            <span className='text-black font-bold text-lg capitalize'>Freezone Company</span>
-                            <h2 className='text-black font-extrabold leading-16 text-[56px] pt-8'>Advantages of a Freezone Company </h2>
+            <section className='bg-[#F6F6F6] py-12  md:py-14 lg:py-16' >
+                <div className='container-1200 px-5' >
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center'>
+                        <div data-aos="fade-up-left">
+                            <span className='text-black font-bold text-sm sm:text-base lg:text-lg capitalize'>
+                                Freezone Company
+                            </span>
+
+                            <h2 className='text-black font-extrabold  text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  pt-5 sm:pt-6 md:pt-8'>
+                                Advantages of a Freezone Company
+                            </h2>
                         </div>
-                        <p className='font-[350] text-base text-black'>A Freezone company is a business registered in a designated UAE Free Zone area. It allows 100% foreign ownership, offers tax advantages, and provides simplified licensing and visa services. It’s ideal for international trade, startups, and companies needing flexible office options.</p>
+
+                        <p className='font-[350] text-sm sm:text-base text-black leading-6 sm:leading-7' data-aos="fade-up-right">
+                            A Freezone company is a business registered in a designated UAE Free Zone area. It allows 100% foreign ownership, offers tax advantages, and provides simplified licensing and visa services. It’s ideal for international trade, startups, and companies needing flexible office options.
+                        </p>
                     </div>
+
                     {/* advantages */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 mt-16">
+                    <div className="grid grid-cols-1 md:grid-cols-3 mt-10 sm:mt-12 md:mt-14 lg:mt-16" data-aos="zoom-in">
                         {features.map((feature) => (
                             <div
                                 key={feature.id}
                                 className={`
-                p-5 flex flex-col justify-start
-                border-[#D9DBDF]
-                
-                /* Mobile Borders (1 Column): Bottom borders for all except the very last item */
-                border-b last:border-b-0
-                
-                /* Desktop Borders (3 Columns): 
-                   1. Add right borders, but remove them for every 3rd item (end of row)
-                   2. Add bottom borders, but remove them for the last 3 items (bottom row) */
-                md:border-b md:border-r
-                md:nth-[3n]:border-r-0
-                md:nth-last-[-n+3]:border-b-0
-              `}
+                        p-4 sm:p-5 flex flex-col justify-start
+                        border-[#D9DBDF]
+
+                        border-b last:border-b-0
+
+                        md:border-b md:border-r
+                        md:nth-[3n]:border-r-0
+                        md:nth-last-[-n+3]:border-b-0
+                    `}
                             >
-                                <span className="text-[#ABAEB2] font-extrabold text-lg">
+                                <span className="text-[#ABAEB2] font-extrabold text-base sm:text-lg">
                                     {feature.id}
                                 </span>
-                                <p className="text-black font-extrabold text-[22px]  pt-6 ">
+
+                                <p className="text-black font-extrabold text-[18px] sm:text-[20px] md:text-[22px] pt-4 sm:pt-5 md:pt-6 leading-snug">
                                     {feature.text}
                                 </p>
                             </div>

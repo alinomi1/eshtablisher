@@ -68,7 +68,7 @@ const desktopItems = [
         points: ["- accounting", "- Tax | VAT | CT", "- auditing"],
         side: "right",
         className:
-            "top-60  left-[calc(50%+275px)] lg:left-[calc(37%+350px)] w-[230px]",
+            "top-60  left-[calc(50%+275px)] lg:left-[calc(37%+350px)] w-[150px]",
     },
     {
         id: "H",
@@ -114,19 +114,19 @@ function FocusLabel({ item }) {
 
 const Focuses = () => {
     return (
-        <section className="bg-[#F7F1E5] py-20">
-            <div className="container-1200 px-5">
-                <div className="text-center">
+        <section className="bg-[#F7F1E5] py-12  md:py-14 lg:py-16">
+            <div className="container-1200 px-5" >
+                <div className="text-center" data-aos="zoom-in-down">
                     <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
                         Our focus
                     </span>
-                    <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[1.2] lg:leading-16 font-extrabold text-black">
+                    <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  lg:leading-16 font-extrabold text-black">
                         Our Main Focuses
                     </h2>
                 </div>
 
                 {/* Desktop layout */}
-                <div className="relative mx-auto mt-20 hidden w-full  md:block lg:h-[500px]">
+                <div className="relative mx-auto mt-16 lg:mt-20 hidden w-full  md:block lg:h-[500px]" data-aos="zoom-in">
                     <div className="absolute left-1/2 top-60 z-10 w-123.5 -translate-x-1/2 -translate-y-1/2">
                         <div className="relative">
                             <Image
@@ -157,7 +157,7 @@ const Focuses = () => {
                     ))}
                 </div>
 
-                {/* Mobile simplified layout */}
+                {/* Mobile layout */}
                 <div className="mt-10 md:hidden">
                     <div className="mx-auto max-w-[360px]">
                         <div className="relative">

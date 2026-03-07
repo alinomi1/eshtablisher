@@ -60,19 +60,19 @@ const Solutions = () => {
     }, [api]);
 
     return (
-        <section className="bg-[#F6F6F6] py-14 sm:py-16 md:py-20 lg:py-24 xl:py-24 overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 items-center">
+        <section className="bg-[#F6F6F6] py-12  md:py-14 lg:py-16 overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 items-center" data-aos="zoom-in-up">
                 {/* Left Content */}
                 <div className="lg:col-span-6 w-full px-4 sm:px-5 md:px-6 lg:pl-16 lg:pr-6 xl:pl-24 2xl:pl-40">
                     <span className="inline-block rounded-full bg-white px-4 sm:px-5 md:px-6 py-2.5 sm:py-3 text-sm sm:text-base lg:text-[18px] font-bold text-black capitalize">
                         Our Services
                     </span>
 
-                    <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[58px] leading-[1.2] lg:leading-18 font-extrabold text-[#0E0F22]">
+                    <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px] lg:leading-[1.2] lg:leading-18 font-extrabold text-[#0E0F22]">
                         Tailored End-to-End Solutions
                     </h2>
 
-                    <p className="mt-6 sm:mt-8 md:mt-10 lg:mt-16 text-sm sm:text-base leading-6 sm:leading-7 font-[350] text-black max-w-114">
+                    <p className="mt-5 sm:mt-8 md:mt-10 lg:mt-16 text-sm sm:text-base leading-6 sm:leading-7 font-[350] text-black max-w-114">
                         We provide a complete suite of professional services designed to support your business at every stage of its global journey:
                     </p>
                 </div>

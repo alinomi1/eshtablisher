@@ -17,7 +17,7 @@ export default function Home() {
       <About />
       <Solutions />
       <Focuses />
-      <div className="py-30">
+      <div className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30">
         <BusinessConsultationSlider />
       </div>
       <HowWeWork />
