@@ -1,5 +1,5 @@
 import React from "react";
-import { StepsCircleIcon } from "../../../../public/icons/icons";
+import { StepsCircleIcon } from "../../../../../public/icons/icons";
 
 const requiredDocs = [
   { no: "01", text: "Company name &\ntwo variations" },

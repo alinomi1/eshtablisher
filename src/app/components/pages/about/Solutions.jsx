@@ -60,7 +60,7 @@ const Solutions = () => {
     }, [api]);
 
     return (
-        <section className="bg-[#F7F1E5] py-14 sm:py-16 md:py-20 lg:py-24 xl:py-24 overflow-hidden">
+        <section className="bg-[#F6F6F6] py-14 sm:py-16 md:py-20 lg:py-24 xl:py-24 overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 items-center">
                 {/* Left Content */}
                 <div className="lg:col-span-6 w-full px-4 sm:px-5 md:px-6 lg:pl-16 lg:pr-6 xl:pl-24 2xl:pl-40">
@@ -147,14 +147,14 @@ const Solutions = () => {
                     <div className="flex gap-3 sm:gap-4 lg:gap-5 shrink-0">
                         <button
                             onClick={() => api?.scrollPrev()}
-                            className="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 rounded-full cursor-pointer flex items-center justify-center bg-[#ECD29A] rotate-180 hover:bg-white transition-all duration-200 text-white hover:text-[#ECD29A]"
+                            className="h-8 md:h-10 w-8 md:w-10  rounded-full cursor-pointer flex items-center justify-center bg-[#ECD29A] rotate-180 hover:bg-white transition-all duration-200 text-white hover:text-[#ECD29A]"
                         >
                             <NextIcon />
                         </button>
 
                         <button
                             onClick={() => api?.scrollNext()}
-                            className="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 rounded-full cursor-pointer flex items-center justify-center bg-[#ECD29A] hover:bg-white transition-all text-white duration-200 hover:text-[#ECD29A]"
+                            className="h-8 md:h-10 w-8 md:w-10  rounded-full cursor-pointer flex items-center justify-center bg-[#ECD29A] hover:bg-white transition-all text-white duration-200 hover:text-[#ECD29A]"
                         >
                             <NextIcon />
                         </button>

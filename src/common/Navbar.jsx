@@ -12,6 +12,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const serviceLinks = [
+    { name: "An Example Of Setting Up A Business in UAE", href: "/business-setup-uae" },
     { name: "Business Strategy", href: "/business-strategy" },
     { name: "Business Angel", href: "/business-angel" },
     { name: "Digital Marketing 360", href: "/digital-marketing" },
@@ -27,6 +28,8 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
+      {/* <div className="absolute top-0 left-0 w-full h-14 bg-white/30 backdrop-blur-lg -z-10"
+        style={{ maskImage: 'linear-gradient(to bottom, black, transparent)' }} /> */}
       <div className="container-1200 px-5 mt-3 md:mt-6">
         <div className="lg:bg-[#0E0F22] lg:rounded-xl lg:py-2.5 lg:px-16 xl:px-30">
           <div className="flex items-center justify-between">

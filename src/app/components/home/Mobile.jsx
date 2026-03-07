@@ -15,6 +15,7 @@ import {
 import { HamburgerIcon } from '../../../../public/icons/icons'
 
 const serviceLinks = [
+    { name: "An Example Of Setting Up A Business in UAE", href: "/business-setup-uae" },
     { name: "Business Strategy", href: "/business-strategy" },
     { name: "Business Angel", href: "/business-angel" },
     { name: "Digital Marketing 360", href: "/digital-marketing" },

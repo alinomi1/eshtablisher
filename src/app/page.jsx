@@ -8,6 +8,7 @@ import WhyChooseUs from "./components/home/WhyChooseUs";
 import ServiceCountries from "./components/home/ServiceCountries";
 import Connect from "./components/pages/contact/Connect";
 import Testimonials from "./components/home/Testimonials";
+import Focuses from "./components/home/Focuses";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <About />
       <Solutions />
+      <Focuses />
       <div className="py-30">
         <BusinessConsultationSlider />
       </div>
