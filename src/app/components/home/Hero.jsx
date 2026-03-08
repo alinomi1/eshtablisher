@@ -21,15 +21,15 @@ const Hero = () => {
   }, [api]);
 
   return (
-    <section className="relative w-full overflow-hidden min-h-[100svh]">
+    <section className="relative w-full overflow-hidden h-svh">
       <Carousel
         setApi={setApi}
         opts={{ loop: true, align: "start" }}
-        className="absolute inset-0 w-full h-full"
+        className="absolute inset-0 w-full h-full "
       >
-        <CarouselContent className="h-full ml-0 pb-10">
+        <CarouselContent className="h-full ml-0 ">
           {heroImages.map((src, index) => (
-            <CarouselItem key={src} className="h-svh w-full pl-0">
+            <CarouselItem key={src} className="h-svh w-full pl-0 ">
               <div className="relative h-full w-full">
                 <Image
                   src={src}
@@ -46,22 +46,22 @@ const Hero = () => {
         </CarouselContent>
       </Carousel>
 
-      <div className="relative z-10 min-h-svh">
-        <div className="container-1200 px-5 pt-30 md:pt-40 lg:pt-44  min-h-svh flex items-start lg:items-center">
-          <div className="w-full grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 sm:gap-10 lg:gap-12 items-start lg:items-center">
+      <div className="relative z-10 h-full flex items-center">
+        <div className="container-1200 px-5 flex w-full">
+          <div className="w-full grid grid-cols-1 md:grid-cols-[1fr_auto] pt-18  md:pt-30 lg:pt-40 items-center gap-8 sm:gap-10 lg:gap-12">
             {/* Left */}
-            <div className="pointer-events-auto max-w-155">
-              <div className="relative w-28 h-20 sm:w-44 sm:h-31 lg:w-88.5 lg:h-62" data-aos="fade-down">
+            <div className="pointer-events-auto w-full md:max-w-155">
+              <div className="relative w-42 md:w-70 xl:w-88.5 h-30 md:h-50 xl:h-62" data-aos="fade-down">
                 <Image
                   src="/images/logoo.png"
                   alt="Establisher"
                   fill
                   sizes="(max-width: 640px) 112px, (max-width: 1024px) 176px, 400px"
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
 
-              <h1 className="text-white font-extrabold leading-[1.05] my-8 lg:my-12 text-[36px] md:text-[52px] lg:text-[60px] max-w-[520px]" data-aos="zoom-in-right">
+              <h1 className="text-white font-extrabold leading-[1.05] my-8 xl:my-12 text-[36px] md:text-[52px] xl:text-[60px] max-w-[520px]" data-aos="zoom-in-right">
                 Global Business <br className="hidden sm:block" /> Consultancy
               </h1>
 
@@ -71,25 +71,20 @@ const Hero = () => {
             </div>
 
             {/* Right */}
-            <div className="pointer-events-auto justify-self-start md:justify-self-end lg:justify-self-end  md:mt-44 lg:mt-52"
+            <div className="self-center md:self-end glass-cutout-mask backdrop-blur-lg bg-white/15 p-3 lg:p-6 overflow-hidden w-54 md:w-64 lg:w-82 h-50 md:h-64 lg:h-82 flex flex-col justify-between"
               data-aos="fade-left"
-              data-aos-anchor="#example-anchor"
-            >
-              <div className="custom-glass-card bg-white/22 backdrop-blur-[80px] w-[160px] sm:w-[220px] md:w-[240px] lg:w-[340px] min-h-[160px] sm:min-h-[220px] md:min-h-[240px] lg:min-h-[300px]">
-                <div className="p-4 sm:p-6 lg:p-10">
-                  <p className="text-white font-medium text-[12px] sm:text-[15px] lg:text-[18px] leading-[1.35]">
-                    Guiding you to <br /> success with
-                  </p>
+              data-aos-anchor="#example-anchor">
 
-                  <div className="mt-2 sm:mt-3 lg:mt-4 text-white font-extrabold leading-none text-[42px] sm:text-[64px] md:text-[68px] lg:text-[110px] tracking-tighter">
-                    100+
-                  </div>
+              <p className="font-normal text-white text-sm md:text-base lg:text-[21px] overflow-hidden">
+                Guiding you to <br></br>success with
+              </p>
 
-                  <p className="mt-2 text-white font-bold text-[12px] sm:text-[16px] lg:text-[22px] tracking-wide">
-                    Investors Served
-                  </p>
-                </div>
+              <div className="font-extrabold text-[60px] md:text-[70px] lg:text-[90px] xl:text-[100px] text-white leading-none">
+                500+
               </div>
+
+              <p className="font-normal text-lg md:text-xl lg:text-2xl text-white">Investers Served</p>
+
             </div>
           </div>
         </div>

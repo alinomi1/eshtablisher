@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const Language = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState("EN"); // "EN" or "FR"
+    const [selected, setSelected] = useState("EN");
 
     return (
         <div className="relative inline-block">

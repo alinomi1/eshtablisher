@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/common/Navbar";
 import Footer from "@/common/Footer";
-import AosInit from "./components/animations/AosInit";
+import AosInit from "@/app/components/animations/AosInit";
 
 
 const nexa = localFont({

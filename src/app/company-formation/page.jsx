@@ -1,8 +1,9 @@
 import React from 'react'
-import Connect from '../components/pages/contact/Connect'
+import Connect from '@/app/components/pages/contact/Connect'
 import BusinessConsultationSlider from '@/common/BusinessConsultationSlider'
-import FormationGuidance from '../components/pages/services/company-formation/FormationGuidance'
-import FormationBanner from '../components/pages/services/company-formation/FormationBanner'
+import FormationGuidance from '@/app/components/pages/services/company-formation/FormationGuidance'
+import FormationBanner from '@/app/components/pages/services/company-formation/FormationBanner'
+import Faqs from '@/app/components/pages/services/company-formation/Faqs'
 
 const page = () => {
     return (
@@ -10,6 +11,7 @@ const page = () => {
             <FormationBanner />
             <FormationGuidance />
             <BusinessConsultationSlider />
+            <Faqs />
             <Connect />
         </>
     )

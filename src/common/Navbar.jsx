@@ -42,7 +42,7 @@ const Navbar = () => {
                   width={105}
                   height={74}
                   priority
-                  className="h-15 md:h-18.5 w-15 md:w-26.25 object-cover"
+                  className="h-14 md:h-18.5 w-20 md:w-26.25 object-cover"
                 />
               </Link>
               <Mobile />

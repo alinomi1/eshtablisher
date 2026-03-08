@@ -4,7 +4,7 @@ import React from 'react';
 const BusinessConsultationSlider = () => {
     return (
         <>
-            <section className="overflow-hidden py-2">
+            <section className="overflow-hidden">
                 <div className="flex items-center gap-4 sm:gap-5 md:gap-7 lg:gap-9 animate-slideLR w-max">
                     <h2 className="text-[#0E0F22] pt-1 leading-none font-normal text-[42px] sm:text-[60px] md:text-[84px] lg:text-[110px] xl:text-[132px] uppercase whitespace-nowrap">
                         BUSINESS
