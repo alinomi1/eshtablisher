@@ -1,9 +1,5 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/common/Navbar";
-import Footer from "@/common/Footer";
-import AosInit from "@/app/components/animations/AosInit";
-
 
 const nexa = localFont({
   src: [
@@ -26,10 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={nexa.variable} suppressHydrationWarning>
       <body suppressHydrationWarning className="antialiased font-sans">
-        <AosInit />
-        <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );

@@ -1,11 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import Language from "./Language";
 import { DropdownIcon } from "../../public/icons/icons";
-import { usePathname } from "next/navigation";
+import {Link, usePathname} from "@/i18n/navigation";
 import Mobile from "@/app/components/home/Mobile";
 
 const Navbar = () => {
