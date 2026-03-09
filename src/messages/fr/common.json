@@ -1,0 +1,36 @@
+{
+  "pages": {
+    "home": "Accueil",
+    "about": "À propos de nous",
+    "services": "Nos services",
+    "contact": "Contactez nous",
+    "demo": "Demander une démo",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales"
+  },
+  "services_nav": {
+    "business_setup_uae": "Exemple de création d'entreprise aux ÉAU",
+    "strategy": "Stratégie commerciale",
+    "angel": "Business Angel",
+    "marketing": "Marketing Digital 360",
+    "formation": "Formation de société",
+    "hr_payroll": "RH & Paie",
+    "finance": "Finance"
+  },
+  "footer": {
+    "description": "Nous sommes une équipe de conseil en affaires dévouée, aidant les entreprises à croître et à atteindre leurs objectifs.",
+    "links_title": "Liens rapides",
+    "pages_title": "Pages",
+    "reach_title": "Nous joindre",
+    "copyright": "© copyright 2026 theestablisher.com | Tous droits réservés",
+    "location": "Dubaï Sud"
+  },
+  "buttons": {
+    "book_consultation": "Réserver une consultation",
+    "learn_more": "En savoir plus"
+  },
+  "languages": {
+    "english": "Anglais",
+    "french": "Français"
+  }
+}

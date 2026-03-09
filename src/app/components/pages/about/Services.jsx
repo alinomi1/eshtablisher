@@ -9,31 +9,26 @@ import {
 import Image from 'next/image';
 import { NextIcon } from '../../../../../public/icons/icons';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const services = [
     {
+
         id: "01",
-        title: "Business Strategy",
-        description: "Navigate company set up Globally with expert guidance on structure, licensing, compliance, and market strategy.",
+        key: "strategy",
         image: "/images/about-solution-1.png",
     },
     {
         id: "02",
-        title: "Business Angel",
-        description: "Tax guidance in global markets, covering structure, compliance, and innovative tax planning for sustainable growth.",
+        key: "angel",
         image: "/images/about-solution-2.png",
-    },
-    {
-        id: "03",
-        title: "Market Expansion",
-        description: "Comprehensive support for entering new territories, including localized research and strategic partnerships.",
-        image: "/images/about-solution-1.png",
     },
 ];
 
-const Solutions = () => {
+const Services = () => {
     const [api, setApi] = useState(null);
     const [progress, setProgress] = useState(0);
+    const t = useTranslations("home")
 
     useEffect(() => {
         if (!api) return;
@@ -65,15 +60,15 @@ const Solutions = () => {
                 {/* Left Content */}
                 <div className="lg:col-span-6 w-full px-4 sm:px-5 md:px-6 lg:pl-16 lg:pr-6 xl:pl-24 2xl:pl-40">
                     <span className="inline-block rounded-full bg-white px-4 sm:px-5 md:px-6 py-2.5 sm:py-3 text-sm sm:text-base lg:text-[18px] font-bold text-black capitalize">
-                        Our Services
+                        {t("services.badge")}
                     </span>
 
                     <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px] lg:leading-[1.2] lg:leading-18 font-extrabold text-[#0E0F22]">
-                        Tailored End-to-End Solutions
+                        {t("services.title")}
                     </h2>
 
                     <p className="mt-5 sm:mt-8 md:mt-10 lg:mt-16 text-sm sm:text-base leading-6 sm:leading-7 font-[350] text-black max-w-114">
-                        We provide a complete suite of professional services designed to support your business at every stage of its global journey:
+                        {t("services.description")}
                     </p>
                 </div>
 
@@ -97,7 +92,7 @@ const Solutions = () => {
                                         <div className="relative h-52 sm:h-56 md:h-60 lg:h-66 w-full">
                                             <Image
                                                 src={service.image}
-                                                alt={service.title}
+                                                alt="services image"
                                                 fill
                                                 className="object-cover"
                                                 priority
@@ -110,18 +105,18 @@ const Solutions = () => {
                                             </span>
 
                                             <h3 className="text-[22px] sm:text-[24px] lg:text-[26px] leading-[1.2] capitalize text-black font-extrabold">
-                                                {service.title}
+                                                {t(`services.cards.${service.key}.title`)}
                                             </h3>
 
                                             <p className="text-black text-sm sm:text-base leading-6 max-w-84">
-                                                {service.description}
+                                                {t(`services.cards.${service.key}.desc`)}
                                             </p>
 
                                             <Link
                                                 href="#"
                                                 className="text-start text-[#0E0F22] capitalize font-bold text-sm sm:text-base hover:underline cursor-pointer underline-offset-8 decoration-2 hover:opacity-75 transition-all"
                                             >
-                                                Learn More
+                                                {t("services.buttons.learn_more")}
                                             </Link>
                                         </div>
                                     </div>
@@ -132,11 +127,11 @@ const Solutions = () => {
                 </div>
             </div>
 
-            {/* Custom Bottom Controls */}
-            <div className='container-1200 px-4 sm:px-5 md:px-6 lg:px-5 mt-8 sm:mt-10'>
+            {/* Custom Bottom  */}
+            <div className='container-1200 px-5 mt-8 sm:mt-10 w-full'>
                 <div className="flex items-center gap-4 sm:gap-6 lg:gap-10 w-full px-0 sm:px-1 md:px-2">
                     {/* Visual Progress Bar */}
-                    <div className="h-2 grow rounded-[10px] bg-white relative">
+                    <div className="h-2 grow rounded-[10px] bg-white relative min-w-full">
                         <div
                             className="absolute left-0 top-0 h-full bg-[#E5C999] rounded-[10px] transition-all duration-500 ease-out"
                             style={{ width: `${progress}%` }}
@@ -144,7 +139,7 @@ const Solutions = () => {
                     </div>
 
                     {/* Navigation Buttons */}
-                    <div className="flex gap-3 sm:gap-4 lg:gap-5 shrink-0">
+                    <div className="flex gap-3 sm:gap-4 lg:gap-5 ">
                         <button
                             onClick={() => api?.scrollPrev()}
                             className="h-8 md:h-10 w-8 md:w-10  rounded-full cursor-pointer flex items-center justify-center bg-[#ECD29A] rotate-180 hover:bg-white transition-all duration-200 text-white hover:text-[#ECD29A]"
@@ -165,4 +160,4 @@ const Solutions = () => {
     );
 };
 
-export default Solutions;
+export default Services;

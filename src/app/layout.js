@@ -1,5 +1,10 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
+import Navbar from "@/common/Navbar";
+import Footer from "@/common/Footer";
+import AosInit from "@/app/components/animations/AosInit";
 
 const nexa = localFont({
   src: [
@@ -10,7 +15,6 @@ const nexa = localFont({
   ],
   variable: "--font-nexa",
   display: "swap",
-  fallback: ["ui-sans-serif", "system-ui", "Segoe UI", "Roboto", "Arial"],
 });
 
 export const metadata = {
@@ -18,11 +22,23 @@ export const metadata = {
   description: "Guiding you to success with 100+ investors served.",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  // 1. Get current locale and all messages
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="en" className={nexa.variable} suppressHydrationWarning>
+    <html lang={locale} className={nexa.variable} suppressHydrationWarning>
       <body suppressHydrationWarning className="antialiased font-sans">
-        {children}
+        {/* 2. Wrap the entire app in the Intl Provider */}
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          <AosInit />
+          <Navbar />
+          <main>
+            {children}
+          </main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

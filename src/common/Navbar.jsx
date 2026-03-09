@@ -4,23 +4,27 @@ import Image from "next/image";
 import React from "react";
 import Language from "./Language";
 import { DropdownIcon } from "../../public/icons/icons";
-import {Link, usePathname} from "@/i18n/navigation";
+
 import Mobile from "@/app/components/home/Mobile";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useTranslations } from "use-intl";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const t = useTranslations("common");
 
   const serviceLinks = [
-    { name: "An Example Of Setting Up A Business in UAE", href: "/business-setup-uae" },
-    { name: "Business Strategy", href: "/business-strategy" },
-    { name: "Business Angel", href: "/business-angel" },
-    { name: "Digital Marketing 360", href: "/digital-marketing" },
-    { name: "Company Formation", href: "/company-formation" },
-    { name: "HR & Payroll", href: "/hr-payroll" },
-    { name: "Finance", href: "/finance" },
+    { name: t("services_nav.business_setup_uae"), href: "/business-setup-uae" },
+    { name: t("services_nav.strategy"), href: "/business-strategy" },
+    { name: t("services_nav.angel"), href: "/business-angel" },
+    { name: t("services_nav.marketing"), href: "/digital-marketing" },
+    { name: t("services_nav.formation"), href: "/company-formation" },
+    { name: t("services_nav.hr_payroll"), href: "/hr-payroll" },
+    { name: t("services_nav.finance"), href: "/finance" },
   ];
 
-  const isServicesActive = serviceLinks.some((link) => pathname === link.href);
+  const isServicesActive = serviceLinks.some((link) => usePathname === link.href);
 
   const activeLine =
     "after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-18.5px] after:h-[5px] after:w-[125px] after:rounded-t-[20px] after:bg-[#ECD29A]";
@@ -50,19 +54,19 @@ const Navbar = () => {
             <nav className="hidden lg:flex items-center gap-8 xl:gap-10 font-normal capitalize text-white text-base leading-[160%]">
               <div className={`relative flex h-full items-center justify-center ${pathname === "/" ? activeLine : ""}`}>
                 <Link href="/" className="hover:text-gray-300 transition-colors px-2 py-4">
-                  Home
+                  {t("pages.home")}
                 </Link>
               </div>
 
               <div className={`relative flex h-full items-center justify-center ${pathname === "/about" ? activeLine : ""}`}>
                 <Link href="/about" className="hover:text-gray-300 transition-colors px-2 py-4">
-                  About Us
+                  {t("pages.about")}
                 </Link>
               </div>
 
               <div className={`relative group flex h-full items-center justify-center ${isServicesActive ? activeLine : ""}`}>
                 <button className="flex items-center gap-2.5 cursor-pointer px-2 py-4 hover:text-gray-300 transition-colors">
-                  Our Services
+                  {t("pages.services")}
                   <span className="inline-flex transition-transform duration-300 group-hover:rotate-180">
                     <DropdownIcon />
                   </span>
@@ -87,7 +91,7 @@ const Navbar = () => {
 
               <div className={`relative flex h-full items-center justify-center ${pathname === "/contact" ? activeLine : ""}`}>
                 <Link href="/contact" className="hover:text-gray-300 transition-colors px-2 py-4">
-                  Contact Us
+                  {t("pages.contact")}
                 </Link>
               </div>
             </nav>

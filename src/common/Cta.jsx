@@ -1,8 +1,14 @@
 import React from 'react'
 import { ForwardIcon } from '../../public/icons/icons'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
-const Cta = ({ text = "Book A Consultation", href = "/contact" }) => {
+const Cta = ({ text, href = "/contact" }) => {
+    const t = useTranslations("common");
+
+    // Professional way: Assign the translation if no text is provided as a prop
+    const buttonText = text || t("buttons.book_consultation");
+
     return (
         <Link
             href={href}
@@ -12,13 +18,13 @@ const Cta = ({ text = "Book A Consultation", href = "/contact" }) => {
             <span className="absolute left-2 top-1/2 h-9 w-9 -translate-y-1/2 rounded-full bg-black transition-all duration-500 ease-in-out group-hover:w-[calc(100%-16px)]" />
 
             {/* icon */}
-            <span className="relative z-10 flex items-center justify-center w-9 h-9 text-white transition-all duration-500 ease-in-out group-hover:translate-x-[calc(100%-28px)]">
+            <span className="relative z-10 flex items-center justify-center w-9 h-9 text-white transition-all duration-500 ease-in-out group-hover:translate-x-[calc(100%-36px)]">
                 <ForwardIcon />
             </span>
 
             {/* text */}
             <span className="relative z-10 font-[350] text-black text-base transition-colors duration-300 group-hover:text-white">
-                {text}
+                {buttonText}
             </span>
         </Link>
     )

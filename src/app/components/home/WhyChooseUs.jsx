@@ -1,29 +1,32 @@
 import React from "react";
 
-const items = [
-    {
-        no: "01",
-        title: "Strategic Insight",
-        desc: "We offer both visionary strategy and tactical execution.",
-    },
-    {
-        no: "02",
-        title: "Worldwide Network",
-        desc: "Our partners and offices enable global reach with local sensitivity.",
-    },
-    {
-        no: "03",
-        title: "Proven Results",
-        desc: "We have helped firms of all sizes compete and win internationally.",
-    },
-    {
-        no: "04",
-        title: "Dedicated Experts",
-        desc: "Our team bring deep industry knowledge and tailored support.",
-    },
-];
-
 const WhyChooseUs = () => {
+
+
+
+    const items = [
+        {
+            no: "01",
+            title: t("why_choose_us.points.title"),
+            desc: t("why_choose_us.points.desc"),
+        },
+        {
+            no: "02",
+            title: t("why_choose_us.points.title"),
+            desc: t("why_choose_us.points.desc"),
+        },
+        {
+            no: "03",
+            title: t("why_choose_us.points.title"),
+            desc: t("why_choose_us.points.desc"),
+        },
+        {
+            no: "04",
+            title: t("why_choose_us.points.title"),
+            desc: t("why_choose_us.points.desc"),
+        },
+    ];
+
     return (
         <section className="bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30">
             <div className="container-1200 px-5">

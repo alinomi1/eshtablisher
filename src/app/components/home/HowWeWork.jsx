@@ -1,13 +1,17 @@
+"use client";
 import Cta from '@/common/Cta';
 import Image from 'next/image';
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 const HowWeWork = () => {
+    const t = useTranslations("home");
+
     const steps = [
-        { id: "Step 1:", title: "Evaluate" },
-        { id: "Step 2:", title: "Plan" },
-        { id: "Step 3:", title: "Develop" },
-        { id: "Step 4:", title: "Deploy" },
+        { id: "Step 1:", title: t("process.steps.step_1") },
+        { id: "Step 2:", title: t("process.steps.step_2") },
+        { id: "Step 3:", title: t("process.steps.step_3") },
+        { id: "Step 4:", title: t("process.steps.step_4") },
     ];
 
     return (
@@ -17,19 +21,17 @@ const HowWeWork = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
                     <div>
                         <span className="inline-flex capitalize rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
-                            our process
+                            {t("process.badge")}
                         </span>
 
-                        <h2 className="text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]   capitalize font-extrabold text-black leading-[1.15] lg:leading-18 pt-5 sm:pt-6 lg:pt-8 max-w-133.25">
-                            How We Work – Simple, Clear, Effective
+                        <h2 className="text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px] capitalize font-extrabold text-black leading-[1.15] lg:leading-18 pt-5 sm:pt-6 lg:pt-8 max-w-133.25">
+                            {t("process.title")}
                         </h2>
                     </div>
 
                     <div>
                         <p className="mb-8 sm:mb-9 lg:mb-10 font-[350] text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 text-black">
-                            From concept to launch, we guide investors and entrepreneurs from
-                            around the world in bringing their visions to life crafting bold, future-ready
-                            businesses in the ever evolving Global business landscape of the United Arab Emirates.
+                            {t("process.description")}
                         </p>
                         <Cta />
                     </div>
@@ -58,11 +60,11 @@ const HowWeWork = () => {
                             />
 
                             <h4 className="text-[22px] sm:text-[24px] lg:text-[28px] text-white font-extrabold py-5 lg:py-7 xl:py-10">
-                                Evaluate
+                                {t("process.active_card.title")}
                             </h4>
 
                             <p className="text-white text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 font-[350]">
-                                At first, our team assesses the needs of the company and its fundamentals
+                                {t("process.active_card.desc")}
                             </p>
                         </div>
                     </div>

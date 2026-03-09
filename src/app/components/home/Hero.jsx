@@ -1,12 +1,13 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Cta from "@/common/Cta";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
   const [api, setApi] = useState(null);
+  const t = useTranslations("home");
 
   const heroImages = ["/images/hero1.png", "/images/hero2.png"];
 
@@ -61,8 +62,8 @@ const Hero = () => {
                 />
               </div>
 
-              <h1 className="text-white font-extrabold leading-[1.05] my-8 xl:my-12 text-[36px] md:text-[52px] xl:text-[60px] max-w-[520px]" data-aos="zoom-in-right">
-                Global Business <br className="hidden sm:block" /> Consultancy
+              <h1 className="text-white font-extrabold leading-[1.05] my-8 xl:my-12 text-[36px] md:text-[52px] xl:text-[60px]" data-aos="zoom-in-right">
+                {t("hero.title")}
               </h1>
 
               <div data-aos="fade-up">
@@ -76,14 +77,14 @@ const Hero = () => {
               data-aos-anchor="#example-anchor">
 
               <p className="font-normal text-white text-sm md:text-base lg:text-[21px] overflow-hidden">
-                Guiding you to <br></br>success with
+                {t("hero.subtitle_line1")} <br /> {t("hero.subtitle_line2")}
               </p>
 
               <div className="font-extrabold text-[60px] md:text-[70px] lg:text-[90px] xl:text-[100px] text-white leading-none">
-                500+
+                {t("hero.stat_value")}
               </div>
 
-              <p className="font-normal text-lg md:text-xl lg:text-2xl text-white">Investers Served</p>
+              <p className="font-normal text-lg md:text-xl lg:text-2xl text-white">{t("hero.stat_label")}</p>
 
             </div>
           </div>

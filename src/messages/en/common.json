@@ -1,0 +1,36 @@
+{
+  "pages": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Our Services",
+    "contact": "Contact Us",
+    "demo": "Request A Demo",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "services_nav": {
+    "business_setup_uae": "An Example Of Setting Up A Business in UAE",
+    "strategy": "Business Strategy",
+    "angel": "Business Angel",
+    "marketing": "Digital Marketing 360",
+    "formation": "Company Formation",
+    "hr_payroll": "HR & Payroll",
+    "finance": "Finance"
+  },
+  "footer": {
+    "description": "We are a dedicated business consultancy team, helping businesses grow and achieve their goals.",
+    "links_title": "Quick Links",
+    "pages_title": "Pages",
+    "reach_title": "Reach Us",
+    "copyright": "© copyright 2026 theestablisher.com | All Rights Reserved",
+    "location": "Dubai South"
+  },
+  "buttons": {
+    "book_consultation": "Book A Consultation",
+    "learn_more": "Learn More"
+  },
+  "languages": {
+    "english": "English",
+    "french": "French"
+  }
+}

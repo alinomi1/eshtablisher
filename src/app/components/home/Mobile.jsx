@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react'
-import {Link} from '@/i18n/navigation'
+
 import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
@@ -12,6 +12,7 @@ import {
     SheetTitle,
 } from "@/components/ui/sheet"
 import { HamburgerIcon } from '../../../../public/icons/icons'
+import Link from 'next/link';
 
 const serviceLinks = [
     { name: "An Example Of Setting Up A Business in UAE", href: "/business-setup-uae" },

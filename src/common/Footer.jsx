@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import {
   FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
   TiktokIcon,
 } from "../../public/icons/icons";
+import { useTranslations } from "next-intl";
 
 const SOCIAL_LINKS = [
   { id: "insta", icon: <InstagramIcon />, href: "#" },
@@ -15,6 +16,7 @@ const SOCIAL_LINKS = [
 ];
 
 const Footer = () => {
+  const t = useTranslations("common")
   return (
     <footer className="bg-[#0E0F22] text-white">
       <div className="container-1200 px-4 sm:px-5 md:px-6 lg:px-5 pt-12 sm:pt-14 lg:pt-11 pb-6">
@@ -34,8 +36,7 @@ const Footer = () => {
             </Link>
 
             <p className="mt-5 sm:mt-6 text-sm sm:text-base leading-6 text-white font-normal max-w-full sm:max-w-[26rem]">
-              We are a dedicated business consultancy team, helping businesses
-              grow and achieve their goals.
+              {t("footer.description")}
             </p>
           </div>
 
@@ -44,17 +45,17 @@ const Footer = () => {
             {/* Column 2 */}
             <div>
               <h4 className="text-[15px] leading-6 font-bold text-white capitalize">
-                Quick Links
+                {t("footer.links_title")}
               </h4>
               <ul className="mt-4 sm:mt-5 space-y-3 sm:space-y-4 text-sm leading-6 font-[350] text-white capitalize">
                 <li>
                   <Link href="#" className="transition-opacity hover:opacity-80">
-                    Privacy Policy
+                    {t("pages.privacy")}
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="transition-opacity hover:opacity-80">
-                    Terms & Conditions
+                    {t("pages.terms")}
                   </Link>
                 </li>
               </ul>
@@ -63,7 +64,7 @@ const Footer = () => {
             {/* Column 3 */}
             <div>
               <h4 className="text-[15px] leading-6 font-bold text-white capitalize">
-                Pages
+                {t("footer.pages_title")}
               </h4>
               <ul className="mt-4 sm:mt-5 space-y-3 sm:space-y-4 text-sm leading-6 font-[350] text-white capitalize">
                 <li>
@@ -71,7 +72,7 @@ const Footer = () => {
                     href="/about"
                     className="transition-opacity hover:opacity-80"
                   >
-                    About Us
+                    {t("pages.about")}
                   </Link>
                 </li>
                 <li>
@@ -79,12 +80,12 @@ const Footer = () => {
                     href="/contact"
                     className="transition-opacity hover:opacity-80"
                   >
-                    Contact Us
+                    {t("pages.contact")}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="transition-opacity hover:opacity-80">
-                    Request a Demo
+                  <Link href="#" clasisName="transition-opacity hover:opacity-80">
+                    {t("pages.demo")}
                   </Link>
                 </li>
               </ul>
@@ -93,7 +94,7 @@ const Footer = () => {
             {/* Column 4 */}
             <div >
               <h4 className="text-[15px] leading-6 font-bold text-white capitalize">
-                Reach Us
+                {t("footer.reach_title")}
               </h4>
               <ul className="mt-4 sm:mt-5 space-y-3 sm:space-y-4 text-sm leading-6 font-[350] text-white capitalize break-words">
                 <li>
@@ -112,7 +113,7 @@ const Footer = () => {
                     julie@gmail.com
                   </a>
                 </li>
-                <li>JVC Dubai UAE</li>
+                <li> {t("footer.location")}</li>
               </ul>
             </div>
           </div>
@@ -121,7 +122,7 @@ const Footer = () => {
         {/* Divider */}
         <div className="mt-10 sm:mt-12 lg:mt-14 border-t border-white/10 pt-5 sm:pt-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <p className="text-center md:text-left text-sm sm:text-base leading-6 font-normal text-white">
-            © copyright 2026 theestablisher.com | All Rights Reserved
+            {t("footer.copyright")}
           </p>
 
           {/* Socials */}

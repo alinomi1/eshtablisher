@@ -1,0 +1,143 @@
+{
+  "hero": {
+    "title": "Global Business Consultancy",
+    "subtitle_line1": "Guiding you to",
+    "subtitle_line2": "success with",
+    "stat_value": "500+",
+    "stat_label": "Investers Served"
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Who We Are",
+    "description": "<bold>Establisher</bold>, is a UAE Based Global Business Consultancy simplifying Global business setup. From company formation and banking advisory to tax consultancy, marketing services, and Golden & Freelance Visas, we provide complete, reliable solutions. Our expert team ensures smooth processes, regulatory compliance, and strategic guidance to help entrepreneurs confidently launch and grow their ventures.",
+    "mission_title": "Our Mission",
+    "vision_title": "Our Vision",
+    "mission_desc": "Our mission is to become the trusted partner businesses rely on to confidently enter new markets, scale operations effectively, and create sustainable long-term value. Through strategic planning and seamless execution support, we deliver solutions that are practical, efficient, and carefully designed to evolve alongside your business growth.",
+    "vision_desc": "Our vision is to redefine excellence in global business consulting by combining international standards, strong regional expertise, and an unwavering commitment to client success. We aim not only to advise organizations but to equip them with the clarity, confidence, and strategic tools needed to lead in competitive markets."
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Tailored End-to-End Solutions",
+    "description": "We provide a complete suite of professional services designed to support your business at every stage of its global journey.",
+    "buttons": {
+      "learn_more": "learn more"
+    },
+    "cards": {
+      "strategy": {
+        "title": "Business Strategy",
+        "desc": "Navigate company set up Globally with expert guidance on structure, licensing, compliance, and market strategy."
+      },
+      "angel": {
+        "title": "Business Angel",
+        "desc": "Tax guidance in global markets, covering structure, compliance, and innovative tax planning for sustainable growth."
+      }
+    }
+  },
+  "main_focus": {
+    "badge": "Our Focus",
+    "title": "Business 360 Solutions"
+  },
+  "focus": {
+    "center": {
+      "title": "Business",
+      "subtitle": "360 Degrees"
+    },
+    "items": {
+      "strategy": {
+        "title": "BUSINESS STRATEGY",
+        "points": ["Operational growth", "Scaling of Business", "Result driven"]
+      },
+      "angel": {
+        "title": "BUSINESS ANGEL",
+        "points": ["Project Study", "Intro To Investors", "Fund Raising"]
+      },
+      "setup": {
+        "title": "COMPANY SETUP",
+        "points": ["International/Global", "Mainland", "Freezone", "Offshore"]
+      },
+      "hr": {
+        "title": "HR & PAYROLL",
+        "points": ["Payroll Management", "WPS", "Administration", "Recruitment"]
+      },
+      "marketing": {
+        "title": "MARKETING 360",
+        "points": ["Web & App Development", "Business Loans", "Compliance"]
+      },
+      "banking": {
+        "title": "BUSINESS BANKING",
+        "points": ["Corporate Bank Accounts", "Business Loans", "Compliance"]
+      },
+      "finance": {
+        "title": "FINANCE",
+        "points": ["Accounting", "Tax | VAT | CT", "Auditing"]
+      },
+      "risk": {
+        "title": "RISK & COMPLIANCE",
+        "points": [
+          "AML & CFT",
+          "Regulatory Compliance",
+          "Drafting Policies",
+          "AML Audit"
+        ]
+      }
+    }
+  },
+  "process": {
+    "badge": "Our Process",
+    "title": "How We Work – Simple, Clear, Effective",
+    "description": "From concept to launch, we guide investors and entrepreneurs from around the world in bringing their visions to life...",
+    "steps": {
+      "step_1": "Evaluate",
+      "step_2": "Plan",
+      "step_3": "Develop",
+      "step_4": "Deploy"
+    },
+    "active_card": {
+      "title": "Evaluate",
+      "desc": "At first, our team assesses the needs of the company and its fundamentals"
+    }
+  },
+  "why_choose_us": {
+    "badge": "why choose us",
+    "title": "Your Strategic Growth Partner",
+    "points": [
+      {
+        "title": "Strategic Insight",
+        "desc": "We offer both visionary strategy and tactical execution."
+      },
+      {
+        "title": "Worldwide Network",
+        "desc": "Our partners and offices enable global reach with local sensitivity."
+      },
+      {
+        "title": "Proven Results",
+        "desc": "We have helped firms of all sizes compete and win internationally."
+      },
+      {
+        "title": "Dedicated Experts",
+        "desc": "Our team bring deep industry knowledge and tailored support."
+      }
+    ]
+  },
+  "countries": {
+    "badge": "Service Countries",
+    "title": "Our Global Service Coverage"
+  },
+
+  "testimonials": {
+    "badge": "testimonials",
+    "title": "What Our Clients Say About Us",
+    "list": [
+      {
+        "quote": "A fantastic experience working with Business Consultancy...",
+        "author": "Soraya, CEO at Cairo Dynamics",
+        "location": "DUBAI, UAE"
+      },
+      {
+        "quote": "Their team provided invaluable insights and strategies...",
+        "author": "Rajesh, CEO at Bharat Innovations",
+        "location": "DURBAN, SOUTH AFRICA"
+      }
+    ]
+  }
+}

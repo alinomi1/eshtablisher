@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "Cabinet de Conseil en Affaires Globales",
+    "subtitle_line1": "Vous guider vers le",
+    "subtitle_line2": "succès avec",
+    "stat_value": "500+",
+    "stat_label": "Investisseurs servis"
+  },
+  "about": {
+    "badge": "À propos de nous",
+    "title": "Qui nous sommes",
+    "description": "<bold>Establisher</bold> est un cabinet de conseil aux entreprises basé aux EAU, spécialisé dans la simplification de la création d'entreprises à l'échelle mondiale. De la création de sociétés au conseil bancaire, en passant par le conseil fiscal, les services de marketing et les visas Golden & Freelance, nous offrons des solutions complètes et fiables. Notre équipe d'experts garantit des processus fluides, le respect des réglementations et un accompagnement stratégique pour aider les entrepreneurs à lancer et développer leurs projets en toute confiance.",
+    "mission_title": "Notre Mission",
+    "vision_title": "Notre Vision",
+    "mission_desc": "Notre mission est de devenir le partenaire de confiance sur lequel les entreprises comptent pour pénétrer de nouveaux marchés en toute confiance, optimiser leurs opérations et créer une valeur durable à long terme. Grâce à une planification stratégique et un soutien opérationnel fluide, nous proposons des solutions pratiques, efficaces et conçues pour évoluer au rythme de votre croissance.",
+    "vision_desc": "Notre vision est de redéfinir l'excellence dans le conseil aux entreprises à l'échelle mondiale en combinant des standards internationaux, une expertise régionale solide et un engagement inébranlable envers le succès de nos clients. Nous visons non seulement à conseiller les organisations, mais à leur donner la clarté, la confiance et les outils stratégiques nécessaires pour s'imposer sur des marchés compétitifs."
+  },
+  "services": {
+    "badge": "Nos Services",
+    "title": "Solutions de bout en bout sur mesure",
+    "description": "Nous offrons une gamme complète de services professionnels conçus pour soutenir votre entreprise à chaque étape de son parcours mondial.",
+    "buttons": {
+      "learn_more": "En savoir plus"
+    },
+    "cards": {
+      "strategy": {
+        "title": "Stratégie Commerciale",
+        "desc": "Naviguez dans la création d'entreprise à l'échelle mondiale avec des conseils d'experts sur la structure, les licences, la conformité et la stratégie de marché."
+      },
+      "angel": {
+        "title": "Business Angel",
+        "desc": "Conseils fiscaux sur les marchés mondiaux, couvrant la structure, la conformité et la planification fiscale innovante pour une croissance durable."
+      }
+    }
+  },
+  "main_focus": { "badge": "Notre Focus", "title": "Solutions Business 360" },
+  "focus": {
+    "center": {
+      "title": "Entreprise",
+      "subtitle": "360 Degrés"
+    },
+    "items": {
+      "strategy": {
+        "title": "STRATÉGIE COMMERCIALE",
+        "points": [
+          "Croissance opérationnelle",
+          "Développement d'entreprise",
+          "Axé sur les résultats"
+        ]
+      },
+      "angel": {
+        "title": "BUSINESS ANGEL",
+        "points": [
+          "Étude de projet",
+          "Introduction aux investisseurs",
+          "Levée de fonds"
+        ]
+      },
+      "setup": {
+        "title": "CRÉATION D'ENTREPRISE",
+        "points": ["International / Global", "Mainland", "Freezone", "Offshore"]
+      },
+      "hr": {
+        "title": "RH & PAIE",
+        "points": ["Gestion de la paie", "WPS", "Administration", "Recrutement"]
+      },
+      "marketing": {
+        "title": "MARKETING 360",
+        "points": [
+          "Développement Web & App",
+          "Prêts aux entreprises",
+          "Conformité"
+        ]
+      },
+      "banking": {
+        "title": "BANQUE D'AFFAIRES",
+        "points": [
+          "Comptes bancaires d'entreprise",
+          "Prêts aux entreprises",
+          "Conformité"
+        ]
+      },
+      "finance": {
+        "title": "FINANCE",
+        "points": ["Comptabilité", "Fiscalité | TVA | IS", "Audit"]
+      },
+      "risk": {
+        "title": "RISQUE ET CONFORMITÉ",
+        "points": [
+          "LBC & FT",
+          "Conformité réglementaire",
+          "Rédaction de politiques",
+          "Audit LBC"
+        ]
+      }
+    }
+  },
+  "process": {
+    "badge": "Notre Processus",
+    "title": "Comment nous travaillons – Simple, Clair, Efficace",
+    "description": "Du concept au lancement, nous guidons les investisseurs et les entrepreneurs du monde entier pour donner vie à leurs visions...",
+    "steps": {
+      "step_1": "Évaluer",
+      "step_2": "Planifier",
+      "step_3": "Développer",
+      "step_4": "Déployer"
+    },
+    "active_card": {
+      "title": "Évaluer",
+      "desc": "Dans un premier temps, notre équipe évalue les besoins de l'entreprise et ses fondamentaux."
+    }
+  },
+  "why_choose_us": {
+    "badge": "Pourquoi nous choisir",
+    "title": "Votre partenaire de croissance stratégique",
+    "points": [
+      {
+        "title": "Vision Stratégique",
+        "desc": "Nous offrons à la fois une stratégie visionnaire et une exécution tactique."
+      },
+      {
+        "title": "Réseau Mondial",
+        "desc": "Nos partenaires et bureaux permettent une portée mondiale avec une sensibilité locale."
+      },
+      {
+        "title": "Résultats Prouvés",
+        "desc": "Nous avons aidé des entreprises de toutes tailles à être compétitives et à gagner à l'international."
+      },
+      {
+        "title": "Experts Dédiés",
+        "desc": "Notre équipe apporte une connaissance approfondie du secteur et un soutien sur mesure."
+      }
+    ]
+  },
+  "countries": {
+    "badge": "Pays desservis",
+    "title": "Notre couverture de service mondiale"
+  },
+  "testimonials": {
+    "badge": "Témoignages",
+    "title": "Ce que nos clients disent de nous",
+    "list": [
+      {
+        "quote": "Une expérience fantastique avec ce cabinet de conseil. Leur approche globale à 360 degrés pour la croissance...",
+        "author": "Soraya, PDG chez Cairo Dynamics",
+        "location": "DUBAÏ, ÉAU"
+      },
+      {
+        "quote": "Leur équipe a fourni des informations et des stratégies inestimables qui ont propulsé notre entreprise...",
+        "author": "Rajesh, PDG chez Bharat Innovations",
+        "location": "DURBAN, AFRIQUE DU SUD"
+      }
+    ]
+  }
+}

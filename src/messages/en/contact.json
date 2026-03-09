@@ -1,0 +1,20 @@
+{
+  "email": "email",
+  "contact": "contact",
+  "location": "location",
+  "place": "Jvc Dubai UAE",
+  "badge": "Contact Us",
+  "title": "Let’s Connect! Reach Out Anytime!",
+  "form_title": "Schedule A Consultation Now",
+  "form_subtitle": "Whether you have a question about our brews or just want to share your story...",
+  "placeholders": {
+    "name": "Your Name",
+    "mobile": "Mobile Number",
+    "service": "Service",
+    "message": "Message"
+  },
+  "features": {
+    "support": "24/7 Customer Support",
+    "emergency": "Emergency Services"
+  }
+}

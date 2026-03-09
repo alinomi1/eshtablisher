@@ -1,69 +1,77 @@
 "use client";
-import React, { useState } from 'react';
-import { useLocale } from 'next-intl';
-import { usePathname, useRouter } from '@/i18n/navigation';
+import React, { useState, useTransition } from 'react';
+import { useLocale, useTranslations } from 'next-intl';
+import { useRouter } from 'next/navigation';
+import { setUserLocale } from '@/app/actions';
 
 const Language = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isPending, startTransition] = useTransition();
 
     const locale = useLocale();
-    const pathname = usePathname();
+    const t = useTranslations('common');
     const router = useRouter();
 
     const selected = locale === "fr" ? "FR" : "EN";
 
     const handleChange = (nextLocale) => {
-        setIsOpen(false);
-
         if (nextLocale === locale) return;
 
-        router.replace(pathname, { locale: nextLocale });
+        startTransition(async () => {
+            await setUserLocale(nextLocale);
+            setIsOpen(false);
+            router.refresh();
+        });
     };
 
     return (
-        <div className="relative inline-block">
-            {/* Topbar Button */}
+        <div
+            className="relative inline-block pb-6 -mb-6" // Added padding to create a bridge
+            onMouseEnter={() => setIsOpen(true)}
+            onMouseLeave={() => setIsOpen(false)}
+        >
             <button
                 type="button"
-                onClick={() => setIsOpen(!isOpen)}
                 className="text-[22px] leading-6 transition-colors cursor-pointer"
+                disabled={isPending}
             >
                 <span className={selected === "EN" ? "text-[#D4BB8D]" : "text-white"}>EN</span>
                 <span className="text-white">/</span>
                 <span className={selected === "FR" ? "text-[#D4BB8D]" : "text-white"}>FR</span>
             </button>
 
-            {/* Dropdown Menu */}
             {isOpen && (
-                <div className="absolute top-full mt-4 left-0 w-60 h-28 rounded-xl bg-white/22 backdrop-blur-md z-20">
-                    {/* English */}
-                    <div
-                        className="flex items-center justify-between border-b border-white/30 px-6 py-4 cursor-pointer hover:bg-white/5"
-                        onClick={() => handleChange("en")}
-                    >
-                        <span className={selected === "EN" ? "text-[#ECD29A] capitalize" : "text-black"}>
-                            English (EN)
-                        </span>
-                        {selected === "EN" && (
-                            <svg width="20" height="15" viewBox="0 0 20 15" fill="none" className="text-[#ECD29A]">
-                                <path d="M1 7.5L7 13.5L19 1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        )}
-                    </div>
+                <div className="absolute top-full left-0  z-20">
+                    <div className="w-60 h-28 rounded-xl bg-white/22 backdrop-blur-md overflow-hidden">
+                        {/* English Option */}
+                        <div
+                            className="flex items-center justify-between border-b border-white/30 px-6 py-4 cursor-pointer hover:bg-white/5"
+                            onClick={() => handleChange("en")}
+                        >
+                            <span className={selected === "EN" ? "text-[#ECD29A] " : "text-black capitalize"}>
+                                {t("languages.english")}
+                            </span>
+                            {selected === "EN" && (
+                                <svg width="20" height="15" viewBox="0 0 20 15" fill="none" className="text-[#ECD29A]">
+                                    <path d="M1 7.5L7 13.5L19 1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            )}
+                        </div>
 
-                    {/* French */}
-                    <div
-                        className="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-white/5"
-                        onClick={() => handleChange("fr")}
-                    >
-                        <span className={selected === "FR" ? "text-[#ECD29A] capitalize" : "text-black"}>
-                            French (FR)
-                        </span>
-                        {selected === "FR" && (
-                            <svg width="20" height="15" viewBox="0 0 20 15" fill="none" className="text-[#ECD29A]">
-                                <path d="M1 7.5L7 13.5L19 1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        )}
+                        {/* French Option */}
+                        <div
+                            className="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-white/5"
+                            onClick={() => handleChange("fr")}
+                        >
+                            <span className={selected === "FR" ? "text-[#ECD29A] " : "text-black capitalize"}>
+                                {t("languages.french")}
+                            </span>
+                            {selected === "FR" && (
+                                <svg width="20" height="15" viewBox="0 0 20 15" fill="none" className="text-[#ECD29A]">
+                                    <path d="M1 7.5L7 13.5L19 1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            )}
+                        </div>
                     </div>
                 </div>
             )}
