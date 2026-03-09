@@ -1,16 +1,20 @@
 import Cta from '@/common/Cta';
+import { useTranslations } from 'next-intl';
 import React from 'react';
 
-const features = [
-    { id: '01', text: 'Payroll setup and processing' },
-    { id: '02', text: 'Time attendance and leaves' },
-    { id: '03', text: 'Payslips tax reports preparation' },
-    { id: '04', text: 'HR administration & compliance' },
-    { id: '05', text: 'Recruitment screening interviews' },
-    { id: '06', text: 'Visas permits onboarding support' },
-];
 
 const HrGuidance = () => {
+       const tc = useTranslations("common");
+        const t = useTranslations("services")
+    
+        const features = [
+        { id: '01', text: t('hr_payroll.cards.01.title') },
+        { id: '02', text: t('hr_payroll.cards.02.title')},
+        { id: '03', text: t('hr_payroll.cards.03.title') },
+        { id: '04', text: t('hr_payroll.cards.04.title') },
+        { id: '05', text: t('hr_payroll.cards.05.title') },
+        { id: '06', text: t('hr_payroll.cards.06.title') },
+    ];
     return (
         <>
             <section className="bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30">
@@ -18,19 +22,22 @@ const HrGuidance = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
                         <div data-aos="fade-up-left">
                             <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 py-2.5 sm:px-5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
-                                Service No 5
+                                  {t("hr_payroll.badge")}
                             </span>
 
                             <h2 className="text-black font-extrabold  text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  lg:leading-16 pt-5 sm:pt-6 lg:pt-8">
-                                Reliable HR and Payroll Support
+                                  {t("hr_payroll.title")}
                             </h2>
                         </div>
 
-                        <div data-aos="fade-up-right">
+                          <div data-aos="fade-up-right">
                             <p className="pb-8 sm:pb-9 lg:pb-10 font-[350] text-sm sm:text-base leading-6 sm:leading-7 text-black">
-                                <span className="font-extrabold">Establisher</span> streamlines your people operations with accurate payroll, compliant HR administration, and fast hiring support. We set up payroll workflows, manage time and attendance, generate payslips, and coordinate deductions and reporting so you stay audit-ready. Need cross-border staffing? We handle employee onboarding formalities, visas and work permits, and ongoing support—so you save time, reduce risk, and focus on growth today.</p>
+                                {t.rich("hr_payroll.description", {
+                                    bold: (chunks) => <span className="font-extrabold text-black">{chunks}</span>
+                                })}
+                            </p>
 
-                            <Cta text='learn more' href='business-setup-uae' />
+                            <Cta text={tc('buttons.learn_more')} href='business-setup-uae' />
                         </div>
                     </div>
 

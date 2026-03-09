@@ -1,0 +1,41 @@
+{
+  "about_page": {
+    "banner_badge": "À propos du fondateur",
+    "badge": "À propos de nous",
+    "title": "Vos architectes de croissance mondiale",
+    "description_top": "Chez <bold>Establisher</bold>, nous sommes plus qu'un cabinet de conseil – nous sommes vos partenaires stratégiques pour transformer des visions d'affaires ambitieuses en succès mondiaux mesurables. Fondé à Dubaï en 2025 par des entrepreneurs internationaux chevronnés, notre cabinet est devenu un fournisseur de confiance de solutions d'affaires complètes à travers le monde.",
+    "description_bottom": "Grâce à un réseau mondial et à une expertise approfondie du marché, nous avons soutenu des milliers de clients dans divers secteurs, permettant aux startups, aux PME, aux entreprises de taille moyenne et aux multinationales de se développer et de prospérer au-delà des frontières."
+  },
+  "who_we_are": {
+    "badge": "Qui sommes-nous",
+    "title": "Vos partenaires en croissance d'entreprise",
+    "description": "Nous sommes un fournisseur de solutions d'affaires à 360° dédié à aider les entreprises à naviguer dans des paysages mondiaux complexes. Depuis notre création, nous nous sommes forgé une réputation en combinant vision stratégique et exécution pratique – en soutenant les entreprises dans l'atteinte de leur croissance, de leur excellence opérationnelle et de leur succès durable.",
+    "points": {
+      "founded": "Fondé à Dubaï en 2025 par des entrepreneurs internationaux chevronnés.",
+      "trusted": "Reconnu par plus de 500 clients dans le monde entier à travers de multiples secteurs.",
+      "expertise": "Expertise approfondie sur les marchés, y compris les Émirats arabes unis."
+    }
+  },
+  "our_commitment": {
+    "badge": "Notre engagement",
+    "title": "Portés par l'objectif et l'excellence",
+    "cards": {
+      "01": {
+        "title": "Notre Mission",
+        "desc": "Notre mission est de devenir le partenaire de confiance sur lequel les entreprises comptent pour pénétrer de nouveaux marchés en toute confiance, intensifier leurs opérations efficacement et créer une valeur durable à long terme. Grâce à une planification stratégique et un soutien à l'exécution sans faille, nous livrons des solutions pratiques, efficaces et soigneusement conçues pour évoluer aux côtés de la croissance de votre entreprise."
+      },
+      "02": {
+        "title": "Notre Vision",
+        "desc": "Notre vision est de redéfinir l'excellence dans le conseil en affaires mondiales en combinant les normes internationales, une solide expertise régionale et un engagement indéfectible envers le succès des clients. Nous visons non seulement à conseiller les organisations, mais aussi à les doter de la clarté, de la confiance et des outils stratégiques nécessaires pour mener dans des marchés concurrentiels."
+      },
+      "03": {
+        "title": "Pourquoi nous choisir",
+        "desc": "Nous combinons une vision mondiale avec une solide expertise locale pour naviguer dans des marchés complexes en toute confiance. Notre soutien de bout en bout assure une exécution fluide à chaque étape de votre parcours. Grâce à une approche centrée sur le client et à une expérience prouvée dans divers secteurs, nous livrons des stratégies qui créent des résultats mesurables et durables."
+      },
+      "04": {
+        "title": "Notre engagement",
+        "desc": "Nous nous consacrons à aider votre entreprise non seulement à croître, mais à s'épanouir véritablement à travers les marchés, les secteurs et les juridictions du monde entier. En maintenant les normes les plus élevées de professionnalisme et d'excellence stratégique, nous veillons à ce que vos objectifs restent au cœur de tout ce que nous faisons. Votre succès durable restera toujours notre priorité absolue."
+      }
+    }
+  }
+}

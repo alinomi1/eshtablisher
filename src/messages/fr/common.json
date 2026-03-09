@@ -32,5 +32,9 @@
   "languages": {
     "english": "Anglais",
     "french": "Français"
+  },
+  "slider": {
+    "business": "ENTREPRISE",
+    "consultation": "CONSULTATION"
   }
 }

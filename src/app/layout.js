@@ -23,14 +23,14 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  // 1. Get current locale and all messages
+
   const locale = await getLocale();
   const messages = await getMessages();
 
   return (
     <html lang={locale} className={nexa.variable} suppressHydrationWarning>
       <body suppressHydrationWarning className="antialiased font-sans">
-        {/* 2. Wrap the entire app in the Intl Provider */}
+
         <NextIntlClientProvider messages={messages} locale={locale}>
           <AosInit />
           <Navbar />

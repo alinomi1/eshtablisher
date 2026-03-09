@@ -1,20 +1,28 @@
 {
-  "email": "Email",
-  "contact": "Contact",
-  "location": "Localisation",
-  "place": "Jvc Dubaï Émirats Arabes Unis",
-  "badge": "Contactez-nous",
-  "title": "Connectons-nous ! Contactez-nous à tout moment !",
-  "form_title": "Planifiez une consultation maintenant",
-  "form_subtitle": "Que vous ayez une question sur nos services ou que vous souhaitiez simplement partager votre histoire...",
-  "placeholders": {
-    "name": "Votre Nom",
-    "mobile": "Numéro de Mobile",
+  "contact_page": {
+    "email": "E-mail",
+    "contact": "Contact",
+    "location": "Emplacement",
+    "place": "Jvc Dubaï, Émirats Arabes Unis",
+    "badge": "Contactez-nous",
+    "title": "Parlons-nous ! Contactez-nous à tout moment !",
+    "form_title": "Planifier une consultation maintenant",
+    "form_subtitle": "Que vous ayez une question sur nos services ou que vous souhaitiez simplement partager votre histoire...",
+    "name": "Votre nom",
+    "mobile": "Numéro de téléphone",
     "service": "Service",
-    "message": "Message"
-  },
-  "features": {
-    "support": "Support client 24/7",
-    "emergency": "Services d'urgence"
+    "message": "Message",
+    "features": {
+      "support": "Support client 24/7",
+      "emergency": "Services d'urgence"
+    },
+    "services": {
+      "strategy": "Stratégie",
+      "angel": "Business Angel",
+      "marketing": "Marketing",
+      "formation": "Formation",
+      "hr": "Ressources Humaines",
+      "finance": "Finance"
+    }
   }
 }

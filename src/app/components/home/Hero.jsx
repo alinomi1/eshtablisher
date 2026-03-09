@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 
 const Hero = () => {
   const [api, setApi] = useState(null);
+  const [current, setCurrent] = useState(0);
   const t = useTranslations("home");
 
   const heroImages = ["/images/hero1.png", "/images/hero2.png"];
@@ -14,12 +15,22 @@ const Hero = () => {
   useEffect(() => {
     if (!api) return;
 
+    const onSelect = () => {
+      setCurrent(api.selectedScrollSnap());
+    };
+
+    api.on("select", onSelect);
+
     const id = setInterval(() => {
       api.scrollNext();
-    }, 2500);
+    }, 4500);
 
-    return () => clearInterval(id);
+    return () => {
+      api.off("select", onSelect);
+      clearInterval(id);
+    };
   }, [api]);
+
 
   return (
     <section className="relative w-full overflow-hidden h-svh">
@@ -31,14 +42,21 @@ const Hero = () => {
         <CarouselContent className="h-full ml-0 ">
           {heroImages.map((src, index) => (
             <CarouselItem key={src} className="h-svh w-full pl-0 ">
-              <div className="relative h-full w-full">
+              <div className="relative h-full w-full overflow-hidden">
                 <Image
                   src={src}
                   alt={`Hero Slide ${index + 1}`}
                   fill
                   priority={index === 0}
                   sizes="100vw"
-                  className="object-cover object-[72%_center] sm:object-[70%_center] md:object-[78%_center] lg:object-cover"
+                  className={`
+          object-cover 
+          object-[72%_center] 
+          sm:object-[70%_center] 
+          md:object-[78%_center] 
+          lg:object-cover
+          ${current === index ? "animate-zoom-out" : ""} 
+        `}
                 />
                 <div className="absolute inset-0 bg-black/45" />
               </div>
@@ -48,6 +66,12 @@ const Hero = () => {
       </Carousel>
 
       <div className="relative z-10 h-full flex items-center">
+        <div className="pointer-events-none absolute inset-0 z-2 hidden  md:block">
+          <span className="absolute top-0 bottom-0 left-[12%] lg:left-[22%] w-[0.5px] bg-white/12" />
+          <span className="absolute top-0 bottom-0 left-[35%] lg:left-[41%] w-[0.5px] bg-white/12" />
+          <span className="absolute top-0 bottom-0 right-[42%] w-[0.5px] bg-white/12" />
+          <span className="absolute top-0 bottom-0 right-[20%] lg:right-[23%] w-[0.5px] bg-white/12" />
+        </div>
         <div className="container-1200 px-5 flex w-full">
           <div className="w-full grid grid-cols-1 md:grid-cols-[1fr_auto] pt-18  md:pt-30 lg:pt-40 items-center gap-8 sm:gap-10 lg:gap-12">
             {/* Left */}

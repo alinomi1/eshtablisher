@@ -16,18 +16,18 @@ const Connect = () => {
                     <div className="bg-[#F7F1E5] rounded-xl p-4 sm:p-5 md:p-6 flex flex-col md:flex-row md:flex-wrap justify-between items-stretch md:items-center" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom">
                         <div className="flex flex-col items-center justify-center flex-1 py-4 sm:py-5 md:py-0 border-b md:border-b-0 md:border-r border-[#E5C999]/50 last:border-0">
-                            <span className="text-base sm:text-lg md:text-xl text-black font-extrabold capitalize">{t("email")}</span>
+                            <span className="text-base sm:text-lg md:text-xl text-black font-extrabold capitalize">{t("contact_page.email")}</span>
                             <a href="mailto:julie@gmail.com" className="font-[350] text-sm text-black pt-2 sm:pt-3 break-all text-center">julie@gmail.com</a>
                         </div>
 
                         <div className="flex flex-col items-center justify-center flex-1 py-4 sm:py-5 md:py-0 border-b md:border-b-0 md:border-r border-[#ECD29A] last:border-0">
-                            <span className="text-base sm:text-lg md:text-xl text-black font-extrabold capitalize">{t("contact")}</span>
+                            <span className="text-base sm:text-lg md:text-xl text-black font-extrabold capitalize">{t("contact_page.contact")}</span>
                             <a href="tel:+971585934816" className="font-[350] text-sm text-black pt-2 sm:pt-3 text-center">+971 58 593 4816</a>
                         </div>
 
                         <div className="flex flex-col items-center justify-center flex-1 py-4 sm:py-5 md:py-0">
-                            <span className="text-base sm:text-lg md:text-xl text-black font-extrabold capitalize">{t("location")}</span>
-                            <p className="font-[350] text-sm text-black pt-2 sm:pt-3 text-center">{t("place")}</p>
+                            <span className="text-base sm:text-lg md:text-xl text-black font-extrabold capitalize">{t("contact_page.location")}</span>
+                            <p className="font-[350] text-sm text-black pt-2 sm:pt-3 text-center">{t("contact_page.place")}</p>
                         </div>
                     </div>
 
@@ -35,11 +35,11 @@ const Connect = () => {
                         {/* Left */}
                         <div data-aos="fade-up-right">
                             <span className="inline-block rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black capitalize">
-                                {t("badge")}
+                                {t("contact_page.badge")}
                             </span>
 
                             <h1 className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[1.2] lg:leading-18 max-w-xl font-extrabold text-black pt-5 sm:pt-6 lg:pt-8">
-                                {t("title")}
+                                {t("contact_page.title")}
                             </h1>
 
                             <div className="space-y-6 sm:space-y-8 md:space-y-10 pt-8 sm:pt-10 md:pt-12 lg:pt-16">
@@ -54,7 +54,7 @@ const Connect = () => {
                                         />
                                     </div>
                                     <span className="text-base sm:text-lg font-bold text-black leading-5 capitalize">
-                                        {t("features.support")}
+                                        {t("contact_page.features.support")}
                                     </span>
                                 </div>
 
@@ -71,7 +71,7 @@ const Connect = () => {
                                         />
                                     </div>
                                     <span className="text-base sm:text-lg font-bold text-black leading-5 capitalize">
-                                        {t("features.emergency")}
+                                        {t("contact_page.features.emergency")}
                                     </span>
                                 </div>
                             </div>
@@ -80,18 +80,18 @@ const Connect = () => {
                         {/* Right */}
                         <div data-aos="fade-up-left">
                             <h3 className="text-[20px] sm:text-[22px] leading-[1.2] font-extrabold text-black capitalize">
-                                {t("form_title")}
+                                {t("contact_page.form_title")}
                             </h3>
 
                             <p className="text-black text-sm font-[350] max-w-md pt-3 sm:pt-4 leading-6">
-                                {t("form_subtitle")}
+                                {t("contact_page.form_subtitle")}
                             </p>
 
                             <form className="pt-8 sm:pt-10 md:pt-12 flex flex-col gap-4 sm:gap-5">
                                 <div className="border-b border-gray-200 py-2">
                                     <input
                                         type="text"
-                                        placeholder={t("placeholders.name")}
+                                        placeholder={t("contact_page.name")}
                                         className="w-full outline-none text-base sm:text-lg text-black placeholder:text-[#7A7C81] bg-transparent"
                                     />
                                 </div>
@@ -99,7 +99,7 @@ const Connect = () => {
                                 <div className="border-b border-gray-200 py-2">
                                     <input
                                         type="tel"
-                                        placeholder={t("placeholders.mobile")}
+                                        placeholder={t("contact_page.mobile")}
                                         className="w-full outline-none text-base sm:text-lg text-black placeholder:text-[#7A7C81] bg-transparent"
                                     />
                                 </div>
@@ -109,20 +109,20 @@ const Connect = () => {
                                         defaultValue=""
                                         className="w-full outline-none text-base sm:text-lg text-[#7A7C81] bg-transparent appearance-none cursor-pointer"
                                     >
-                                        <option value="" disabled>{t("placeholders.service")}</option>
-                                        <option value="strategy">Business Strategy</option>
-                                        <option value="angel">Business Angel</option>
-                                        <option value="marketing">Digital Marketing 360</option>
-                                        <option value="formation">Company Formation</option>
-                                        <option value="hr">HR & Payroll</option>
-                                        <option value="finance">Finance</option>
+                                        <option value="" disabled>{t("contact_page.service")}</option>
+                                        <option value="strategy">{t("contact_page.services.strategy")}</option>
+                                        <option value="angel">{t("contact_page.services.angel")}</option>
+                                        <option value="marketing">{t("contact_page.services.marketing")}</option>
+                                        <option value="formation">{t("contact_page.services.formation")}</option>
+                                        <option value="hr">{t("contact_page.services.hr")}</option>
+                                        <option value="finance">{t("contact_page.services.finance")}</option>
                                     </select>
                                     <DropdownIcon className="text-black cursor-pointer shrink-0" />
                                 </div>
 
                                 <div className="border-b border-gray-200 py-2">
                                     <textarea
-                                        placeholder={t("placeholders.message")}
+                                        placeholder={t("contact_page.message")}
                                         rows={1}
                                         className="w-full outline-none text-base sm:text-lg text-black placeholder:text-[#7A7C81] bg-transparent resize-none"
                                     ></textarea>

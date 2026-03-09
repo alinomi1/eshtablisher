@@ -6,6 +6,7 @@
     "stat_value": "500+",
     "stat_label": "Investisseurs servis"
   },
+
   "about": {
     "badge": "À propos de nous",
     "title": "Qui nous sommes",
@@ -15,6 +16,7 @@
     "mission_desc": "Notre mission est de devenir le partenaire de confiance sur lequel les entreprises comptent pour pénétrer de nouveaux marchés en toute confiance, optimiser leurs opérations et créer une valeur durable à long terme. Grâce à une planification stratégique et un soutien opérationnel fluide, nous proposons des solutions pratiques, efficaces et conçues pour évoluer au rythme de votre croissance.",
     "vision_desc": "Notre vision est de redéfinir l'excellence dans le conseil aux entreprises à l'échelle mondiale en combinant des standards internationaux, une expertise régionale solide et un engagement inébranlable envers le succès de nos clients. Nous visons non seulement à conseiller les organisations, mais à leur donner la clarté, la confiance et les outils stratégiques nécessaires pour s'imposer sur des marchés compétitifs."
   },
+
   "services": {
     "badge": "Nos Services",
     "title": "Solutions de bout en bout sur mesure",
@@ -33,6 +35,7 @@
       }
     }
   },
+
   "main_focus": { "badge": "Notre Focus", "title": "Solutions Business 360" },
   "focus": {
     "center": {
@@ -95,6 +98,7 @@
       }
     }
   },
+
   "process": {
     "badge": "Notre Processus",
     "title": "Comment nous travaillons – Simple, Clair, Efficace",
@@ -110,46 +114,64 @@
       "desc": "Dans un premier temps, notre équipe évalue les besoins de l'entreprise et ses fondamentaux."
     }
   },
+
   "why_choose_us": {
-    "badge": "Pourquoi nous choisir",
+    "badge": "pourquoi nous choisir",
     "title": "Votre partenaire de croissance stratégique",
-    "points": [
-      {
-        "title": "Vision Stratégique",
+    "points": {
+      "0": {
+        "title": "Vision stratégique",
         "desc": "Nous offrons à la fois une stratégie visionnaire et une exécution tactique."
       },
-      {
-        "title": "Réseau Mondial",
-        "desc": "Nos partenaires et bureaux permettent une portée mondiale avec une sensibilité locale."
+      "1": {
+        "title": "Réseau mondial",
+        "desc": "Nos partenaires et nos bureaux permettent une portée mondiale avec une sensibilité locale."
       },
-      {
-        "title": "Résultats Prouvés",
-        "desc": "Nous avons aidé des entreprises de toutes tailles à être compétitives et à gagner à l'international."
+      "2": {
+        "title": "Résultats probants",
+        "desc": "Nous avons aidé des entreprises de toutes tailles à rivaliser et à gagner à l'international."
       },
-      {
-        "title": "Experts Dédiés",
+      "3": {
+        "title": "Experts dédiés",
         "desc": "Notre équipe apporte une connaissance approfondie du secteur et un soutien sur mesure."
       }
-    ]
+    }
   },
+
   "countries": {
     "badge": "Pays desservis",
     "title": "Notre couverture de service mondiale"
   },
+
   "testimonials": {
-    "badge": "Témoignages",
+    "badge": "Pays de service",
     "title": "Ce que nos clients disent de nous",
-    "list": [
-      {
-        "quote": "Une expérience fantastique avec ce cabinet de conseil. Leur approche globale à 360 degrés pour la croissance...",
-        "author": "Soraya, PDG chez Cairo Dynamics",
-        "location": "DUBAÏ, ÉAU"
+    "items": {
+      "0": {
+        "text": "L'expertise de leur équipe a été essentielle pour naviguer sur des marchés internationaux complexes et atteindre une croissance remarquable.",
+        "name": "Nantes, France",
+        "role": "Ingrid, Directrice chez Svenson Group"
       },
-      {
-        "quote": "Leur équipe a fourni des informations et des stratégies inestimables qui ont propulsé notre entreprise...",
-        "author": "Rajesh, PDG chez Bharat Innovations",
-        "location": "DURBAN, AFRIQUE DU SUD"
+      "1": {
+        "text": "Des services de conseil exceptionnels ! Business Consultancy a fourni des analyses claires, des solutions sur mesure et un accompagnement pratique qui ont transformé nos opérations. Leur expertise en stratégie, RH et croissance digitale est inégalée.",
+        "name": "Mascate, Oman",
+        "role": "Kenji, Fondateur de Tokyo Systems"
+      },
+      "2": {
+        "text": "Ils nous ont aidés à nous développer à l'international grâce à une stratégie fluide et à un accompagnement expert. Leur équipe a simplifié des processus complexes, amélioré l'efficacité et apporté des résultats mesurables.",
+        "name": "Doha, Qatar",
+        "role": "Pavel, Propriétaire de Prague Investments"
+      },
+      "3": {
+        "text": "Une expérience formidable avec Business Consultancy. Leur approche globale à 360 degrés de la croissance d'entreprise, du recrutement et de la stratégie digitale a renforcé notre équipe.",
+        "name": "Dubaï, EAU",
+        "role": "Soraya, PDG de Cairo Dynamics"
+      },
+      "4": {
+        "text": "Leur équipe nous a fourni des analyses et des stratégies précieuses qui ont propulsé notre entreprise vers de nouveaux sommets sur le marché mondial.",
+        "name": "Durban, Afrique du Sud",
+        "role": "Rajesh, PDG de Bharat Innovations"
       }
-    ]
+    }
   }
 }

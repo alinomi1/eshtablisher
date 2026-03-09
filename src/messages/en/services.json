@@ -1,0 +1,258 @@
+{
+  "business_strategy": {
+    "top_banner": "business strategy",
+    "badge": "Service No 1",
+    "title": "Smart, Scalable Business Strategy",
+    "description": "<bold>Establisher</bold> helps founders and growing companies make confident decisions with a clear strategy built on real market insight. We assess your current position, define your target segments, sharpen your value proposition, and design an actionable roadmap for growth. From pricing and positioning to revenue forecasting and execution priorities, we create a practical plan your team can follow—and investors can trust—so you move faster, reduce risk, and scale sustainably.",
+    "cards": {
+      "01": {
+        "title": "Market and competitor analysis"
+      },
+      "02": {
+        "title": "Clear positioning and messaging"
+      },
+      "03": {
+        "title": "Growth roadmap and milestones"
+      },
+      "04": {
+        "title": "Revenue model and forecasting"
+      },
+      "05": {
+        "title": "Pricing strategy and packaging"
+      },
+      "06": {
+        "title": "Investor-ready business plan"
+      }
+    }
+  },
+
+  "business_angel": {
+    "top_banner": "angel",
+    "badge": "Service No 2",
+    "title": "Business Angel Funding and Guidance",
+    "description": "<bold>Establisher</bold> connects promising founders with the right business angels and strategic investors, combining capital access with practical mentoring. We assess your project, refine your pitch, validate financials, and position your story for the audience that matters. Then we manage introductions, follow-ups, and fundraising steps so you can focus on traction and close commitments smoothly, fast, cleanly, from intro to term-sheet.",
+    "cards": {
+      "01": {
+        "title": "Project readiness assessment"
+      },
+      "02": {
+        "title": "Pitch deck refinement"
+      },
+      "03": {
+        "title": "Investor introductions support"
+      },
+      "04": {
+        "title": "Fundraising strategy planning"
+      },
+      "05": {
+        "title": "Term sheet guidance"
+      },
+      "06": {
+        "title": "Due diligence coordination"
+      }
+    }
+  },
+
+  "digital_marketing": {
+    "top_banner": "digital marketing 360",
+    "badge": "Service No 3",
+    "title": "Marketing 360° for Growth Results",
+    "description": "<bold>Establisher</bold> delivers end-to-end Digital Marketing 360° to grow your visibility and sales. We plan your communication strategy, build high-performing websites and campaigns, and optimize every channel for ROI—search, social, and paid ads. With tracking and actionable reporting, we turn audience attention into qualified leads, partners, and customers, while keeping your brand consistent across platforms from first audit to monthly improvements.",
+    "cards": {
+      "01": {
+        "title": "Lead generation campaigns"
+      },
+      "02": {
+        "title": "Content marketing funnels"
+      },
+      "03": {
+        "title": "Website and app"
+      },
+      "04": {
+        "title": "SEO SEM optimization"
+      },
+      "05": {
+        "title": "PPC ads retargeting"
+      },
+      "06": {
+        "title": "Community management reporting"
+      }
+    }
+  },
+
+  "company_formation": {
+    "top_banner": "company formation",
+    "badge": "Service No 4",
+    "title": "Fast Company Setup, Done Right",
+    "description": "<bold>Establisher</bold> takes the stress out of company formation by managing the full setup journey—from choosing the right jurisdiction and activity, to preparing documents, securing licenses and certificates, and coordinating approvals. We also guide you through bank account opening and post-setup essentials so you can launch confidently, stay compliant, and focus on operations while we handle the paperwork and timelines.",
+    "cards": {
+      "01": {
+        "title": "License and activity selection"
+      },
+      "02": {
+        "title": "File preparation & submission"
+      },
+      "03": {
+        "title": "Certificates and approvals handling"
+      },
+      "04": {
+        "title": "Bank account opening support"
+      },
+      "05": {
+        "title": "Resident visa processing help"
+      },
+      "06": {
+        "title": "Ongoing compliance and renewals"
+      }
+    },
+    "faq": {
+      "badge": "FAQS",
+      "title": "UAE Tax Consultancy FAQs",
+      "items": {
+        "01": {
+          "question": "Which government Authority is responsible for the issuance of Mainland License?",
+          "answer": "The issuance of the License is from DED (DEPARTMENT OF ECONOMIC DEPARTMENT)."
+        },
+        "02": {
+          "question": "Are whats the Visa options?",
+          "answer": "Options include the Investor/Partner Visa (2 years), the Golden Visa (10 years for major investors), the Green Visa (5 years for skilled professionals), and standard Employment Visas for your staff."
+        },
+        "03": {
+          "question": "What is the partner or investor Visa?",
+          "answer": "This is a residency permit granted to foreign nationals who invest in or establish a company on the UAE mainland. It allows you to live, work, and sponsor your family members for residency."
+        },
+        "04": {
+          "question": "How do I obtain an employment Visa?",
+          "answer": "Your employer must first apply for a work permit and entry permit. Once you enter the UAE, you must pass a medical fitness test, complete Emirates ID biometrics, and sign an official MoHRE labor contract."
+        },
+        "05": {
+          "question": "What steps should I take after receiving my e-visa?",
+          "answer": "After receiving your e-visa (Entry Permit), you must enter the UAE or perform a 'status change' if already inside. Then, complete your medical screening and biometrics within 60 days to finalize your residency."
+        }
+      }
+    }
+  },
+
+  "hr_payroll": {
+    "top_banner": "hr & payroll",
+    "badge": "Service No 5",
+    "title": "Reliable HR and Payroll Support",
+    "description": "<bold>Establisher</bold> streamlines your people operations with accurate payroll, compliant HR administration, and fast hiring support. We set up payroll workflows, manage time and attendance, generate payslips, and coordinate deductions and reporting so you stay audit-ready. Need cross-border staffing? We handle employee onboarding formalities, visas and work permits, and ongoing support—so you save time, reduce risk, and focus on growth today.",
+    "cards": {
+      "01": {
+        "title": "Payroll setup and processing"
+      },
+      "02": {
+        "title": "Time attendance and leaves"
+      },
+      "03": {
+        "title": "Payslips tax reports preparation"
+      },
+      "04": {
+        "title": "HR administration & compliance"
+      },
+      "05": {
+        "title": "Recruitment screening interviews"
+      },
+      "06": {
+        "title": "Visas permits onboarding support"
+      }
+    }
+  },
+
+  "finance": {
+    "top_banner": "finance",
+    "badge": "Service No 6",
+    "title": "Accurate Finance Support, Full Compliance",
+    "description": "<bold>Establisher</bold> keeps your finances clean, compliant, and decision-ready through outsourced accounting, bookkeeping, and reporting. We set up the right accounting software, supervise accounts to detect errors early, and guide you through VAT registration, filing, amendments, or deregistration. When audits come, we prepare your records and support assurance needs—so you stay confident, investor-ready, and focused on growth in the UAE.",
+    "cards": {
+      "01": {
+        "title": "Account Opening Support"
+      },
+      "02": {
+        "title": "Bank Selection Guidance"
+      },
+      "03": {
+        "title": "Documentation Preparation Help"
+      },
+      "04": {
+        "title": "Compliance & KYC"
+      },
+      "05": {
+        "title": "Business Banking Setup"
+      },
+      "06": {
+        "title": "Ongoing Banking Assistance"
+      }
+    }
+  },
+
+  "business_setup_uae": {
+    "top_banner": "An Example Of Setting A Business In UAE",
+    "process": {
+      "badge": "our process",
+      "title": "The Process Of Business Setup",
+      "required_docs": {
+        "title": "Required Documents",
+        "items": {
+          "01": "Company name & two variations",
+          "02": "Passport + latest UAE entry stamp",
+          "03": "Proof of residence document",
+          "04": "White background passport photo",
+          "05": "Same documents for all shareholders"
+        }
+      },
+      "incorporation": {
+        "title": "Incorporation Steps",
+        "items": {
+          "06": "Pay (bank transfer or card) to Establisher",
+          "07": "Receive documents → sign & email back",
+          "08": "We will proceed with the registration your company"
+        }
+      }
+    },
+    "timeline": {
+      "badge": "Our Commitment",
+      "title": "Timeline To Establish Your Business"
+    },
+    "freezone_advantages": {
+      "badge": "Freezone Company",
+      "title": "Advantages of a Freezone Company",
+      "description": "A Freezone company is a business registered in a designated UAE Free Zone area. It allows 100% foreign ownership, offers tax advantages, and provides simplified licensing and visa services.",
+      "items": {
+        "01": "Minimal Corporate & no income tax, what you earn is yours.",
+        "02": "No public or online registration.",
+        "03": "Possibility to invoice anywhere in the world.",
+        "04": "Possibility to repatriate all capital and profits.",
+        "05": "100% shareholder of your company.",
+        "06": "2-Year residence visa for share-holders and employees.",
+        "07": "Possibility to sponsor dependent visa.",
+        "08": "Shareholders' presence isn't required to start incorporation.",
+        "09": "Annual audit may be required, depending on selected zone/activity."
+      }
+    },
+    "arrival_instructions": {
+      "badge": "Arrival Instructions",
+      "title": "Upon Arrival in UAE",
+      "items": {
+        "01": "Keep Your Phone Active For Coordination",
+        "02": "Share Flight Details 7 Days Before Travel",
+        "03": "Dubai Entry Stamp Copy After Arrival.",
+        "04": "We Apply For Visa (6-8 Working Days)",
+        "05": "Medical & Biometrics After E-Visa",
+        "06": "Status Changed To Residence Visa"
+      }
+    },
+    "banking_conditions": {
+      "badge": "About Banking",
+      "title": "Banking Terms & Conditions",
+      "description": "In general, banks follow similar ethical and compliance standards. As part of the onboarding process, the Risk & Compliance team may request:",
+      "items": {
+        "01": "A Business Plan Outlining Your Activities",
+        "02": "An Updated CV / Resume.",
+        "03": "Last 6 Account Statements.",
+        "04": "Website Link (We Can Help You Build One)"
+      }
+    }
+  }
+}

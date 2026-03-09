@@ -84,7 +84,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" clasisName="transition-opacity hover:opacity-80">
+                  <Link href="#" className="transition-opacity hover:opacity-80">
                     {t("pages.demo")}
                   </Link>
                 </li>

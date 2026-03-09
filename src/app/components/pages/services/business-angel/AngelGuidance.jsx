@@ -1,16 +1,20 @@
 import Cta from '@/common/Cta';
+import { useTranslations } from 'next-intl';
 import React from 'react';
 
-const features = [
-    { id: '01', text: 'Project readiness assessment' },
-    { id: '02', text: 'Pitch deck refinement' },
-    { id: '03', text: 'Investor introductions support' },
-    { id: '04', text: 'Fundraising strategy planning' },
-    { id: '05', text: 'Term sheet guidance' },
-    { id: '06', text: 'Due diligence coordination' },
-];
 
 const AngelGuidance = () => {
+    const tc = useTranslations("common");
+    const t = useTranslations("services")
+
+    const features = [
+        { id: '01', text: t('business_angel.cards.01.title') },
+        { id: '02', text: t('business_angel.cards.02.title') },
+        { id: '03', text: t('business_angel.cards.03.title') },
+        { id: '04', text: t('business_angel.cards.04.title') },
+        { id: '05', text: t('business_angel.cards.05.title') },
+        { id: '06', text: t('business_angel.cards.06.title') },
+    ];
     return (
         <>
             <section className="bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30">
@@ -18,20 +22,22 @@ const AngelGuidance = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
                         <div data-aos="fade-up-left">
                             <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 py-2.5 sm:px-5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
-                                Service No 2
+                            {t("business_angel.badge")}
                             </span>
 
                             <h2 className="text-black font-extrabold text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  lg:leading-16 pt-5 sm:pt-6 lg:pt-8">
-                                Business Angel Funding and Guidance
+                               {t("business_angel.title")}
                             </h2>
                         </div>
 
                         <div data-aos="fade-up-right">
                             <p className="pb-8 sm:pb-9 lg:pb-10 font-[350] text-sm sm:text-base leading-6 sm:leading-7 text-black">
-                                <span className="font-extrabold">Establisher</span> connects promising founders with the right business angels and strategic investors, combining capital access with practical mentoring. We assess your project, refine your pitch, validate financials, and position your story for the audience that matters. Then we manage introductions, follow-ups, and fundraising steps so you can focus on traction and close commitments smoothly, fast, cleanly, from intro to term-sheet.
+                                  {t.rich("business_angel.description", {
+                                    bold: (chunks) => <span className="font-extrabold text-black">{chunks}</span>
+                                })}
                             </p>
 
-                            <Cta text='learn more' href='business-setup-uae' />
+                            <Cta text={tc('buttons.learn_more')} href='business-setup-uae' />
                         </div>
                     </div>
 

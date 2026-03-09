@@ -1,16 +1,20 @@
 import Cta from '@/common/Cta';
+import { useTranslations } from 'next-intl';
 import React from 'react';
 
-const features = [
-    { id: '01', text: 'Lead generation campaigns' },
-    { id: '02', text: 'Content marketing funnels' },
-    { id: '03', text: 'Website and app' },
-    { id: '04', text: 'SEO SEM optimization' },
-    { id: '05', text: 'PPC ads retargeting' },
-    { id: '06', text: 'Community management reporting' },
-];
 
 const MarketingGuidance = () => {
+    const tc = useTranslations("common");
+    const t = useTranslations("services")
+
+    const features = [
+        { id: '01', text: t('digital_marketing.cards.01.title') },
+        { id: '02', text: t('digital_marketing.cards.02.title') },
+        { id: '03', text: t('digital_marketing.cards.03.title') },
+        { id: '04', text: t('digital_marketing.cards.04.title') },
+        { id: '05', text: t('digital_marketing.cards.05.title') },
+        { id: '06', text: t('digital_marketing.cards.06.title') },
+    ];
     return (
         <>
             <section className="bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30">
@@ -18,20 +22,22 @@ const MarketingGuidance = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
                         <div data-aos="fade-up-left">
                             <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 py-2.5 sm:px-5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
-                                Service No 3
+                                {t("digital_marketing.badge")}
                             </span>
 
                             <h2 className="text-black font-extrabold text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  lg:leading-16 pt-5 sm:pt-6 lg:pt-8">
-                                Marketing 360° for Growth Results
+                                {t("digital_marketing.title")}
                             </h2>
                         </div>
 
                         <div data-aos="fade-up-right">
                             <p className="pb-8 sm:pb-9 lg:pb-10 font-[350] text-sm sm:text-base leading-6 sm:leading-7 text-black">
-                                <span className="font-extrabold">Establisher</span> delivers end-to-end Digital Marketing 360° to grow your visibility and sales. We plan your communication strategy, build high-performing websites and campaigns, and optimize every channel for ROI—search, social, and paid ads. With tracking and actionable reporting, we turn audience attention into qualified leads, partners, and customers, while keeping your brand consistent across platforms from first audit to monthly improvements.
+                                {t.rich("digital_marketing.description", {
+                                    bold: (chunks) => <span className="font-extrabold text-black">{chunks}</span>
+                                })}
                             </p>
 
-                            <Cta text='learn more' href='business-setup-uae' />
+                            <Cta text={tc('buttons.learn_more')} href='business-setup-uae' />
                         </div>
                     </div>
 

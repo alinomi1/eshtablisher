@@ -6,6 +6,7 @@
     "stat_value": "500+",
     "stat_label": "Investers Served"
   },
+
   "about": {
     "badge": "About Us",
     "title": "Who We Are",
@@ -15,6 +16,7 @@
     "mission_desc": "Our mission is to become the trusted partner businesses rely on to confidently enter new markets, scale operations effectively, and create sustainable long-term value. Through strategic planning and seamless execution support, we deliver solutions that are practical, efficient, and carefully designed to evolve alongside your business growth.",
     "vision_desc": "Our vision is to redefine excellence in global business consulting by combining international standards, strong regional expertise, and an unwavering commitment to client success. We aim not only to advise organizations but to equip them with the clarity, confidence, and strategic tools needed to lead in competitive markets."
   },
+
   "services": {
     "badge": "Our Services",
     "title": "Tailored End-to-End Solutions",
@@ -33,10 +35,12 @@
       }
     }
   },
+
   "main_focus": {
     "badge": "Our Focus",
     "title": "Business 360 Solutions"
   },
+
   "focus": {
     "center": {
       "title": "Business",
@@ -82,6 +86,7 @@
       }
     }
   },
+
   "process": {
     "badge": "Our Process",
     "title": "How We Work – Simple, Clear, Effective",
@@ -97,47 +102,64 @@
       "desc": "At first, our team assesses the needs of the company and its fundamentals"
     }
   },
+
   "why_choose_us": {
     "badge": "why choose us",
     "title": "Your Strategic Growth Partner",
-    "points": [
-      {
+    "points": {
+      "0": {
         "title": "Strategic Insight",
         "desc": "We offer both visionary strategy and tactical execution."
       },
-      {
+      "1": {
         "title": "Worldwide Network",
         "desc": "Our partners and offices enable global reach with local sensitivity."
       },
-      {
+      "2": {
         "title": "Proven Results",
         "desc": "We have helped firms of all sizes compete and win internationally."
       },
-      {
+      "3": {
         "title": "Dedicated Experts",
         "desc": "Our team bring deep industry knowledge and tailored support."
       }
-    ]
+    }
   },
+
   "countries": {
     "badge": "Service Countries",
     "title": "Our Global Service Coverage"
   },
 
   "testimonials": {
-    "badge": "testimonials",
+    "badge": "Service Countries",
     "title": "What Our Clients Say About Us",
-    "list": [
-      {
-        "quote": "A fantastic experience working with Business Consultancy...",
-        "author": "Soraya, CEO at Cairo Dynamics",
-        "location": "DUBAI, UAE"
+    "items": {
+      "0": {
+        "text": "Their team's expertise was instrumental in navigating complex international markets and achieving remarkable growth.",
+        "name": "Nantes, France",
+        "role": "Ingrid, Director at Svenson Group"
       },
-      {
-        "quote": "Their team provided invaluable insights and strategies...",
-        "author": "Rajesh, CEO at Bharat Innovations",
-        "location": "DURBAN, SOUTH AFRICA"
+      "1": {
+        "text": "Exceptional consultancy services! Business Consultancy provided clear insights, tailored solutions, and hands-on support that transformed our operations. Their expertise in strategy, HR, and digital growth is unmatched.",
+        "name": "Muscat, Oman",
+        "role": "Kenji, Founder at Tokyo Systems"
+      },
+      "2": {
+        "text": "They helped us expand internationally with seamless strategy and expert guidance. Their team simplified complex processes, improved efficiency, and delivered measurable results.",
+        "name": "Doha, Qatar",
+        "role": "Pavel, Owner at Prague Investments"
+      },
+      "3": {
+        "text": "A fantastic experience working with Business Consultancy. Their comprehensive 360-degree approach to business growth, recruitment, and digital strategy empowered our team.",
+        "name": "Dubai, UAE",
+        "role": "Soraya, CEO at Cairo Dynamics"
+      },
+      "4": {
+        "text": "Their team provided invaluable insights and strategies that propelled our company to new heights in the global market.",
+        "name": "Durban, South Africa",
+        "role": "Rajesh, CEO at Bharat Innovations"
       }
-    ]
+    }
   }
 }

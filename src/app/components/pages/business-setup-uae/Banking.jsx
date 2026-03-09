@@ -1,15 +1,18 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image'
 import React from 'react'
 
 
-const data = [
-    { number: '01', title: 'A business plan outlining your activities' },
-    { number: '02', title: 'An updated CV / resume.' },
-    { number: '03', title: 'Last 6 account statements.' },
-    { number: '04', title: 'Website link (we can help you build one)' },
-];
-
 const Banking = () => {
+    const t = useTranslations("services")
+
+    const data = [
+        { number: '01', title: t('business_setup_uae.banking_conditions.items.01') },
+        { number: '02', title: t('business_setup_uae.banking_conditions.items.02') },
+        { number: '03', title: t('business_setup_uae.banking_conditions.items.03') },
+        { number: '04', title: t('business_setup_uae.banking_conditions.items.04') },
+    ];
+
     return (
         <>
             <section className='bg-white'>
@@ -19,12 +22,12 @@ const Banking = () => {
                         {/* Left */}
                         <div className="w-full md:w-[55%]" data-aos="fade-up-right">
                             <span className="inline-flex rounded-full  bg-[#F6F6F6] px-5 py-3 text-sm md:text-base lg:text-lg font-bold text-black">
-                                About Banking
+                                {t("business_setup_uae.banking_conditions.badge")}
                             </span>
                             <h2 className="text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  capitalize font-extrabold text-black lg:leading-16 pt-4 md:pt-8">
-                                Banking Terms & Conditions
+                                {t("business_setup_uae.banking_conditions.title")}
                             </h2>
-                            <p className='text-black text-base font-[350] pt-6 md:pt-8 lg:pt-12'>In general, banks follow similar ethical and compliance standards. As part of the onboarding process, the Risk & Compliance team may request,</p>
+                            <p className='text-black text-base font-[350] pt-6 md:pt-8 lg:pt-12'>{t("business_setup_uae.banking_conditions.description")}</p>
 
                             {/* steps */}
                             <div className="mt-6 grid grid-cols-1 md:grid-cols-2">

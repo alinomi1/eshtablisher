@@ -1,29 +1,31 @@
+"use client";
+
 import React from "react";
+import { useTranslations } from "next-intl";
 
 const WhyChooseUs = () => {
-
-
+    const t = useTranslations("home");
 
     const items = [
         {
             no: "01",
-            title: t("why_choose_us.points.title"),
-            desc: t("why_choose_us.points.desc"),
+            title: t("why_choose_us.points.0.title"),
+            desc: t("why_choose_us.points.0.desc"),
         },
         {
             no: "02",
-            title: t("why_choose_us.points.title"),
-            desc: t("why_choose_us.points.desc"),
+            title: t("why_choose_us.points.1.title"),
+            desc: t("why_choose_us.points.1.desc"),
         },
         {
             no: "03",
-            title: t("why_choose_us.points.title"),
-            desc: t("why_choose_us.points.desc"),
+            title: t("why_choose_us.points.2.title"),
+            desc: t("why_choose_us.points.2.desc"),
         },
         {
             no: "04",
-            title: t("why_choose_us.points.title"),
-            desc: t("why_choose_us.points.desc"),
+            title: t("why_choose_us.points.3.title"),
+            desc: t("why_choose_us.points.3.desc"),
         },
     ];
 
@@ -32,12 +34,12 @@ const WhyChooseUs = () => {
             <div className="container-1200 px-5">
                 {/* heading */}
                 <div className="text-center" data-aos="zoom-in-down">
-                    <span className="inline-flex  rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
-                        why choose us
+                    <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
+                        {t("why_choose_us.badge")}
                     </span>
 
-                    <h2 className="mt-3 sm:mt-4  capitalize text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  font-extrabold leading-[1.1] text-black">
-                        Your Strategic Growth Partner
+                    <h2 className="mt-3 sm:mt-4 capitalize text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px] font-extrabold leading-[1.1] text-black">
+                        {t("why_choose_us.title")}
                     </h2>
                 </div>
 

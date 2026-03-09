@@ -1,18 +1,20 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import React from 'react';
 
 
-const data = [
-    { number: '01', title: 'Keep your phone active for coordination' },
-    { number: '02', title: 'Share flight details 7 days before travel' },
-    { number: '03', title: 'Dubai entry stamp copy after arrival.' },
-    { number: '04', title: 'We apply for visa (6-8 working days)' },
-    { number: '05', title: 'Medical & biometrics after e-Visa' },
-    { number: '06', title: 'Status changed to Residence Visa' },
-];
-
 const Arrival = () => {
+const t = useTranslations("services")
 
+
+    const data = [
+    { number: '01', title: t('business_setup_uae.arrival_instructions.items.01') },
+    { number: '02', title: t('business_setup_uae.arrival_instructions.items.02') },
+    { number: '03', title: t('business_setup_uae.arrival_instructions.items.03') },
+    { number: '04', title: t('business_setup_uae.arrival_instructions.items.04') },
+    { number: '05', title: t('business_setup_uae.arrival_instructions.items.05') },
+    { number: '06', title: t('business_setup_uae.arrival_instructions.items.06') },
+];
     return (
         <>
             <section className='bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30'>
@@ -32,11 +34,11 @@ const Arrival = () => {
                         {/* Right */}
                         <div className="w-full lg:w-[55%]" data-aos="fade-up-right">
                             <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
-                                Arrival Instructions
+                                {t("business_setup_uae.arrival_instructions.badge")}
                             </span>
 
                             <h2 className="text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  font-extrabold text-black lg:leading-16 pt-6 sm:pt-7 lg:pt-8 max-w-full lg:max-w-133.25">
-                                Upon Arrival in UAE
+                               {t("business_setup_uae.arrival_instructions.title")}
                             </h2>
 
                             {/* 2-Column Grid for Steps */}

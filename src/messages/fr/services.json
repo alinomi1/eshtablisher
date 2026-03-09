@@ -1,0 +1,258 @@
+{
+  "business_strategy": {
+    "top_banner": "Business Strategy",
+    "badge": "Service N° 1",
+    "title": "Stratégie d'entreprise intelligente et évolutive",
+    "description": "<bold>Establisher</bold> aide les fondateurs et les entreprises en pleine croissance à prendre des décisions éclairées grâce à une stratégie claire basée sur une réelle connaissance du marché. Nous évaluons votre position actuelle, définissons vos segments cibles, affinons votre proposition de valeur et concevons une feuille de route concrète pour la croissance. De la tarification au positionnement, en passant par les prévisions de revenus et les priorités d'exécution, nous créons un plan pratique que votre équipe peut suivre — et auquel les investisseurs peuvent faire confiance — pour vous permettre d'avancer plus vite, de réduire les risques et de croître durablement.",
+    "cards": {
+      "01": {
+        "title": "Analyse du marché et de la concurrence"
+      },
+      "02": {
+        "title": "Positionnement et message clairs"
+      },
+      "03": {
+        "title": "Feuille de route de croissance et jalons"
+      },
+      "04": {
+        "title": "Modèle de revenus et prévisions"
+      },
+      "05": {
+        "title": "Stratégie de prix et packaging"
+      },
+      "06": {
+        "title": "Business plan prêt pour les investisseurs"
+      }
+    }
+  },
+
+  "business_angel": {
+    "top_banner": "Angel Funding",
+    "badge": "Service N° 2",
+    "title": "Financement par Business Angels et Accompagnement",
+    "description": "<bold>Establisher</bold> met en relation des fondateurs prometteurs avec les bons business angels et investisseurs stratégiques, alliant accès au capital et mentorat pratique. Nous évaluons votre projet, affinons votre pitch, validons les données financières et positionnons votre histoire pour l'audience appropriée. Ensuite, nous gérons les introductions, les suivis et les étapes de levée de fonds afin que vous puissiez vous concentrer sur la traction et conclure des engagements de manière fluide, rapide et efficace, de l'introduction au term-sheet.",
+    "cards": {
+      "01": {
+        "title": "Évaluation de la préparation du projet"
+      },
+      "02": {
+        "title": "Optimisation du pitch deck"
+      },
+      "03": {
+        "title": "Soutien aux introductions d'investisseurs"
+      },
+      "04": {
+        "title": "Planification de la stratégie de levée de fonds"
+      },
+      "05": {
+        "title": "Conseils sur le term-sheet"
+      },
+      "06": {
+        "title": "Coordination de la due diligence"
+      }
+    }
+  },
+
+  "digital_marketing": {
+    "top_banner": "Marketing Digital 360",
+    "badge": "Service N° 3",
+    "title": "Marketing 360° pour des Résultats de Croissance",
+    "description": "<bold>Establisher</bold> propose un Marketing Digital 360° de bout en bout pour accroître votre visibilité et vos ventes. Nous planifions votre stratégie de communication, créons des sites web et des campagnes performants, et optimisons chaque canal pour le ROI — recherche, social et publicités payantes. Grâce au suivi et à des rapports exploitables, nous transformons l'attention de l'audience en prospects qualifiés, partenaires et clients, tout en maintenant la cohérence de votre marque sur toutes les plateformes, du premier audit aux améliorations mensuelles.",
+    "cards": {
+      "01": {
+        "title": "Campagnes de génération de leads"
+      },
+      "02": {
+        "title": "Entonnoirs de marketing de contenu"
+      },
+      "03": {
+        "title": "Site web et application"
+      },
+      "04": {
+        "title": "Optimisation SEO et SEM"
+      },
+      "05": {
+        "title": "Reciblage publicitaire PPC"
+      },
+      "06": {
+        "title": "Reporting et gestion de communauté"
+      }
+    }
+  },
+
+  "company_formation": {
+    "top_banner": "Company Formation",
+    "badge": "Service N° 4",
+    "title": "Création d'Entreprise Rapide et Efficace",
+    "description": "<bold>Establisher</bold> élimine le stress lié à la création d'entreprise en gérant l'intégralité du processus — du choix de la juridiction et de l'activité appropriées à la préparation des documents, l'obtention des licences et certificats, et la coordination des approbations. Nous vous accompagnons également dans l'ouverture de votre compte bancaire et les formalités post-création essentielles pour que vous puissiez vous lancer en toute confiance, rester en conformité et vous concentrer sur vos opérations pendant que nous gérons la paperasse et les délais.",
+    "cards": {
+      "01": {
+        "title": "Sélection de la licence et de l'activité"
+      },
+      "02": {
+        "title": "Préparation et soumission des dossiers"
+      },
+      "03": {
+        "title": "Gestion des certificats et approbations"
+      },
+      "04": {
+        "title": "Aide à l'ouverture de compte bancaire"
+      },
+      "05": {
+        "title": "Aide au traitement du visa de résident"
+      },
+      "06": {
+        "title": "Conformité continue et renouvellements"
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "FAQ sur le Conseil Fiscal aux Émirats Arabes Unis",
+      "items": {
+        "01": {
+          "question": "Quelle autorité gouvernementale est responsable de la délivrance de la licence Mainland ?",
+          "answer": "La délivrance de la licence est effectuée par le DED (Département du Développement Économique)."
+        },
+        "02": {
+          "question": "Quelles sont les différentes options de visa ?",
+          "answer": "Les options incluent le visa Investisseur/Partenaire (2 ans), le Golden Visa (10 ans pour les investisseurs majeurs), le Green Visa (5 ans pour les professionnels qualifiés) et les visas de travail standards pour votre personnel."
+        },
+        "03": {
+          "question": "Qu'est-ce que le visa de partenaire ou d'investisseur ?",
+          "answer": "Il s'agit d'un permis de résidence accordé aux ressortissants étrangers qui investissent dans une société ou en créent une sur le territoire principal (Mainland) des Émirats Arabes Unis. Il vous permet de résider, de travailler et de parrainer les membres de votre famille pour leur résidence."
+        },
+        "04": {
+          "question": "Comment obtenir un visa d'emploi ?",
+          "answer": "Votre employeur doit d'abord demander un permis de travail et un permis d'entrée. Une fois entré aux Émirats Arabes Unis, vous devez passer un examen médical, effectuer la biométrie pour l'Emirates ID et signer un contrat de travail officiel du MoHRE (Ministère des Ressources Humaines)."
+        },
+        "05": {
+          "question": "Quelles étapes dois-je suivre après avoir reçu mon e-visa ?",
+          "answer": "Après avoir reçu votre e-visa (permis d'entrée), vous devez entrer aux Émirats Arabes Unis ou effectuer un « changement de statut » si vous êtes déjà sur place. Ensuite, vous devez finaliser votre examen médical et votre biométrie dans les 60 jours pour valider votre résidence."
+        }
+      }
+    }
+  },
+
+  "hr_payroll": {
+    "top_banner": "RH & Paie",
+    "badge": "Service N° 5",
+    "title": "Support RH et Paie Fiable",
+    "description": "<bold>Establisher</bold> simplifie la gestion de votre personnel grâce à une paie précise, une administration RH conforme et un support au recrutement rapide. Nous mettons en place des flux de travail pour la paie, gérons le temps et les présences, générons les fiches de paie et coordonnons les déductions et rapports afin que vous soyez toujours prêt pour un audit. Besoin de personnel transfrontalier ? Nous gérons les formalités d'intégration des employés, les visas et permis de travail, ainsi que le support continu — pour que vous gagniez du temps, réduisiez les risques et vous concentriez sur votre croissance dès aujourd'hui.",
+    "cards": {
+      "01": {
+        "title": "Configuration et traitement de la paie"
+      },
+      "02": {
+        "title": "Gestion du temps, des présences et des congés"
+      },
+      "03": {
+        "title": "Préparation des fiches de paie et rapports fiscaux"
+      },
+      "04": {
+        "title": "Administration RH et conformité"
+      },
+      "05": {
+        "title": "Entretiens et sélection de recrutement"
+      },
+      "06": {
+        "title": "Aide aux visas, permis et intégration"
+      }
+    }
+  },
+
+  "finance": {
+    "top_banner": "finance",
+    "badge": "Service N° 6",
+    "title": "Support Financier Précis, Conformité Totale",
+    "description": "<bold>Establisher</bold> maintient vos finances propres, conformes et prêtes pour la prise de décision grâce à l'externalisation de la comptabilité, de la tenue de livres et du reporting. Nous installons les logiciels comptables appropriés, supervisons les comptes pour détecter les erreurs rapidement et vous guidons à travers l'enregistrement à la TVA, les déclarations, les modifications ou les désenregistrements. En cas d'audit, nous préparons vos documents et soutenons vos besoins d'assurance — pour que vous restiez confiant, prêt pour les investisseurs et concentré sur votre croissance aux Émirats Arabes Unis.",
+    "cards": {
+      "01": {
+        "title": "Aide à l'ouverture de compte"
+      },
+      "02": {
+        "title": "Conseils sur le choix de la banque"
+      },
+      "03": {
+        "title": "Aide à la préparation des documents"
+      },
+      "04": {
+        "title": "Conformité et KYC"
+      },
+      "05": {
+        "title": "Configuration bancaire d'entreprise"
+      },
+      "06": {
+        "title": "Assistance bancaire continue"
+      }
+    }
+  },
+
+  "business_setup_uae": {
+    "top_banner": "Un exemple de création d'entreprise aux EAU",
+    "process": {
+      "badge": "notre processus",
+      "title": "Le Processus de Création d'Entreprise",
+      "required_docs": {
+        "title": "Documents Requis",
+        "items": {
+          "01": "Nom de la société et deux variantes",
+          "02": "Passeport + dernier tampon d'entrée aux EAU",
+          "03": "Justificatif de domicile",
+          "04": "Photo d'identité sur fond blanc",
+          "05": "Mêmes documents pour tous les actionnaires"
+        }
+      },
+      "incorporation": {
+        "title": "Étapes d'Immatriculation",
+        "items": {
+          "06": "Paiement (virement ou carte) à Establisher",
+          "07": "Réception des documents → signature et renvoi par email",
+          "08": "Nous procédons à l'enregistrement de votre société"
+        }
+      }
+    },
+    "timeline": {
+      "badge": "Notre Engagement",
+      "title": "Délai pour Établir votre Entreprise"
+    },
+    "freezone_advantages": {
+      "badge": "Société Freezone",
+      "title": "Avantages d'une Société en Zone Franche",
+      "description": "Une société Freezone est une entreprise enregistrée dans une zone franche désignée aux EAU. Elle permet la propriété étrangère à 100%, offre des avantages fiscaux et simplifie les services de licence et de visa.",
+      "items": {
+        "01": "Impôt sur les sociétés minimal et aucun impôt sur le revenu.",
+        "02": "Pas d'enregistrement public ou en ligne.",
+        "03": "Possibilité de facturer n'importe où dans le monde.",
+        "04": "Possibilité de rapatrier tout le capital et les profits.",
+        "05": "Actionnaire à 100% de votre entreprise.",
+        "06": "Visa de résidence de 2 ans pour les actionnaires et employés.",
+        "07": "Possibilité de parrainer des visas pour personnes à charge.",
+        "08": "La présence des actionnaires n'est pas requise pour débuter.",
+        "09": "Un audit annuel peut être requis, selon la zone/activité choisie."
+      }
+    },
+    "arrival_instructions": {
+      "badge": "Instructions d'Arrivée",
+      "title": "À votre Arrivée aux EAU",
+      "items": {
+        "01": "Gardez votre téléphone actif pour la coordination",
+        "02": "Partagez les détails du vol 7 jours avant le voyage",
+        "03": "Copie du tampon d'entrée à Dubaï après l'arrivée.",
+        "04": "Nous demandons le visa (6-8 jours ouvrables)",
+        "05": "Examen médical et biométrie après l'E-Visa",
+        "06": "Changement de statut en Visa de Résidence"
+      }
+    },
+    "banking_conditions": {
+      "badge": "À propos de la Banque",
+      "title": "Conditions Générales Bancaires",
+      "description": "En général, les banques suivent des normes d'éthique et de conformité similaires. Dans le cadre du processus, l'équipe Risk & Compliance peut demander :",
+      "items": {
+        "01": "Un Business Plan détaillant vos activités",
+        "02": "Un CV / Résumé mis à jour.",
+        "03": "Les 6 derniers relevés de compte.",
+        "04": "Lien vers votre site web (Nous pouvons vous aider à en créer un)"
+      }
+    }
+  }
+}

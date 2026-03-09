@@ -8,38 +8,40 @@ import {
     CarouselItem,
 } from "@/components/ui/carousel";
 import { TestimonialsIcon } from "../../../../public/icons/icons";
-
-const testimonials = [
-    {
-        text: "Their team's expertise was instrumental in navigating complex international markets and achieving remarkable growth.",
-        name: "Nantes, France",
-        role: "Ingrid, Director at Svenson Group",
-    },
-    {
-        text: "Exceptional consultancy services! Business Consultancy provided clear insights, tailored solutions, and hands-on support that transformed our operations. Their expertise in strategy, HR, and digital growth is unmatched.",
-        name: "Muscat, Oman",
-        role: "Kenji, Founder at Tokyo Systems",
-    },
-    {
-        text: "They helped us expand internationally with seamless strategy and expert guidance. Their team simplified complex processes, improved efficiency, and delivered measurable results.",
-        name: "Doha, Qatar",
-        role: "Pavel, Owner at Prague Investments",
-    },
-    {
-        text: "A fantastic experience working with Business Consultancy. Their comprehensive 360-degree approach to business growth, recruitment, and digital strategy empowered our team",
-        name: "Dubai, UAE",
-        role: "Soraya, CEO at Cairo Dynamics",
-    },
-    {
-        text: "Their team provided invaluable insights and strategies that propelled our company to new heights in the global market.",
-        name: "Durban, South Africa",
-        role: "Rajesh, CEO at Bharat Innovations",
-    },
-];
+import { useTranslations } from "next-intl";
 
 export default function Testimonials() {
+    const t = useTranslations("home");
     const [api, setApi] = useState(null);
     const [selected, setSelected] = useState(0);
+
+    const testimonials = [
+        {
+            text: t("testimonials.items.0.text"),
+            name: t("testimonials.items.0.name"),
+            role: t("testimonials.items.0.role"),
+        },
+        {
+            text: t("testimonials.items.1.text"),
+            name: t("testimonials.items.1.name"),
+            role: t("testimonials.items.1.role"),
+        },
+        {
+            text: t("testimonials.items.2.text"),
+            name: t("testimonials.items.2.name"),
+            role: t("testimonials.items.2.role"),
+        },
+        {
+            text: t("testimonials.items.3.text"),
+            name: t("testimonials.items.3.name"),
+            role: t("testimonials.items.3.role"),
+        },
+        {
+            text: t("testimonials.items.4.text"),
+            name: t("testimonials.items.4.name"),
+            role: t("testimonials.items.4.role"),
+        },
+    ];
 
     const autoplay = useMemo(
         () =>
@@ -71,15 +73,15 @@ export default function Testimonials() {
 
     return (
         <section className="bg-[#F6F0E3] py-12  md:py-14 lg:py-16 overflow-hidden">
-            <div className=":px-5 flex flex-col items-center">
+            <div className="px-5 flex flex-col items-center">
                 {/* heading */}
                 <div className="text-center" data-aos="zoom-in-down">
                     <span className="inline-flex items-center rounded-full bg-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-sm sm:text-base lg:text-lg font-bold text-black shadow-sm">
-                        Service Countries
+                        {t("testimonials.badge")}
                     </span>
 
                     <h2 className="capitalize font-extrabold text-black leading-[1.15] text-[30px] sm:text-[36px] md:text-[44px] lg:text-[56px] pt-5 sm:pt-6 lg:pt-8 text-center">
-                        What Our Clients Say About Us
+                        {t("testimonials.title")}
                     </h2>
                 </div>
                 <div className="mt-6 sm:mt-8 w-full" data-aos="fade-up">
@@ -94,7 +96,7 @@ export default function Testimonials() {
                         className="w-full max-w-[1400px] mx-auto"
                     >
                         <CarouselContent className="-ml-4 sm:-ml-5 md:-ml-6 lg:-ml-8 items-stretch py-8 sm:py-10 md:py-12">
-                            {testimonials.map((t, idx) => {
+                            {testimonials.map((item, idx) => {
                                 const isActive = idx === selected;
 
                                 return (
@@ -116,16 +118,16 @@ export default function Testimonials() {
                                             <div>
                                                 <TestimonialsIcon />
                                                 <p className="text-base sm:text-lg md:text-xl text-black font-medium leading-7 sm:leading-8 py-6 sm:py-8 md:py-10">
-                                                    "{t.text}"
+                                                    &ldquo;{item.text}&rdquo;
                                                 </p>
                                             </div>
 
                                             <div>
                                                 <div className="text-xs sm:text-sm font-bold text-black uppercase">
-                                                    {t.name}
+                                                    {item.name}
                                                 </div>
                                                 <div className="text-sm sm:text-base text-black font-normal">
-                                                    {t.role}
+                                                    {item.role}
                                                 </div>
                                             </div>
                                         </div>

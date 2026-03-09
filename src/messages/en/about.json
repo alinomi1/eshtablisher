@@ -1,0 +1,41 @@
+{
+  "about_page": {
+    "banner_badge": "About Establisher",
+    "badge": "About Us",
+    "title": "Your Global Growth Architects",
+    "description_top": "At <bold>Establisher</bold>, we are more than a consultancy – we are your strategic partners in turning ambitious business visions into measurable global success. Founded in Dubai in 2025 by experienced international entrepreneurs, our firm has grown into a trusted provider of comprehensive business solutions worldwide.",
+    "description_bottom": "With a worldwide network and deep market expertise, we have supported thousands of clients across industries, empowering startups, SMEs, mid-sized enterprises and multinational corporations to expand and thrive across borders."
+  },
+  "who_we_are": {
+    "badge": "Who We Are",
+    "title": "Your Partners In Business Growth",
+    "description": "We are a 360° business solutions provider dedicated to helping companies navigate complex global landscapes. Since our inception, we have built a reputation for combining strategic insight with practical execution – supporting companies in achieving growth, operational excellence, and sustainable success.",
+    "points": {
+      "founded": "Founded in Dubai in 2025 by seasoned international entrepreneurs.",
+      "trusted": "Trusted by 500+ clients worldwide across multiple sectors.",
+      "expertise": "Deep expertise across markets including the UAE."
+    }
+  },
+  "our_commitment": {
+    "badge": "Our Commitment",
+    "title": "Driven By Purpose And Excellence",
+    "cards": {
+      "01": {
+        "title": "Our Mission",
+        "desc": "Our mission is to become the trusted partner businesses rely on to confidently enter new markets, scale operations effectively, and create sustainable long-term value. Through strategic planning and seamless execution support, we deliver solutions that are practical, efficient, and carefully designed to evolve alongside your business growth."
+      },
+      "02": {
+        "title": "Our Vision",
+        "desc": "Our vision is to redefine excellence in global business consulting by combining international standards, strong regional expertise, and an unwavering commitment to client success. We aim not only to advise organizations but to equip them with the clarity, confidence, and strategic tools needed to lead in competitive markets."
+      },
+      "03": {
+        "title": "Why Choose Us",
+        "desc": "We combine global insight with strong local expertise to navigate complex markets with confidence. Our end-to-end support ensures seamless execution at every stage of your journey. With a client-focused approach and proven experience across industries, we deliver strategies that create measurable and sustainable results."
+      },
+      "04": {
+        "title": "Our Commitment",
+        "desc": "We are dedicated to helping your business not only grow but truly thrive across markets, industries, and jurisdictions worldwide. By maintaining the highest standards of professionalism and strategic excellence, we ensure your goals remain at the center of everything we do. Your sustained success will always remain our primary focus."
+      }
+    }
+  }
+}

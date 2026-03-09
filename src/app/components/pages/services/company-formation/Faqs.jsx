@@ -1,50 +1,53 @@
 "use client"
 import React, { useState } from 'react';
 import { DropdownIcon } from '../../../../../../public/icons/icons';
+import { useTranslations } from 'next-intl';
 
 
-const faqData = [
-    {
-        id: "01",
-        question: " Which government Authority is responsible for the issuance of Mainland License?",
-        answer: "The issuance of the License is from DED (DEPARTMENT OF ECONOMIC DEPARTMENT)."
-    },
-    {
-        id: "02",
-        question: " Are whats the Visa options?",
-        answer: "Options include the Investor/Partner Visa (2 years), the Golden Visa (10 years for major investors), the Green Visa (5 years for skilled professionals), and standard Employment Visas for your staff."
-    },
-    {
-        id: "03",
-        question: " What is the partner or investor Visa?",
-        answer: "This is a residency permit granted to foreign nationals who invest in or establish a company on the UAE mainland. It allows you to live, work, and sponsor your family members for residency."
-    },
-    {
-        id: "04",
-        question: "How do I obtain an employment Visa?",
-        answer: "Your employer must first apply for a work permit and entry permit. Once you enter the UAE, you must pass a medical fitness test, complete Emirates ID biometrics, and sign an official MoHRE labor contract."
-    },
-    {
-        id: "05",
-        question: "What steps should I take after receiving my e-visa?",
-        answer: "After receiving your e-visa (Entry Permit), you must enter the UAE or perform a 'status change' if already inside. Then, complete your medical screening and biometrics within 60 days to finalize your residency."
-    },
-];
 
 
 const Faqs = () => {
-    const [openIndex, setOpenIndex] = useState(0);
+    const [openIndex, setOpenIndex] = useState(-1);
+    const t = useTranslations("services")
+
+    const faqData = [
+        {
+            id: "01",
+            question: t("company_formation.faq.items.01.question"),
+            answer: t("company_formation.faq.items.01.answer"),
+        },
+        {
+            id: "02",
+            question: t("company_formation.faq.items.02.question"),
+            answer: t("company_formation.faq.items.02.answer"),
+        },
+        {
+            id: "03",
+            question: t("company_formation.faq.items.03.question"),
+            answer: t("company_formation.faq.items.03.answer"),
+        },
+        {
+            id: "04",
+            question: t("company_formation.faq.items.04.question"),
+            answer: t("company_formation.faq.items.04.answer"),
+        },
+        {
+            id: "05",
+            question: t("company_formation.faq.items.05.question"),
+            answer: t("company_formation.faq.items.05.answer"),
+        },
+    ];
 
     return (
-        <section className='pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-30"'>
+        <section className='pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-30'>
             <div className="container-1200 px-5">
                 {/* Top Title */}
                 <div className="text-center" data-aos="zoom-in-down">
                     <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
-                        FAQS
+                        {t("company_formation.faq.badge")}
                     </span>
                     <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[1.2] lg:leading-16 font-extrabold text-black">
-                        UAE Tax Consultancy FAQs
+                        {t("company_formation.faq.title")}
                     </h2>
                 </div>
 

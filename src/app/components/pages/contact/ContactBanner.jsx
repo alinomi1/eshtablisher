@@ -11,7 +11,7 @@ const ContactBanner = () => {
                     fill
                     priority
                     className="object-cover h-full"
-                    data-aos="fade-right"
+                    // data-aos="fade-right"
 
                 />
                 {/* Gradient overlay */}

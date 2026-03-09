@@ -1,18 +1,20 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 
 const TimeLine = () => {
+    const t = useTranslations("services")
     return (
         <>
             <section className="bg-[#F6F6F6] py-12  md:py-14 lg:py-16">
                 <div className="container-1200 px-5 flex flex-col items-center text-center">
                     {/* Header Content */}
                     <span className="inline-flex rounded-full bg-white px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
-                        Our Commitment
+                        {t("business_setup_uae.timeline.badge")}
                     </span>
 
                     <h2 className="capitalize font-extrabold text-black leading-tight text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  pt-6 sm:pt-8 max-w-full">
-                        Timeline to Establish Your Business
+                        {t("business_setup_uae.timeline.title")}
                     </h2>
 
                     <div className="relative w-full max-w-226 mx-auto mt-10 sm:mt-12 md:mt-16" data-aos="zoom-in">
