@@ -76,7 +76,7 @@ export default function Testimonials() {
             <div className="px-5 flex flex-col items-center">
                 {/* heading */}
                 <div className="text-center" data-aos="zoom-in-down">
-                    <span className="inline-flex items-center rounded-full bg-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-sm sm:text-base lg:text-lg font-bold text-black shadow-sm">
+                    <span className="inline-flex items-center capitalize rounded-full bg-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 text-sm sm:text-base lg:text-lg font-bold text-black">
                         {t("testimonials.badge")}
                     </span>
 
@@ -95,14 +95,14 @@ export default function Testimonials() {
                         }}
                         className="w-full max-w-[1400px] mx-auto"
                     >
-                        <CarouselContent className="-ml-4 sm:-ml-5 md:-ml-6 lg:-ml-8 items-stretch py-8 sm:py-10 md:py-12">
+                        <CarouselContent className="-ml-2 sm:-ml-3 md:-ml-4 lg:-ml-5 items-stretch py-8 sm:py-10 md:py-12">
                             {testimonials.map((item, idx) => {
                                 const isActive = idx === selected;
 
                                 return (
                                     <CarouselItem
                                         key={idx}
-                                        className="pl-4 sm:pl-5 md:pl-6 lg:pl-8 basis-[86%] sm:basis-[70%] md:basis-1/2 lg:basis-[30%] flex"
+                                        className="pl-2 sm:pl-3 md:pl-4 lg:pl-5 basis-[86%] sm:basis-[70%] md:basis-1/2 lg:basis-[30%] flex"
                                     >
                                         <div
                                             className={`
@@ -110,8 +110,8 @@ export default function Testimonials() {
                                                 transition-all duration-700 cubic-bezier(0.4, 0, 0.2, 1)
                                                 transform-gpu
                                                 ${isActive
-                                                    ? "bg-white opacity-100 scale-105 z-20"
-                                                    : "bg-white opacity-70 scale-90 z-10"
+                                                    ? "bg-white opacity-100 scale-[1.03] z-20"
+                                                    : "bg-white opacity-70 scale-[0.96] z-10"
                                                 }
                                             `}
                                         >

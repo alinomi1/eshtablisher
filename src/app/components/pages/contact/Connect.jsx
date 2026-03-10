@@ -1,13 +1,26 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import { DropdownIcon } from '../../../../../public/icons/icons';
 import Image from 'next/image';
 import Cta from '@/common/Cta';
 import { useTranslations } from 'next-intl';
+import Link from "next/link";
 
 const Connect = () => {
     const t = useTranslations("contact");
+    const tCommon = useTranslations("common");
+    const [isServiceOpen, setIsServiceOpen] = useState(false);
+    const [selectedService, setSelectedService] = useState("");
 
+    const serviceLinks = [
+        { name: tCommon("services_nav.business_setup_uae"), href: "/business-setup-uae", value: "business-setup-uae" },
+        { name: tCommon("services_nav.strategy"), href: "/business-strategy", value: "strategy" },
+        { name: tCommon("services_nav.angel"), href: "/business-angel", value: "angel" },
+        { name: tCommon("services_nav.marketing"), href: "/digital-marketing", value: "marketing" },
+        { name: tCommon("services_nav.formation"), href: "/company-formation", value: "formation" },
+        { name: tCommon("services_nav.hr_payroll"), href: "/hr-payroll", value: "hr-payroll" },
+        { name: tCommon("services_nav.finance"), href: "/finance", value: "finance" },
+    ];
     return (
         <>
             <section className='bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30'>
@@ -104,22 +117,40 @@ const Connect = () => {
                                     />
                                 </div>
 
-                                <div className="flex items-center justify-between relative border-b border-gray-200 py-2">
-                                    <select
-                                        defaultValue=""
-                                        className="w-full outline-none text-base sm:text-lg text-[#7A7C81] bg-transparent appearance-none cursor-pointer"
+                                <div
+                                    className="relative border-b border-gray-200 py-2"
+                                    onMouseEnter={() => setIsServiceOpen(true)}
+                                    onMouseLeave={() => setIsServiceOpen(false)}
+                                >
+                                    <button
+                                        type="button"
+                                        onClick={() => setIsServiceOpen((prev) => !prev)}
+                                        className="w-full flex items-center justify-between text-base sm:text-lg text-[#7A7C81] bg-transparent cursor-pointer"
                                     >
-                                        <option value="" disabled>{t("contact_page.service")}</option>
-                                        <option value="strategy">{t("contact_page.services.strategy")}</option>
-                                        <option value="angel">{t("contact_page.services.angel")}</option>
-                                        <option value="marketing">{t("contact_page.services.marketing")}</option>
-                                        <option value="formation">{t("contact_page.services.formation")}</option>
-                                        <option value="hr">{t("contact_page.services.hr")}</option>
-                                        <option value="finance">{t("contact_page.services.finance")}</option>
-                                    </select>
-                                    <DropdownIcon className="text-black cursor-pointer shrink-0" />
+                                        <span>{selectedService || t("contact_page.service")}</span>
+                                        <DropdownIcon className={`text-black shrink-0 transition-transform duration-300 ${isServiceOpen ? "rotate-180" : ""}`} />
+                                    </button>
+                                    {isServiceOpen && (
+                                        <div className="absolute left-0 top-full z-20 w-full pt-4">
+                                            <div className="bg-[#FFFFFF38] backdrop-blur-[80px] rounded-2xl overflow-hidden">
+                                                {serviceLinks.map((service, index) => (
+                                                    <Link
+                                                        key={index}
+                                                        href={service.href}
+                                                        onClick={() => {
+                                                            setSelectedService(service.name);
+                                                            setIsServiceOpen(false);
+                                                        }}
+                                                        className={`block w-full text-left p-4 text-base text-black capitalize font-normal hover:bg-white/10 transition-colors border-[#0000001F] ${index !== serviceLinks.length - 1 ? "border-b" : ""}`}
+                                                    >
+                                                        {service.name}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
-
+                                <input type="hidden" name="service" value={selectedService} />
                                 <div className="border-b border-gray-200 py-2">
                                     <textarea
                                         placeholder={t("contact_page.message")}

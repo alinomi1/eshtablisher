@@ -10,7 +10,7 @@ const ServiceCountries = () => {
                 <div className="container-1200 px-5 flex flex-col items-center text-center">
                     {/* Header Content */}
                     <div data-aos="zoom-in-down">
-                        <span className="inline-flex items-center rounded-full capitalize bg-white px-4 sm:px-5 py-2 sm:py-2.5 text-sm sm:text-base lg:text-lg font-bold text-black shadow-sm">
+                        <span className="inline-flex items-center rounded-full capitalize bg-white px-4 sm:px-5 py-2 sm:py-2.5 text-sm sm:text-base lg:text-lg font-bold text-black">
                             {t("countries.badge")}
                         </span>
 
@@ -21,7 +21,7 @@ const ServiceCountries = () => {
                     </div>
                     <div className="relative w-full mt-8 sm:mt-10 md:mt-12 lg:mt-16" data-aos="fade-up">
                         <Image
-                            src="/images/global.png"
+                            src="/images/global-image.png"
                             alt="Business Focuses Diagram"
                             width={1306}
                             height={723}

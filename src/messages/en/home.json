@@ -91,6 +91,12 @@
     "badge": "Our Process",
     "title": "How We Work – Simple, Clear, Effective",
     "description": "From concept to launch, we guide investors and entrepreneurs from around the world in bringing their visions to life...",
+    "step": {
+      "step1": "step 1",
+      "step2": "step 2",
+      "step3": "step 3",
+      "step4": "step 4"
+    },
     "steps": {
       "step_1": "Evaluate",
       "step_2": "Plan",
@@ -109,19 +115,19 @@
     "points": {
       "0": {
         "title": "Strategic Insight",
-        "desc": "We offer both visionary strategy and tactical execution."
+        "desc": "We combine visionary strategy with practical tactical execution, enabling businesses and brands to grow, scale, and succeed in competitive international markets."
       },
       "1": {
-        "title": "Worldwide Network",
-        "desc": "Our partners and offices enable global reach with local sensitivity."
+        "title": "Dedicated Experts",
+        "desc": "Our team offers deep industry expertise and tailored support, backed by over 30 years of international business experience across multiple sectors. We operate globally with multilingual capabilities in English, French, German, Afrikaans, and Italian."
       },
       "2": {
-        "title": "Proven Results",
-        "desc": "We have helped firms of all sizes compete and win internationally."
+        "title": "Worldwide Network",
+        "desc": "Through our international partners and offices, we deliver global reach combined with local insight and cultural sensitivity."
       },
       "3": {
-        "title": "Dedicated Experts",
-        "desc": "Our team bring deep industry knowledge and tailored support."
+        "title": "Proven Results",
+        "desc": "We build, establish, and scale highly profitable international businesses and brands."
       }
     }
   },
@@ -132,7 +138,7 @@
   },
 
   "testimonials": {
-    "badge": "Service Countries",
+    "badge": "testimonials",
     "title": "What Our Clients Say About Us",
     "items": {
       "0": {

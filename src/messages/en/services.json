@@ -27,7 +27,7 @@
   },
 
   "business_angel": {
-    "top_banner": "angel",
+    "top_banner": "business angel",
     "badge": "Service No 2",
     "title": "Business Angel Funding and Guidance",
     "description": "<bold>Establisher</bold> connects promising founders with the right business angels and strategic investors, combining capital access with practical mentoring. We assess your project, refine your pitch, validate financials, and position your story for the audience that matters. Then we manage introductions, follow-ups, and fundraising steps so you can focus on traction and close commitments smoothly, fast, cleanly, from intro to term-sheet.",
@@ -195,19 +195,19 @@
       "required_docs": {
         "title": "Required Documents",
         "items": {
-          "01": "Company name & two variations",
-          "02": "Passport + latest UAE entry stamp",
-          "03": "Proof of residence document",
-          "04": "White background passport photo",
-          "05": "Same documents for all shareholders"
+          "01": "Company name & two variations.",
+          "02": "Passport + latest entry stamp.",
+          "03": "Proof of residence document.",
+          "04": "White background passport photo.",
+          "05": "Same documents for all shareholders."
         }
       },
       "incorporation": {
         "title": "Incorporation Steps",
         "items": {
-          "06": "Pay (bank transfer or card) to Establisher",
-          "07": "Receive documents → sign & email back",
-          "08": "We will proceed with the registration your company"
+          "06": "Pay (bank transfer or card) to Establisher.",
+          "07": "Receive documents → sign & email back.",
+          "08": "We will proceed with the registration your company."
         }
       }
     },

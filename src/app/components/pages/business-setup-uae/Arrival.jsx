@@ -4,17 +4,17 @@ import React from 'react';
 
 
 const Arrival = () => {
-const t = useTranslations("services")
+    const t = useTranslations("services")
 
 
     const data = [
-    { number: '01', title: t('business_setup_uae.arrival_instructions.items.01') },
-    { number: '02', title: t('business_setup_uae.arrival_instructions.items.02') },
-    { number: '03', title: t('business_setup_uae.arrival_instructions.items.03') },
-    { number: '04', title: t('business_setup_uae.arrival_instructions.items.04') },
-    { number: '05', title: t('business_setup_uae.arrival_instructions.items.05') },
-    { number: '06', title: t('business_setup_uae.arrival_instructions.items.06') },
-];
+        { number: '01', title: t('business_setup_uae.arrival_instructions.items.01') },
+        { number: '02', title: t('business_setup_uae.arrival_instructions.items.02') },
+        { number: '03', title: t('business_setup_uae.arrival_instructions.items.03') },
+        { number: '04', title: t('business_setup_uae.arrival_instructions.items.04') },
+        { number: '05', title: t('business_setup_uae.arrival_instructions.items.05') },
+        { number: '06', title: t('business_setup_uae.arrival_instructions.items.06') },
+    ];
     return (
         <>
             <section className='bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30'>
@@ -38,7 +38,7 @@ const t = useTranslations("services")
                             </span>
 
                             <h2 className="text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  font-extrabold text-black lg:leading-16 pt-6 sm:pt-7 lg:pt-8 max-w-full lg:max-w-133.25">
-                               {t("business_setup_uae.arrival_instructions.title")}
+                                {t("business_setup_uae.arrival_instructions.title")}
                             </h2>
 
                             {/* 2-Column Grid for Steps */}
@@ -46,12 +46,7 @@ const t = useTranslations("services")
                                 {data.map((item, index) => (
                                     <div
                                         key={index}
-                                        className={`${index % 2 === 0
-                                            ? "md:pr-6 p-5 md:border-r border-[#D9DBDF]"
-                                            : "p-5"
-                                            } ${index >= 1 ? "border-t border-[#D9DBDF] md:border-t-0" : ""
-                                            } ${index >= 2 ? "md:border-t border-[#D9DBDF]" : ""
-                                            }`}
+                                        className={`p-5 border-[#D9DBDF] ${index % 2 === 0 ? "md:pr-6 md:border-r" : "md:pl-6"} ${index !== data.length - 1 ? "border-b" : ""} ${index >= data.length - 2 ? "md:border-b-0" : ""}`}
                                     >
                                         <span className="text-lg font-extrabold text-[#ABAEB2]">
                                             {item.number}

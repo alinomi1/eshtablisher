@@ -37,7 +37,7 @@ const Hero = () => {
       <Carousel
         setApi={setApi}
         opts={{ loop: true, align: "start" }}
-        className="absolute inset-0 w-full h-full "
+        className="absolute inset-0 w-full h-full"
       >
         <CarouselContent className="h-full ml-0 ">
           {heroImages.map((src, index) => (

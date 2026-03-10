@@ -26,7 +26,7 @@ const Language = () => {
 
     return (
         <div
-            className="relative inline-block pb-6 -mb-6" // Added padding to create a bridge
+            className="relative inline-block pb-6 -mb-6"
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
         >
@@ -34,6 +34,7 @@ const Language = () => {
                 type="button"
                 className="text-[22px] leading-6 transition-colors cursor-pointer"
                 disabled={isPending}
+                onClick={() => setIsOpen((prev) => !prev)}
             >
                 <span className={selected === "EN" ? "text-[#D4BB8D]" : "text-white"}>EN</span>
                 <span className="text-white">/</span>
@@ -41,11 +42,10 @@ const Language = () => {
             </button>
 
             {isOpen && (
-                <div className="absolute top-full left-0  z-20">
-                    <div className="w-60 h-28 rounded-xl bg-white/22 backdrop-blur-md overflow-hidden">
-                        {/* English Option */}
+                <div className="absolute lg:top-full top-8 lg-top-0 -left-18 md:-left-30 xl:left-0 z-20">
+                    <div className="w-36 md:w-44 lg:w-60 h-28 rounded-xl bg-white/22 backdrop-blur-[80px] overflow-hidden">
                         <div
-                            className="flex items-center justify-between border-b border-white/30 px-6 py-4 cursor-pointer hover:bg-white/5"
+                            className="flex items-center justify-between border-b border-[#0000001F] px-6 py-4 cursor-pointer hover:bg-white/5"
                             onClick={() => handleChange("en")}
                         >
                             <span className={selected === "EN" ? "text-[#ECD29A] " : "text-black capitalize"}>
@@ -58,7 +58,6 @@ const Language = () => {
                             )}
                         </div>
 
-                        {/* French Option */}
                         <div
                             className="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-white/5"
                             onClick={() => handleChange("fr")}

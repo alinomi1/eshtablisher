@@ -11,30 +11,42 @@ const desktopItems = [
     { id: "D", key: "hr", side: "left", className: "bottom-0 right-[calc(50%+140px)] lg:right-[calc(42%+170px)] w-[240px]" },
     { id: "E", key: "marketing", side: "right", className: "-top-5 left-[calc(50%+220px)] lg:left-[calc(42%+250px)] w-[200px]" },
     { id: "F", key: "banking", side: "right", className: "top-28 left-[calc(50%+290px)] lg:left-[calc(40%+340px)] w-[220px]" },
-    { id: "G", key: "finance", side: "right", className: "top-60 left-[calc(50%+275px)] lg:left-[calc(37%+350px)] w-[150px]" },
-    { id: "H", key: "risk", side: "right", className: "bottom-0 left-[calc(50%+140px)] lg:left-[calc(32%+320px)] w-[230px]" },
+    { id: "G", key: "finance", side: "right", className: "top-60 left-[calc(50%+275px)] lg:left-[calc(33%+350px)] w-[246px]", contentClassName: "pl-24" },
+    { id: "H", key: "risk", side: "right", className: "bottom-0  left-[calc(50%+140px)] lg:left-[calc(28%+350px)] w-[230px]" },
 ];
 
 function FocusLabel({ item }) {
     const t = useTranslations("home");
     const isLeft = item.side === "left";
-    // Fetch array of points safely using t.raw
     const points = t.raw(`focus.items.${item.key}.points`) || [];
 
     return (
         <div className={`absolute ${item.className}`}>
             <div className="relative">
-                {/* L shape border */}
+                {/*  L-shape border */}
                 <div className="absolute bottom-0 left-0 right-0 h-[0.5px] bg-black" />
-                <div className={`absolute bottom-0 h-18.75 w-[0.5px] bg-black ${isLeft ? "left-0" : "right-0"}`} />
+                <div
+                    className={`absolute bottom-0 h-18.75 w-[0.5px] bg-black ${isLeft ? "left-0" : "right-0"
+                        }`}
+                />
+                {/* line only for D and H */}
+                {item.id === "D" && (
+                    <div className="absolute bottom-0 right-0 h-24 w-[0.5px] bg-black" />
+                )}
 
-                <div className="p-4 text-left">
-                    <h3 className="whitespace-nowrap font-extrabold uppercase text-black text-base">
-                        <span className="mr-1 font-extrabold text-[#ADA9A0] text-base">{item.id}.</span>
+                {item.id === "H" && (
+                    <div className="absolute bottom-0 left-0 h-28 w-[0.5px] bg-black" />
+                )}
+
+                <div className={`p-4 text-left ${item.contentClassName ?? ""}`}>
+                    <h3 className="whitespace-nowrap text-base font-extrabold uppercase text-black">
+                        <span className="mr-1 text-base font-extrabold text-[#ADA9A0]">
+                            {item.id}.
+                        </span>
                         {t(`focus.items.${item.key}.title`)}
                     </h3>
 
-                    <ul className="mt-1 pl-3 whitespace-nowrap space-y-0.5 leading-[1.35] capitalize text-black text-[10px]">
+                    <ul className="mt-1 space-y-0.5 whitespace-nowrap pl-3 text-[10px] leading-[1.35] capitalize text-black">
                         {points.map((point, index) => (
                             <li key={index}>
                                 <span>- {point}</span>
@@ -63,7 +75,7 @@ const Focuses = () => {
                 </div>
 
                 {/* Desktop layout */}
-                <div className="relative mx-auto mt-16 lg:mt-20 hidden w-full md:block lg:h-[500px]" data-aos="zoom-in">
+                <div className="relative mx-auto mt-16 lg:mt-20 hidden w-full md:block h-full md:h-[500px]" data-aos="zoom-in">
                     <div className="absolute left-1/2 top-60 z-10 w-123.5 -translate-x-1/2 -translate-y-1/2">
                         <div className="relative">
                             <Image src="/images/focuses.png" alt="Business 360 diagram" width={560} height={490} priority className="h-auto w-full object-contain" />

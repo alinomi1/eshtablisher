@@ -17,14 +17,14 @@ const TimeLine = () => {
                         {t("business_setup_uae.timeline.title")}
                     </h2>
 
-                    <div className="relative w-full max-w-226 mx-auto mt-10 sm:mt-12 md:mt-16" data-aos="zoom-in">
+                    <div className="relative w-full max-w-226 h-168.25 mx-auto mt-10 sm:mt-12 md:mt-16" data-aos="zoom-in">
                         <Image
-                            src="/images/timeline-image.png"
+                            src="/images/timeline-pic.svg"
                             alt="Business Focuses Diagram"
                             width={904}
                             height={673}
                             priority
-                            className="w-full h-auto object-cover"
+                            className="w-full h-auto object-contain"
                             sizes="(max-width: 640px) 100vw, (max-width: 768px) 95vw, 904px"
                         />
                     </div>

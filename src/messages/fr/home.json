@@ -103,6 +103,12 @@
     "badge": "Notre Processus",
     "title": "Comment nous travaillons – Simple, Clair, Efficace",
     "description": "Du concept au lancement, nous guidons les investisseurs et les entrepreneurs du monde entier pour donner vie à leurs visions...",
+    "step": {
+      "step1": "Étape 1",
+      "step2": "Étape 2",
+      "step3": "Étape 3",
+      "step4": "Étape 4"
+    },
     "steps": {
       "step_1": "Évaluer",
       "step_2": "Planifier",
@@ -121,19 +127,19 @@
     "points": {
       "0": {
         "title": "Vision stratégique",
-        "desc": "Nous offrons à la fois une stratégie visionnaire et une exécution tactique."
+        "desc": "Nous combinons une stratégie visionnaire avec une exécution tactique concrète, permettant aux entreprises et aux marques de se développer, de s'étendre et de réussir sur des marchés internationaux compétitifs."
       },
       "1": {
-        "title": "Réseau mondial",
-        "desc": "Nos partenaires et nos bureaux permettent une portée mondiale avec une sensibilité locale."
+        "title": "Experts dédiés",
+        "desc": "Notre équipe offre une expertise sectorielle approfondie et un soutien sur mesure, appuyés par plus de 30 ans d'expérience dans les affaires internationales à travers de multiples secteurs. Nous opérons à l'échelle mondiale avec des compétences multilingues en anglais, français, allemand, afrikaans et italien."
       },
       "2": {
-        "title": "Résultats probants",
-        "desc": "Nous avons aidé des entreprises de toutes tailles à rivaliser et à gagner à l'international."
+        "title": "Réseau mondial",
+        "desc": "Grâce à nos partenaires et bureaux internationaux, nous offrons une portée mondiale combinée à une vision locale et une sensibilité culturelle."
       },
       "3": {
-        "title": "Experts dédiés",
-        "desc": "Notre équipe apporte une connaissance approfondie du secteur et un soutien sur mesure."
+        "title": "Résultats prouvés",
+        "desc": "Nous bâtissons, établissons et développons des entreprises et des marques internationales hautement rentables."
       }
     }
   },

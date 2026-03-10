@@ -73,8 +73,8 @@ const Navbar = () => {
                 </button>
 
                 {/* Dropdown */}
-                <div className="absolute left-1/2 top-full hidden -translate-x-1/2 w-60 pt-5 group-hover:block animate-in fade-in slide-in-from-top-2 duration-300">
-                  <div className="bg-white/22 backdrop-blur-md rounded-2xl overflow-hidden">
+                <div className="absolute left-1/2 top-full hidden -translate-x-1/2 w-95.75 pt-4 group-hover:block animate-in fade-in slide-in-from-top-2 duration-300">
+                  <div className="bg-[#FFFFFF38] backdrop-blur-[80px] rounded-2xl overflow-hidden">
                     {serviceLinks.map((link, index) => (
                       <Link
                         key={index}

@@ -13,14 +13,26 @@ const Banking = () => {
         { number: '04', title: t('business_setup_uae.banking_conditions.items.04') },
     ];
 
+    const bankImages = [
+        { id: 1, src: "/images/adib.png", alt: "ADIB" },
+        { id: 2, src: "/images/adcb.png", alt: "Bank 2" },
+        { id: 3, src: "/images/fab.png", alt: "Bank 3" },
+        { id: 4, src: "/images/islamic.png", alt: "Bank 4" },
+        { id: 5, src: "/images/nbd.png", alt: "Bank 5" },
+        { id: 6, src: "/images/mashreq.png", alt: "Bank 6" },
+        { id: 7, src: "/images/rakbank.png", alt: "Bank 7" },
+        { id: 8, src: "/images/islamic-bank.png", alt: "Bank 8" },
+        { id: 9, src: "/images/commercial-bank.png", alt: "Bank 9" },
+    ];
+
     return (
         <>
             <section className='bg-white'>
                 <div className='container-1200 px-5'>
 
-                    <div className="flex flex-col-reverse md:flex-row gap-12">
+                    <div className="flex flex-col-reverse lg:flex-row gap-12">
                         {/* Left */}
-                        <div className="w-full md:w-[55%]" data-aos="fade-up-right">
+                        <div className="w-full lg:w-[55%]" data-aos="fade-up-right">
                             <span className="inline-flex rounded-full  bg-[#F6F6F6] px-5 py-3 text-sm md:text-base lg:text-lg font-bold text-black">
                                 {t("business_setup_uae.banking_conditions.badge")}
                             </span>
@@ -34,11 +46,7 @@ const Banking = () => {
                                 {data.map((item, index) => (
                                     <div
                                         key={index}
-                                        className={` ${index % 2 === 0
-                                            ? "md:pr-6 p-5 md:border-r border-[#D9DBDF]"
-                                            : "p-5"
-                                            } ${index >= 1 ? "border-t border-[#D9DBDF] md:border-t-0" : ""}
-                              ${index >= 2 ? "md:border-t border-[#D9DBDF]" : ""}`}
+                                        className={`p-5 border-[#D9DBDF] ${index % 2 === 0 ? "md:pr-6 md:border-r" : "md:pl-6"} ${index !== data.length - 1 ? "border-b" : ""} ${index >= data.length - 2 ? "md:border-b-0" : ""}`}
                                     >
                                         <span className="text-lg font-extrabold text-[#ABAEB2]">
                                             {item.number}
@@ -58,13 +66,27 @@ const Banking = () => {
                         </div>
 
                         {/* Right*/}
-                        <div className="w-full md:w-[45%] relative h-[320px] sm:h-[420px] md:h-155.25 overflow-hidden" data-aos="fade-up-left">
-                            <Image
-                                src="/images/banking.png"
-                                alt="Dubai Skyline"
-                                fill
-                                className="w-full h-full object-cover rounded-[20px]"
-                            />
+                        <div
+                            className="w-full lg:w-[45%]"
+                            data-aos="fade-up-left"
+                        >
+                            <div className='bg-[#EFE5D1]  rounded-[20px] grid grid-cols-2 md:grid-cols-3 gap-x-4 md:gap-x-7 gap-y-4 md:gap-y-12 px-6 py-6 md:py-16 lg:py-20'>
+                                {bankImages.map((bank) => (
+                                    <div
+                                        key={bank.id}
+                                        className=" "
+                                    >
+                                        <Image
+                                            src={bank.src}
+                                            alt={bank.alt}
+                                            width={155}
+                                            height={122}
+                                            className="object-cover w-full "
+                                        />
+                                    </div>
+
+                                ))}
+                            </div>
                         </div>
                     </div>
 

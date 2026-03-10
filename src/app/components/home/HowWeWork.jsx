@@ -1,19 +1,39 @@
 "use client";
 import Cta from '@/common/Cta';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 const HowWeWork = () => {
     const t = useTranslations("home");
+    const [activeStep, setActiveStep] = useState(0);
 
     const steps = [
-        { id: "Step 1:", title: t("process.steps.step_1") },
-        { id: "Step 2:", title: t("process.steps.step_2") },
-        { id: "Step 3:", title: t("process.steps.step_3") },
-        { id: "Step 4:", title: t("process.steps.step_4") },
+        {
+            id: t("process.step.step1"),
+            title: t("process.steps.step_1"),
+            cardTitle: t("process.active_card.title"),
+            cardDesc: t("process.active_card.desc"),
+        },
+        {
+            id: t("process.step.step2"),
+            title: t("process.steps.step_2"),
+            cardTitle: "plan",
+            cardDesc: "Then, our experts review the best structure and plan based on your goals",
+        },
+        {
+            id: t("process.step.step3"),
+            title: t("process.steps.step_3"),
+            cardTitle: "develop",
+            cardDesc: "Next, we prepare the required documents and handle each step with care",
+        },
+        {
+            id: t("process.step.step4"),
+            title: t("process.steps.step_4"),
+            cardTitle: "deploy",
+            cardDesc: "Finally, we complete the process and guide you through every final step",
+        },
     ];
-
     return (
         <section className='bg-white'>
             <div className='container-1200 px-5' data-aos="zoom-out-up">
@@ -59,12 +79,12 @@ const HowWeWork = () => {
                                 className='object-cover w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16'
                             />
 
-                            <h4 className="text-[22px] sm:text-[24px] lg:text-[28px] text-white font-extrabold py-5 lg:py-7 xl:py-10">
-                                {t("process.active_card.title")}
+                            <h4 className="text-[22px] sm:text-[24px] capitalize lg:text-[28px] text-white font-extrabold py-5 lg:py-7 xl:py-10">
+                                {steps[activeStep].cardTitle}
                             </h4>
 
                             <p className="text-white text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 font-[350]">
-                                {t("process.active_card.desc")}
+                                {steps[activeStep].cardDesc}
                             </p>
                         </div>
                     </div>
@@ -74,13 +94,14 @@ const HowWeWork = () => {
                         {steps.map((step, index) => (
                             <div
                                 key={index}
-                                className={`py-4 sm:py-5 lg:py-4 pl-4 sm:pl-5 lg:pl-6 ${index !== steps.length - 1 ? 'border-b border-[#D9DBDF]' : ''}`}
+                                onMouseEnter={() => setActiveStep(index)}
+                                className={`relative transition-all duration-300 py-4 sm:py-5 lg:py-4 pl-4 sm:pl-5 lg:pl-6 ${index !== steps.length - 1 ? 'border-b border-[#D9DBDF]' : ''} ${activeStep === index ? 'bg-[#0E0F22] before:absolute rounded-b-lg before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-[#ECD29A]' : 'bg-transparent'}`}
                             >
-                                <span className="block text-base sm:text-lg font-extrabold text-black">
+                                <span className={`block text-base sm:text-lg font-extrabold ${activeStep === index ? 'text-white' : 'text-black'}`}>
                                     {step.id}
                                 </span>
 
-                                <h3 className="text-[22px] sm:text-[24px] lg:text-[28px] leading-[1.2] font-extrabold text-black pt-4 sm:pt-5 lg:pt-6">
+                                <h3 className={`text-[22px] sm:text-[24px] lg:text-[28px] leading-[1.2] font-extrabold pt-4 sm:pt-5 lg:pt-6 ${activeStep === index ? 'text-white' : 'text-black'}`}>
                                     {step.title}
                                 </h3>
                             </div>
