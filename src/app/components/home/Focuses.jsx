@@ -66,10 +66,10 @@ const Focuses = () => {
         <section className="bg-[#F7F1E5] py-12 md:py-14 lg:py-16">
             <div className="container-1200 px-5">
                 <div className="text-center" data-aos="zoom-in-down">
-                    <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
+                    <span className="inline-flex rounded-full bg-white px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
                         {t("main_focus.badge")}
                     </span>
-                    <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px] lg:leading-16 font-extrabold text-black uppercase">
+                    <h2 className="mt-5 sm:mt-6 capitalize lg:mt-8 text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px] lg:leading-16 font-extrabold text-black">
                         {t("main_focus.title")}
                     </h2>
                 </div>

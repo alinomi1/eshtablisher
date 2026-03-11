@@ -13,26 +13,30 @@ const HowWeWork = () => {
         {
             id: t("process.step.step1"),
             title: t("process.steps.step_1"),
-            cardTitle: t("process.active_card.title"),
-            cardDesc: t("process.active_card.desc"),
+            cardTitle: t("process.active_card.step1.title"),
+            cardDesc: t("process.active_card.step1.desc"),
+            icon: "/images/evaluate-icon.png",
         },
         {
             id: t("process.step.step2"),
             title: t("process.steps.step_2"),
-            cardTitle: "plan",
-            cardDesc: "Then, our experts review the best structure and plan based on your goals",
+            cardTitle: t("process.active_card.step2.title"),
+            cardDesc: t("process.active_card.step2.desc"),
+            icon: "/images/plan-icon.png",
         },
         {
             id: t("process.step.step3"),
             title: t("process.steps.step_3"),
-            cardTitle: "develop",
-            cardDesc: "Next, we prepare the required documents and handle each step with care",
+            cardTitle: t("process.active_card.step3.title"),
+            cardDesc: t("process.active_card.step3.desc"),
+            icon: "/images/develop-icon.png",
         },
         {
             id: t("process.step.step4"),
             title: t("process.steps.step_4"),
-            cardTitle: "deploy",
-            cardDesc: "Finally, we complete the process and guide you through every final step",
+            cardTitle: t("process.active_card.step4.title"),
+            cardDesc: t("process.active_card.step4.desc"),
+            icon: "/images/deploy-icon.png",
         },
     ];
     return (
@@ -73,8 +77,8 @@ const HowWeWork = () => {
                         {/*box */}
                         <div className="absolute bottom-0 right-0 lg:-right-12 xl:-right-20 bg-[#0E0F22] text-white p-4 sm:p-6 lg:p-8 rounded-[16px] max-w-64 xl:max-w-93">
                             <Image
-                                src="/images/evaluate-icon.png"
-                                alt='evaluate'
+                                src={steps[activeStep].icon}
+                                alt={steps[activeStep].cardTitle}
                                 width={64}
                                 height={64}
                                 className='object-cover w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16'

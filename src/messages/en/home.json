@@ -53,7 +53,7 @@
   },
   "main_focus": {
     "badge": "Our Focus",
-    "title": "Business 360 Solutions"
+    "title": "Our Main Focuses"
   },
 
   "focus": {
@@ -118,10 +118,24 @@
       "step_3": "Develop",
       "step_4": "Deploy"
     },
-    "active_card": {
+   "active_card": {
+    "step1": {
       "title": "Evaluate",
       "desc": "At first, our team assesses the needs of the company and its fundamentals"
+    },
+    "step2": {
+      "title": "Plan",
+      "desc": "Then, our experts review the best structure and plan based on your goals"
+    },
+    "step3": {
+      "title": "Develop",
+      "desc": "Next, we prepare the required documents and handle each step with care"
+    },
+    "step4": {
+      "title": "Deploy",
+      "desc": "Finally, we complete the process and guide you through every final step"
     }
+  }
   },
 
   "why_choose_us": {

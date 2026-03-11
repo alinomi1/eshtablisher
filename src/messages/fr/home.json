@@ -52,7 +52,7 @@
     }
   },
 
-  "main_focus": { "badge": "Notre Focus", "title": "Solutions Business 360" },
+  "main_focus": { "badge": "Notre Focus", "title": "Nos principaux axes" },
   "focus": {
     "center": {
       "title": "Entreprise",
@@ -132,8 +132,22 @@
       "step_4": "Déployer"
     },
     "active_card": {
-      "title": "Évaluer",
-      "desc": "Dans un premier temps, notre équipe évalue les besoins de l'entreprise et ses fondamentaux."
+      "step1": {
+        "title": "Évaluer",
+        "desc": "Dans un premier temps, notre équipe évalue les besoins de l'entreprise et ses fondamentaux"
+      },
+      "step2": {
+        "title": "Planifier",
+        "desc": "Ensuite, nos experts examinent la meilleure structure et le plan en fonction de vos objectifs"
+      },
+      "step3": {
+        "title": "Développer",
+        "desc": "Ensuite, nous préparons les documents requis et gérons chaque étape avec soin"
+      },
+      "step4": {
+        "title": "Déployer",
+        "desc": "Enfin, nous terminons le processus et vous guidons à travers chaque étape finale"
+      }
     }
   },
 

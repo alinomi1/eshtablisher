@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, } from 'react';
 import {
     Carousel,
     CarouselContent,
@@ -25,28 +25,26 @@ const Services = () => {
     const [progress, setProgress] = useState(0);
     const t = useTranslations("home")
 
+
+
     useEffect(() => {
         if (!api) return;
-
         const updateCarousel = () => {
             const snaps = api.scrollSnapList().length;
             const selected = api.selectedScrollSnap();
-
             let calculatedProgress = ((selected + 1) / snaps) * 100;
-
             if (!api.canScrollNext()) {
                 calculatedProgress = 100;
             }
-
             setProgress(calculatedProgress);
         };
-
         updateCarousel();
         api.on("select", updateCarousel);
-
         return () => {
             api.off("select", updateCarousel);
+
         };
+
     }, [api]);
 
     return (
@@ -77,7 +75,7 @@ const Services = () => {
                                     align: "start",
                                     loop: false,
                                 }}
-                                className="w-full"
+                                className="w-full cursor-grab active:cursor-grabbing"
                             >
                                 <CarouselContent className="items-stretch">
                                     {services.map((service) => (
@@ -124,36 +122,37 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            {/* Custom Bottom  */}
-            <div className='container-1200 px-5 mt-8 sm:mt-10 w-full'>
-                <div className="flex items-center gap-4 sm:gap-6 lg:gap-10 w-full px-0 sm:px-1 md:px-2">
-                    {/* Visual Progress Bar */}
-                    <div className="h-2 grow rounded-[10px] bg-white relative min-w-full">
-                        <div
-                            className="absolute left-0 top-0 h-full bg-[#E5C999] rounded-[10px] transition-all duration-500 ease-out"
-                            style={{ width: `${progress}%` }}
-                        ></div>
-                    </div>
+                {/* Custom Bottom  */}
+                <div className=' mt-8 sm:mt-10 w-full'>
+                    <div className="flex items-center gap-4 sm:gap-6 lg:gap-10 w-full px-0 sm:px-1 md:px-2">
+                        {/* Visual Progress Bar */}
+                        <div className="h-2 grow rounded-[10px] bg-white relative min-w-full">
+                            <div
+                                className="absolute left-0 top-0 h-full bg-[#E5C999] rounded-[10px] transition-all duration-500 ease-out"
+                                style={{ width: `${progress}%` }}
+                            ></div>
+                        </div>
 
-                    {/* Navigation Buttons */}
-                    <div className="flex gap-3 sm:gap-4 lg:gap-5 ">
-                        <button
-                            onClick={() => api?.scrollPrev()}
-                            className="h-8 md:h-10 w-8 md:w-10  rounded-full cursor-pointer flex items-center justify-center bg-[#ECD29A] rotate-180 hover:bg-white transition-all duration-200 text-white hover:text-[#ECD29A]"
-                        >
-                            <NextIcon />
-                        </button>
+                        {/* Navigation Buttons */}
+                        <div className="flex gap-3 sm:gap-4 lg:gap-5 ">
+                            <button
+                                onClick={() => api?.scrollPrev()}
+                                className="h-8 md:h-10 w-8 md:w-10  rounded-full cursor-pointer flex items-center justify-center bg-[#ECD29A] rotate-180 hover:bg-white transition-all duration-200 text-white hover:text-[#ECD29A]"
+                            >
+                                <NextIcon />
+                            </button>
 
-                        <button
-                            onClick={() => api?.scrollNext()}
-                            className="h-8 md:h-10 w-8 md:w-10  rounded-full cursor-pointer flex items-center justify-center bg-[#ECD29A] hover:bg-white transition-all text-white duration-200 hover:text-[#ECD29A]"
-                        >
-                            <NextIcon />
-                        </button>
+                            <button
+                                onClick={() => api?.scrollNext()}
+                                className="h-8 md:h-10 w-8 md:w-10  rounded-full cursor-pointer flex items-center justify-center bg-[#ECD29A] hover:bg-white transition-all text-white duration-200 hover:text-[#ECD29A]"
+                            >
+                                <NextIcon />
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
     );
 };
