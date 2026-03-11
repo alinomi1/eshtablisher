@@ -43,7 +43,7 @@ const Footer = () => {
           {/* Right Side Links */}
           <div className="grid gap-y-8 gap-x-8 md:gap-x-10 md:col-span-8 lg:col-span-7 md:grid-cols-3  lg:gap-10 xl:gap-16">
             {/* Column 2 */}
-            <div>
+            {/* <div>
               <h4 className="text-[15px] leading-6 font-bold text-white capitalize">
                 {t("footer.links_title")}
               </h4>
@@ -59,7 +59,7 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Column 3 */}
             <div>

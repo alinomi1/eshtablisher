@@ -43,7 +43,7 @@ const Process = () => {
             {item.no}
           </span>
 
-          <p className="mt-6 whitespace-pre-line text-[21px] font-bold  text-black">
+          <p className="mt-6  text-[20px] font-bold  text-black">
             {item.text}
           </p>
         </li>
@@ -59,13 +59,13 @@ const Process = () => {
             {t("business_setup_uae.process.badge")}
           </span>
           <h2 className="mt-4 text-center capitalize text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  font-extrabold leading-[1.1] text-black">
-            {t("business_setup_uae.process.required_docs.title")}
+            {t("business_setup_uae.process.title")}
           </h2>
         </div>
 
         <div className="mt-16" data-aos="fade-up-right">
           <h3 className="text-[32px] leading-16 font-extrabold capitalizes text-black">
-            {t("business_setup_uae.process.badge")}
+            {t("business_setup_uae.process.required_docs.title")}
           </h3>
           {renderStepList(requiredDocs, "grid-cols-5")}
         </div>

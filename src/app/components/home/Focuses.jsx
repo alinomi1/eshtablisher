@@ -5,14 +5,14 @@ import React from "react";
 
 // Structural data only - no hardcoded text
 const desktopItems = [
-    { id: "A", key: "strategy", side: "left", className: "-top-5 right-[calc(50%+220px)] lg:right-[calc(41%+250px)] w-[200px]" },
-    { id: "B", key: "angel", side: "left", className: "top-28 right-[calc(50%+290px)] lg:right-[calc(40%+340px)] w-[220px]" },
-    { id: "C", key: "setup", side: "left", className: "top-60 right-[calc(50%+275px)] lg:right-[calc(34%+350px)] w-[250px]" },
-    { id: "D", key: "hr", side: "left", className: "bottom-0 right-[calc(50%+140px)] lg:right-[calc(42%+170px)] w-[240px]" },
-    { id: "E", key: "marketing", side: "right", className: "-top-5 left-[calc(50%+220px)] lg:left-[calc(42%+250px)] w-[200px]" },
-    { id: "F", key: "banking", side: "right", className: "top-28 left-[calc(50%+290px)] lg:left-[calc(40%+340px)] w-[220px]" },
-    { id: "G", key: "finance", side: "right", className: "top-60 left-[calc(50%+275px)] lg:left-[calc(33%+350px)] w-[246px]", contentClassName: "pl-24" },
-    { id: "H", key: "risk", side: "right", className: "bottom-0  left-[calc(50%+140px)] lg:left-[calc(28%+350px)] w-[230px]" },
+    { id: "A", key: "strategy", side: "left", className: "top-5 lg:-top-5 right-[calc(36%+220px)] lg:right-[calc(41%+250px)] w-[200px]" },
+    { id: "B", key: "angel", side: "left", className: "top-32 lg:top-28 right-[calc(29%+290px)] lg:right-[calc(40%+340px)] w-[220px]" },
+    { id: "C", key: "setup", side: "left", className: "top-60 right-[calc(24%+275px)] lg:right-[calc(34%+350px)] w-[250px]" },
+    { id: "D", key: "hr", side: "left", className: "bottom-5 lg:bottom-0 right-[calc(35%+140px)] lg:right-[calc(42%+170px)] w-[240px]" },
+    { id: "E", key: "marketing", side: "right", className: "top-5 lg:-top-5 left-[calc(35%+220px)] lg:left-[calc(42%+250px)] w-[200px]" },
+    { id: "F", key: "banking", side: "right", className: "top-32 lg:top-28 left-[calc(31%+290px)] lg:left-[calc(40%+340px)] w-[220px]" },
+    { id: "G", key: "finance", side: "right", className: "top-60 left-[calc(23%+275px)] lg:left-[calc(33%+350px)] w-[246px]", contentClassName: "pl-24" },
+    { id: "H", key: "risk", side: "right", className: "bottom-4 lg:bottom-0  left-[calc(30%+140px)] lg:left-[calc(28%+350px)] w-[230px]" },
 ];
 
 function FocusLabel({ item }) {
@@ -75,14 +75,14 @@ const Focuses = () => {
                 </div>
 
                 {/* Desktop layout */}
-                <div className="relative mx-auto mt-16 lg:mt-20 hidden w-full md:block h-full md:h-[500px]" data-aos="zoom-in">
-                    <div className="absolute left-1/2 top-60 z-10 w-123.5 -translate-x-1/2 -translate-y-1/2">
+                <div className="relative mx-auto mt-0 lg:mt-20 hidden w-full md:block h-full md:h-[500px]" data-aos="zoom-in">
+                    <div className="absolute left-1/2 top-60 z-10 lg:w-123.5 -translate-x-1/2 -translate-y-1/2">
                         <div className="relative">
                             <Image src="/images/focuses.png" alt="Business 360 diagram" width={560} height={490} priority className="h-auto w-full object-contain" />
                             <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
                                 <div className="mb-[2%] ml-[1%] text-center leading-none text-black">
-                                    <h3 className="text-[36px] font-extrabold text-black capitalize">{t("focus.center.title")}</h3>
-                                    <div className="mt-1 text-2xl font-medium">{t("focus.center.subtitle")}</div>
+                                    <h3 className="text-[28px] lg:text-[36px] font-extrabold text-black capitalize">{t("focus.center.title")}</h3>
+                                    <div className="mt-1 text-xl lg:text-2xl font-medium">{t("focus.center.subtitle")}</div>
                                 </div>
                             </div>
                         </div>

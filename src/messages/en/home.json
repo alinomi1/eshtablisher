@@ -17,7 +17,7 @@
     "vision_desc": "Our vision is to redefine excellence in global business consulting by combining international standards, strong regional expertise, and an unwavering commitment to client success. We aim not only to advise organizations but to equip them with the clarity, confidence, and strategic tools needed to lead in competitive markets."
   },
 
-  "services": {
+"services": {
     "badge": "Our Services",
     "title": "Tailored End-to-End Solutions",
     "description": "We provide a complete suite of professional services designed to support your business at every stage of its global journey.",
@@ -32,10 +32,25 @@
       "angel": {
         "title": "Business Angel",
         "desc": "Tax guidance in global markets, covering structure, compliance, and innovative tax planning for sustainable growth."
+      },
+      "digital_marketing": {
+        "title": "Digital Marketing 360",
+        "desc": "Elevate your brand with digital marketing services, including social media, content creation, and targeted ad campaigns."
+      },
+      "company_formation": {
+        "title": "Company Formation",
+        "desc": "Establishers takes the stress out of company formation by managing the full setup journey, from registration to licensing."
+      },
+      "hr_payroll": {
+        "title": "HR & Payroll",
+        "desc": "Streamline HR tasks with payroll services, ensuring compliance and efficient employee management for global teams."
+      },
+      "finance": {
+        "title": "Finance",
+        "desc": "We keep your finances clean, compliant, and decision-ready through outsourced accounting, bookkeeping, and reporting."
       }
     }
   },
-
   "main_focus": {
     "badge": "Our Focus",
     "title": "Business 360 Solutions"

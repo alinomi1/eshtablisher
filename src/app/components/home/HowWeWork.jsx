@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 const HowWeWork = () => {
     const t = useTranslations("home");
     const [activeStep, setActiveStep] = useState(0);
+    const [hoveredStep, setHoveredStep] = useState(null);
 
     const steps = [
         {
@@ -80,11 +81,11 @@ const HowWeWork = () => {
                             />
 
                             <h4 className="text-[22px] sm:text-[24px] capitalize lg:text-[28px] text-white font-extrabold py-5 lg:py-7 xl:py-10">
-                                {steps[activeStep].cardTitle}
+                                {activeStep !== null ? steps[activeStep].cardTitle : ""}
                             </h4>
 
                             <p className="text-white text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 font-[350]">
-                                {steps[activeStep].cardDesc}
+                                {activeStep !== null ? steps[activeStep].cardDesc : ""}
                             </p>
                         </div>
                     </div>
@@ -94,14 +95,32 @@ const HowWeWork = () => {
                         {steps.map((step, index) => (
                             <div
                                 key={index}
-                                onMouseEnter={() => setActiveStep(index)}
-                                className={`relative transition-all duration-300 py-4 sm:py-5 lg:py-4 pl-4 sm:pl-5 lg:pl-6 ${index !== steps.length - 1 ? 'border-b border-[#D9DBDF]' : ''} ${activeStep === index ? 'bg-[#0E0F22] before:absolute rounded-b-lg before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-[#ECD29A]' : 'bg-transparent'}`}
+                                onMouseEnter={() => {
+                                    setActiveStep(index);
+                                    setHoveredStep(index);
+                                }}
+                                // onMouseLeave={() => setHoveredStep(null)}
+                                onMouseLeave={() => {
+                                    setHoveredStep(null);
+                                    setActiveStep(0);
+                                }}
+                                className={`relative transition-all duration-300 py-4 sm:py-5 lg:py-4 pl-4 sm:pl-5 lg:pl-6 ${index !== steps.length - 1 ? 'border-b border-[#D9DBDF]' : ''
+                                    } ${hoveredStep === index
+                                        ? 'bg-[#0E0F22] before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-[#ECD29A]'
+                                        : 'bg-transparent'
+                                    }`}
                             >
-                                <span className={`block text-base sm:text-lg font-extrabold ${activeStep === index ? 'text-white' : 'text-black'}`}>
+                                <span
+                                    className={`block text-base sm:text-lg font-extrabold ${hoveredStep === index ? 'text-white' : 'text-black'
+                                        }`}
+                                >
                                     {step.id}
                                 </span>
 
-                                <h3 className={`text-[22px] sm:text-[24px] lg:text-[28px] leading-[1.2] font-extrabold pt-4 sm:pt-5 lg:pt-6 ${activeStep === index ? 'text-white' : 'text-black'}`}>
+                                <h3
+                                    className={`text-[22px] sm:text-[24px] lg:text-[28px] leading-[1.2] font-extrabold pt-4 sm:pt-5 lg:pt-6 ${hoveredStep === index ? 'text-white' : 'text-black'
+                                        }`}
+                                >
                                     {step.title}
                                 </h3>
                             </div>

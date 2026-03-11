@@ -1,5 +1,6 @@
 {
   "contact_page": {
+    "top_banner": "contact us",
     "email": "email",
     "contact": "contact",
     "location": "location",
@@ -10,7 +11,7 @@
     "form_subtitle": "Whether you have a question about our brews or just want to share your story...",
     "name": "Your Name",
     "mobile": "Mobile Number",
-    "service": "Service",
+    "service": "Services",
     "message": "Message",
     "features": {
       "support": "24/7 Customer Support",

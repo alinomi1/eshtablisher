@@ -26,12 +26,28 @@
     },
     "cards": {
       "strategy": {
-        "title": "Stratégie Commerciale",
-        "desc": "Naviguez dans la création d'entreprise à l'échelle mondiale avec des conseils d'experts sur la structure, les licences, la conformité et la stratégie de marché."
+        "title": "Stratégie d'Entreprise",
+        "desc": "Gérez la création de votre entreprise à l'international avec des conseils d'experts sur la structure et la conformité."
       },
       "angel": {
         "title": "Business Angel",
-        "desc": "Conseils fiscaux sur les marchés mondiaux, couvrant la structure, la conformité et la planification fiscale innovante pour une croissance durable."
+        "desc": "Accompagnement fiscal mondial, couvrant la structure, la conformité et la planification fiscale innovante."
+      },
+      "digital_marketing": {
+        "title": "Marketing Numérique 360",
+        "desc": "Valorisez votre marque grâce à nos services de marketing numérique, incluant les réseaux sociaux et les campagnes ciblées."
+      },
+      "company_formation": {
+        "title": "Création d'Entreprise",
+        "desc": "Establishers simplifie la création d'entreprise en gérant l'intégralité du processus d'installation, de l'enregistrement aux licences."
+      },
+      "hr_payroll": {
+        "title": "RH & Paie",
+        "desc": "Simplifiez vos tâches RH avec nos services de paie, garantissant la conformité et une gestion efficace des employés."
+      },
+      "finance": {
+        "title": "Finance",
+        "desc": "Nous maintenons vos finances saines, conformes et prêtes pour la prise de décision grâce à l'externalisation comptable."
       }
     }
   },
@@ -60,7 +76,7 @@
         ]
       },
       "setup": {
-        "title": "CRÉATION D'ENTREPRISE",
+        "title": "CRÉATION",
         "points": ["International / Global", "Mainland", "Freezone", "Offshore"]
       },
       "hr": {

@@ -1,26 +1,36 @@
 "use client";
-import React, { useState } from 'react';
 import { DropdownIcon } from '../../../../../public/icons/icons';
 import Image from 'next/image';
 import Cta from '@/common/Cta';
 import { useTranslations } from 'next-intl';
-import Link from "next/link";
+import React, { useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 const Connect = () => {
+    const searchParams = useSearchParams();
     const t = useTranslations("contact");
     const tCommon = useTranslations("common");
     const [isServiceOpen, setIsServiceOpen] = useState(false);
     const [selectedService, setSelectedService] = useState("");
 
     const serviceLinks = [
-        { name: tCommon("services_nav.business_setup_uae"), href: "/business-setup-uae", value: "business-setup-uae" },
-        { name: tCommon("services_nav.strategy"), href: "/business-strategy", value: "strategy" },
-        { name: tCommon("services_nav.angel"), href: "/business-angel", value: "angel" },
-        { name: tCommon("services_nav.marketing"), href: "/digital-marketing", value: "marketing" },
-        { name: tCommon("services_nav.formation"), href: "/company-formation", value: "formation" },
-        { name: tCommon("services_nav.hr_payroll"), href: "/hr-payroll", value: "hr-payroll" },
-        { name: tCommon("services_nav.finance"), href: "/finance", value: "finance" },
+        { name: tCommon("services_nav.business_setup_uae"), value: "business-setup-uae" },
+        { name: tCommon("services_nav.strategy"), value: "strategy" },
+        { name: tCommon("services_nav.angel"), value: "angel" },
+        { name: tCommon("services_nav.marketing"), value: "marketing" },
+        { name: tCommon("services_nav.formation"), value: "formation" },
+        { name: tCommon("services_nav.hr_payroll"), value: "hr-payroll" },
+        { name: tCommon("services_nav.finance"), value: "finance" },
     ];
+
+    const serviceFromUrl = searchParams.get("service");
+
+    const matchedService = serviceLinks.find(
+        (service) => service.value === serviceFromUrl
+    );
+
+    const currentService = selectedService || matchedService?.name || "";
+
     return (
         <>
             <section className='bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30'>
@@ -101,7 +111,7 @@ const Connect = () => {
                             </p>
 
                             <form className="pt-8 sm:pt-10 md:pt-12 flex flex-col gap-4 sm:gap-5">
-                                <div className="border-b border-gray-200 py-2">
+                                <div className="border-b border-[#D9DBDF] py-2">
                                     <input
                                         type="text"
                                         placeholder={t("contact_page.name")}
@@ -109,34 +119,38 @@ const Connect = () => {
                                     />
                                 </div>
 
-                                <div className="border-b border-gray-200 py-2">
+                                <div className="border-b border-[#D9DBDF] py-2">
                                     <input
                                         type="tel"
                                         placeholder={t("contact_page.mobile")}
                                         className="w-full outline-none text-base sm:text-lg text-black placeholder:text-[#7A7C81] bg-transparent"
                                     />
                                 </div>
-
                                 <div
-                                    className="relative border-b border-gray-200 py-2"
+                                    className="relative border-b border-[#D9DBDF] py-2"
                                     onMouseEnter={() => setIsServiceOpen(true)}
                                     onMouseLeave={() => setIsServiceOpen(false)}
                                 >
                                     <button
                                         type="button"
                                         onClick={() => setIsServiceOpen((prev) => !prev)}
-                                        className="w-full flex items-center justify-between text-base sm:text-lg text-[#7A7C81] bg-transparent cursor-pointer"
+                                        className="w-full flex items-center justify-between text-base sm:text-lg bg-transparent cursor-pointer"
                                     >
-                                        <span>{selectedService || t("contact_page.service")}</span>
-                                        <DropdownIcon className={`text-black shrink-0 transition-transform duration-300 ${isServiceOpen ? "rotate-180" : ""}`} />
+                                        <span className={currentService ? "text-black" : "text-[#7A7C81]"}>
+                                            {currentService || t("contact_page.service")}
+                                        </span>
+                                        <DropdownIcon
+                                            className={`text-black shrink-0 transition-transform duration-300 ${isServiceOpen ? "rotate-180" : ""}`}
+                                        />
                                     </button>
+
                                     {isServiceOpen && (
                                         <div className="absolute left-0 top-full z-20 w-full pt-4">
                                             <div className="bg-[#FFFFFF38] backdrop-blur-[80px] rounded-2xl overflow-hidden">
                                                 {serviceLinks.map((service, index) => (
-                                                    <Link
+                                                    <button
+                                                        type="button"
                                                         key={index}
-                                                        href={service.href}
                                                         onClick={() => {
                                                             setSelectedService(service.name);
                                                             setIsServiceOpen(false);
@@ -144,14 +158,15 @@ const Connect = () => {
                                                         className={`block w-full text-left p-4 text-base text-black capitalize font-normal hover:bg-white/10 transition-colors border-[#0000001F] ${index !== serviceLinks.length - 1 ? "border-b" : ""}`}
                                                     >
                                                         {service.name}
-                                                    </Link>
+                                                    </button>
                                                 ))}
                                             </div>
                                         </div>
                                     )}
                                 </div>
-                                <input type="hidden" name="service" value={selectedService} />
-                                <div className="border-b border-gray-200 py-2">
+
+                                <input type="hidden" name="service" value={currentService} />
+                                <div className="border-b border-[#D9DBDF] py-2">
                                     <textarea
                                         placeholder={t("contact_page.message")}
                                         rows={1}

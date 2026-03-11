@@ -12,22 +12,12 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 const services = [
-    {
-
-        id: "01",
-        key: "strategy",
-        image: "/images/about-solution-1.png",
-    },
-    {
-        id: "02",
-        key: "angel",
-        image: "/images/about-solution-2.png",
-    },
-    {
-        id: "03",
-        key: "strategy",
-        image: "/images/about-solution-1.png",
-    },
+    { id: "01", key: "strategy", image: "/images/about-solution-1.png" },
+    { id: "02", key: "angel", image: "/images/about-solution-2.png" },
+    { id: "03", key: "digital_marketing", image: "/images/marketing-image.png" },
+    { id: "04", key: "company_formation", image: "/images/formation-image.png" },
+    { id: "05", key: "hr_payroll", image: "/images/payroll-image.png" },
+    { id: "06", key: "finance", image: "/images/finance-image.png" },
 ];
 
 const Services = () => {
@@ -64,7 +54,7 @@ const Services = () => {
             <div className="container-1200 px-5">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 items-center" data-aos="zoom-in-up">
                     {/* Left Content */}
-                    <div className="lg:col-span-5 w-full lg:pr-6">
+                    <div className="lg:col-span-5 w-full">
                         <span className="inline-block rounded-full bg-white px-4 sm:px-5 md:px-6 py-2.5 sm:py-3 text-sm sm:text-base lg:text-[18px] font-bold text-black capitalize">
                             {t("services.badge")}
                         </span>
