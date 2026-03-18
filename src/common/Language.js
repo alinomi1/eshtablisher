@@ -1,8 +1,7 @@
 "use client";
 import React, { useState, useTransition } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { useRouter } from 'next/navigation';
-import { setUserLocale } from '@/app/actions';
+import { useRouter, usePathname } from '@/i18n/navigation';
 
 const Language = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,16 +10,16 @@ const Language = () => {
     const locale = useLocale();
     const t = useTranslations('common');
     const router = useRouter();
+    const pathname = usePathname();
 
     const selected = locale === "fr" ? "FR" : "EN";
 
     const handleChange = (nextLocale) => {
         if (nextLocale === locale) return;
 
-        startTransition(async () => {
-            await setUserLocale(nextLocale);
+        startTransition(() => {
+            router.replace(pathname, { locale: nextLocale });
             setIsOpen(false);
-            router.refresh();
         });
     };
 

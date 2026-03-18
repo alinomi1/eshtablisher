@@ -1,11 +1,12 @@
-import { cookies } from 'next/headers';
 import { getRequestConfig } from 'next-intl/server';
-import { defaultLocale, isValidLocale } from './config';
+import { routing } from './routing';
 
-export default getRequestConfig(async () => {
-  const cookieStore = await cookies();
-  const storedLocale = cookieStore.get('locale')?.value;
-  const locale = isValidLocale(storedLocale) ? storedLocale : defaultLocale;
+export default getRequestConfig(async ({ requestLocale }) => {
+  let locale = await requestLocale;
+
+  if (!locale || !routing.locales.includes(locale)) {
+    locale = routing.defaultLocale;
+  }
 
   return {
     locale,

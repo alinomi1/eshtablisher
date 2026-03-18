@@ -1,6 +1,6 @@
 import React from 'react'
 import { ForwardIcon } from '../../public/icons/icons'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 
 const Cta = ({ text, href = "/contact" }) => {

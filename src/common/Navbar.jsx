@@ -5,9 +5,8 @@ import React from "react";
 import Language from "./Language";
 import { DropdownIcon } from "../../public/icons/icons";
 
-import Mobile from "@/app/components/home/Mobile";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Mobile from "@/app/[locale]/components/home/Mobile";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useTranslations } from "use-intl";
 
 const Navbar = () => {
