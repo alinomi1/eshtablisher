@@ -33,17 +33,13 @@ export default async function LocaleLayout({ children, params }) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={nexa.variable} suppressHydrationWarning>
-      <body suppressHydrationWarning className="antialiased font-sans">
-        <NextIntlClientProvider messages={messages} locale={locale}>
-          <AosInit />
-          <Navbar />
-          <main>
-            {children}
-          </main>
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages} locale={locale}>
+      <div className={`${nexa.variable} antialiased font-sans`}>
+        <AosInit />
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </div>
+    </NextIntlClientProvider>
   );
 }
