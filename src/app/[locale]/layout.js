@@ -34,7 +34,7 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
-      <div className={`${nexa.variable} antialiased font-sans`}>
+      <div className={`${nexa.className} ${nexa.variable} antialiased`}>
         <AosInit />
         <Navbar />
         <main>{children}</main>

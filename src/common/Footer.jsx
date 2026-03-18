@@ -102,15 +102,15 @@ const Footer = () => {
                     href="tel:+971585934816"
                     className="transition-opacity hover:opacity-80"
                   >
-                    +971 58 593 4816
+                    +971 585934816
                   </a>
                 </li>
                 <li>
                   <a
-                    href="mailto:julie@gmail.com"
+                    href="mailto:finance@establisherai.com"
                     className="transition-opacity hover:opacity-80 lowercase"
                   >
-                    julie@gmail.com
+                    finance@establisherai.com
                   </a>
                 </li>
                 <li> {t("footer.location")}</li>

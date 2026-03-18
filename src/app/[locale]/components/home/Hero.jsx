@@ -4,11 +4,14 @@ import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Cta from "@/common/Cta";
 import { useTranslations } from "next-intl";
+import { getWhatsAppLink } from "@/lib/whatsapp";
+
 
 const Hero = () => {
   const [api, setApi] = useState(null);
   const [current, setCurrent] = useState(0);
   const t = useTranslations("home");
+  const tc = useTranslations("common");
 
   const heroImages = ["/images/hero1.png", "/images/hero2.png"];
 
@@ -91,7 +94,9 @@ const Hero = () => {
               </h1>
 
               <div data-aos="fade-up">
-                <Cta />
+                <Cta
+                  text={tc("buttons.book_consultation")}
+                  href={getWhatsAppLink("Hello, I want to book a consultation.")} />
               </div>
             </div>
 

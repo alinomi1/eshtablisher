@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Cta from '@/common/Cta';
 import { useTranslations } from 'next-intl';
 import React, { Suspense, useState } from 'react';
+import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useSearchParams } from 'next/navigation';
 
 const ConnectInner = () => {
@@ -40,12 +41,12 @@ const ConnectInner = () => {
                         data-aos-anchor-placement="top-bottom">
                         <div className="flex flex-col items-center justify-center flex-1 py-4 sm:py-5 md:py-0 border-b md:border-b-0 md:border-r border-[#E5C999]/50 last:border-0">
                             <span className="text-base sm:text-lg md:text-xl text-black font-extrabold capitalize">{t("contact_page.email")}</span>
-                            <a href="mailto:julie@gmail.com" className="font-[350] text-sm text-black pt-2 sm:pt-3 break-all text-center">julie@gmail.com</a>
+                            <a href="mailto:julie@gmail.com" className="font-[350] text-sm text-black pt-2 sm:pt-3 break-all text-center">finance@establisherai.com</a>
                         </div>
 
                         <div className="flex flex-col items-center justify-center flex-1 py-4 sm:py-5 md:py-0 border-b md:border-b-0 md:border-r border-[#ECD29A] last:border-0">
                             <span className="text-base sm:text-lg md:text-xl text-black font-extrabold capitalize">{t("contact_page.contact")}</span>
-                            <a href="tel:+971585934816" className="font-[350] text-sm text-black pt-2 sm:pt-3 text-center">+971 58 593 4816</a>
+                            <a href="tel:+971585934816" className="font-[350] text-sm text-black pt-2 sm:pt-3 text-center">+971 585934816</a>
                         </div>
 
                         <div className="flex flex-col items-center justify-center flex-1 py-4 sm:py-5 md:py-0">
@@ -175,7 +176,10 @@ const ConnectInner = () => {
                                 </div>
 
                                 <div className="pt-8 sm:pt-10 md:pt-12">
-                                    <Cta />
+                                    <Cta
+                                        text={tCommon("buttons.book_consultation")}
+                                        href={getWhatsAppLink("Hello, I want to book a consultation.")} />
+
                                 </div>
                             </form>
                         </div>
