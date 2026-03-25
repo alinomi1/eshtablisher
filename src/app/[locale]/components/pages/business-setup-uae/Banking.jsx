@@ -32,7 +32,7 @@ const Banking = () => {
 
                     <div className="flex flex-col-reverse lg:flex-row gap-12">
                         {/* Left */}
-                        <div className="w-full lg:w-[55%]" data-aos="fade-up-right">
+                        <div className="w-full lg:w-[55%]" data-aos="zoom-in-up">
                             <span className="inline-flex rounded-full  bg-[#F6F6F6] px-5 py-3 text-sm md:text-base lg:text-lg font-bold text-black">
                                 {t("business_setup_uae.banking_conditions.badge")}
                             </span>
@@ -68,7 +68,7 @@ const Banking = () => {
                         {/* Right*/}
                         <div
                             className="w-full lg:w-[45%]"
-                            data-aos="fade-up-left"
+                            data-aos="zoom-in-down"
                         >
                             <div className='bg-[#EFE5D1]  rounded-[20px] grid grid-cols-2 md:grid-cols-3 gap-x-4 md:gap-x-7 gap-y-4 md:gap-y-12 px-6 py-6 md:py-16 lg:py-20'>
                                 {bankImages.map((bank) => (

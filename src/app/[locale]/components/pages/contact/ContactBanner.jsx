@@ -14,12 +14,13 @@ const ContactBanner = () => {
           <span className="absolute top-0 bottom-0 right-[20%] lg:right-[23%] w-[0.5px] bg-white/12" />
         </div>
                 <Image
-                    src="/images/contact.png"
+                    src="/images/contact.webp"
                     alt=""
                     fill
-                    priority
+                    preload
+                    sizes="100vw"
                     className="object-cover h-full"
-                    // data-aos="fade-right"
+                    data-aos="fade-right"
 
                 />
                 {/* Gradient overlay */}

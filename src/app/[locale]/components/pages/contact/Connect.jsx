@@ -55,9 +55,10 @@ const ConnectInner = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-12 items-start mt-10 sm:mt-12 md:mt-14 lg:mt-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-12 items-start mt-10 sm:mt-12 md:mt-14 lg:mt-16" data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
                         {/* Left */}
-                        <div data-aos="fade-up-right">
+                        <div>
                             <span className="inline-block rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black capitalize">
                                 {t("contact_page.badge")}
                             </span>
@@ -102,7 +103,7 @@ const ConnectInner = () => {
                         </div>
 
                         {/* Right */}
-                        <div data-aos="fade-up-left">
+                        <div>
                             <h3 className="text-[20px] sm:text-[22px] leading-[1.2] font-extrabold text-black capitalize">
                                 {t("contact_page.form_title")}
                             </h3>

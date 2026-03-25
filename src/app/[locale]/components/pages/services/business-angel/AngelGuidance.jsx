@@ -20,19 +20,19 @@ const AngelGuidance = () => {
             <section className="bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30">
                 <div className="container-1200 px-5">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
-                        <div data-aos="fade-up-left">
+                        <div data-aos="fade-down">
                             <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 py-2.5 sm:px-5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
-                            {t("business_angel.badge")}
+                                {t("business_angel.badge")}
                             </span>
 
                             <h2 className="text-black font-extrabold text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  lg:leading-16 pt-5 sm:pt-6 lg:pt-8">
-                               {t("business_angel.title")}
+                                {t("business_angel.title")}
                             </h2>
                         </div>
 
-                        <div data-aos="fade-up-right">
+                        <div data-aos="fade-up">
                             <p className="pb-8 sm:pb-9 lg:pb-10 font-[350] text-sm sm:text-base leading-6 sm:leading-7 text-black">
-                                  {t.rich("business_angel.description", {
+                                {t.rich("business_angel.description", {
                                     bold: (chunks) => <span className="font-extrabold text-black">{chunks}</span>
                                 })}
                             </p>

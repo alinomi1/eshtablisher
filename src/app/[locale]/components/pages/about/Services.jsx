@@ -12,12 +12,12 @@ import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
 
 const services = [
-    { id: "01", key: "strategy", image: "/images/about-solution-1.png" },
-    { id: "02", key: "angel", image: "/images/about-solution-2.png" },
-    { id: "03", key: "digital_marketing", image: "/images/marketing-image.png" },
-    { id: "04", key: "company_formation", image: "/images/formation-image.png" },
-    { id: "05", key: "hr_payroll", image: "/images/payroll-image.png" },
-    { id: "06", key: "finance", image: "/images/finance-image.png" },
+    { id: "01", key: "strategy", image: "/images/about-solution-1.webp" },
+    { id: "02", key: "angel", image: "/images/about-solution-2.webp" },
+    { id: "03", key: "digital_marketing", image: "/images/marketing-image.webp" },
+    { id: "04", key: "company_formation", image: "/images/formation-image.webp" },
+    { id: "05", key: "hr_payroll", image: "/images/payroll-image.webp" },
+    { id: "06", key: "finance", image: "/images/finance-image.webp" },
 ];
 
 const Services = () => {
@@ -90,7 +90,7 @@ const Services = () => {
                                                         alt="services image"
                                                         fill
                                                         className="object-cover"
-                                                        priority
+                                                        sizes="(max-width: 640px) 85vw, (max-width: 768px) 70vw, (max-width: 1024px) 52vw, 45vw"
                                                     />
                                                 </div>
 

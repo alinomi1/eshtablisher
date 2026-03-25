@@ -6,19 +6,20 @@ const HrBanner = () => {
     const t = useTranslations("services")
     return (
         <section className="relative w-full overflow-hidden h-70 sm:h-90 md:h-110 lg:h-135 xl:h-155">
-              <div className="pointer-events-none absolute inset-0 z-2 hidden  md:block">
-          <span className="absolute top-0 bottom-0 left-[12%] lg:left-[22%] w-[0.5px] bg-white/12" />
-          <span className="absolute top-0 bottom-0 left-[35%] lg:left-[41%] w-[0.5px] bg-white/12" />
-          <span className="absolute top-0 bottom-0 right-[42%] w-[0.5px] bg-white/12" />
-          <span className="absolute top-0 bottom-0 right-[20%] lg:right-[23%] w-[0.5px] bg-white/12" />
-        </div>
+            <div className="pointer-events-none absolute inset-0 z-2 hidden  md:block">
+                <span className="absolute top-0 bottom-0 left-[12%] lg:left-[22%] w-[0.5px] bg-white/12" />
+                <span className="absolute top-0 bottom-0 left-[35%] lg:left-[41%] w-[0.5px] bg-white/12" />
+                <span className="absolute top-0 bottom-0 right-[42%] w-[0.5px] bg-white/12" />
+                <span className="absolute top-0 bottom-0 right-[20%] lg:right-[23%] w-[0.5px] bg-white/12" />
+            </div>
             <Image
-                src="/images/service-banner.png"
+                src="/images/service-banner.webp"
                 alt="Business Strategy Banner"
                 fill
-                priority
+                preload
+                sizes="100vw"
                 className="object-cover"
-            // data-aos="fade-right"
+            data-aos="fade-right"
             />
 
             <div className="absolute inset-0 bg-black/10" />

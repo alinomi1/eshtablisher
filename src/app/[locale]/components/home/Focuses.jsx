@@ -78,7 +78,7 @@ const Focuses = () => {
                 <div className="relative mx-auto mt-0 lg:mt-20 hidden w-full md:block h-full md:h-[500px]" data-aos="zoom-in">
                     <div className="absolute left-1/2 top-60 z-10 lg:w-123.5 -translate-x-1/2 -translate-y-1/2">
                         <div className="relative">
-                            <Image src="/images/focuses.png" alt="Business 360 diagram" width={560} height={490} priority className="h-auto w-full object-contain" />
+                            <Image src="/images/focuses.webp" alt="Business 360 diagram" width={560} height={490} className="h-auto w-full object-contain" />
                             <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
                                 <div className="mb-[2%] ml-[1%] text-center leading-none text-black">
                                     <h3 className="text-[28px] lg:text-[36px] font-extrabold text-black capitalize">{t("focus.center.title")}</h3>

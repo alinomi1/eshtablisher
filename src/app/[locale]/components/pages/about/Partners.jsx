@@ -10,21 +10,22 @@ const Partners = () => {
                 {/* Left */}
                 <div className="relative w-full lg:max-w-xl aspect-576/624 overflow-hidden order-2 lg:order-1">
                     <Image
-                        src="/images/about-partners.png"
+                        src="/images/about-partners.webp"
                         alt="Team meeting"
                         fill
-                        className="object-cover w-full h-full"
-                        data-aos="fade-up-left"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        className="object-cover"
+                        data-aos="zoom-in-up"
                     />
                 </div>
 
                 {/* Right */}
-                <div className='w-full order-1 lg:order-2 ' data-aos="fade-up-right">
+                <div className='w-full order-1 lg:order-2 ' data-aos="zoom-in-down">
                     <span className="inline-flex items-center capitalize rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
                         {t("who_we_are.badge")}
                     </span>
 
-                    <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  lg:leading-16 font-extrabold text-black max-w-133.25">
+                    <h2 className="mt-5 sm:mt-6 lg:mt-8 text-[28px] sm:text-[40px] md:text-[48px] lg:text-[56px]  lg:leading-16 font-extrabold text-black ">
                         {t("who_we_are.title")}
                     </h2>
 
@@ -42,13 +43,13 @@ const Partners = () => {
                     <div className='border-b border-[#E5E7EB]'></div>
 
                     <p className='text-black text-base sm:text-lg font-normal leading-6 sm:leading-7 lg:leading-5 w-full py-4 sm:py-5'>
-                       {t("who_we_are.points.trusted")}
+                        {t("who_we_are.points.trusted")}
                     </p>
 
                     <div className='border-b border-[#E5E7EB]'></div>
 
                     <p className='text-black text-base sm:text-lg font-normal leading-6 sm:leading-7 lg:leading-5 w-full pt-4 sm:pt-5'>
-                       {t("who_we_are.points.expertise")}
+                        {t("who_we_are.points.expertise")}
                     </p>
                 </div>
             </div>

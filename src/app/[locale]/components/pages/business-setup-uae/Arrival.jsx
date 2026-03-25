@@ -22,17 +22,18 @@ const Arrival = () => {
 
                     <div className="flex flex-col lg:flex-row gap-8 md:gap-10 lg:gap-12 items-center">
                         {/* Left */}
-                        <div className="w-full lg:w-[45%] relative h-[320px] sm:h-[420px] md:h-[520px] lg:h-175 overflow-hidden" data-aos="fade-up-left">
+                        <div className="w-full lg:w-[45%] relative h-[320px] sm:h-[420px] md:h-[520px] lg:h-175 overflow-hidden" data-aos="zoom-in-down">
                             <Image
-                                src="/images/arival-image.png"
+                                src="/images/arival-image.webp"
                                 alt="Dubai Skyline"
                                 fill
-                                className="w-full h-full object-cover rounded-[20px]"
+                                sizes="(max-width: 1024px) 100vw, 45vw"
+                                className="object-cover rounded-[20px]"
                             />
                         </div>
 
                         {/* Right */}
-                        <div className="w-full lg:w-[55%]" data-aos="fade-up-right">
+                        <div className="w-full lg:w-[55%]" data-aos="zoom-in-up">
                             <span className="inline-flex rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
                                 {t("business_setup_uae.arrival_instructions.badge")}
                             </span>

@@ -21,11 +21,10 @@ const ServiceCountries = () => {
                     </div>
                     <div className="relative w-full mt-8 sm:mt-10 md:mt-12 lg:mt-16" data-aos="fade-up">
                         <Image
-                            src="/images/global-image.png"
+                            src="/images/global-image.webp"
                             alt="Business Focuses Diagram"
                             width={1306}
                             height={723}
-                            priority
                             className="w-full h-auto object-cover"
                         />
                     </div>

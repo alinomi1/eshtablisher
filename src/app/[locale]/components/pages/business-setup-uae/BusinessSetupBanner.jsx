@@ -14,12 +14,13 @@ const BusinessSetupBanner = () => {
                     <span className="absolute top-0 bottom-0 right-[20%] lg:right-[23%] w-[0.5px] bg-white/12" />
                 </div>
                 <Image
-                    src="/images/service-banner.png"
+                    src="/images/service-banner.webp"
                     alt=""
                     fill
-                    priority
+                    preload
+                    sizes="100vw"
                     className="object-cover"
-                // data-aos="fade-right"
+                    data-aos="fade-right"
                 />
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-black/10" />

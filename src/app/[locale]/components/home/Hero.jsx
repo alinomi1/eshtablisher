@@ -13,7 +13,7 @@ const Hero = () => {
   const t = useTranslations("home");
   const tc = useTranslations("common");
 
-  const heroImages = ["/images/hero1.png", "/images/hero2.png"];
+  const heroImages = ["/images/hero1.webp", "/images/hero2.webp"];
 
   useEffect(() => {
     if (!api) return;
@@ -50,16 +50,16 @@ const Hero = () => {
                   src={src}
                   alt={`Hero Slide ${index + 1}`}
                   fill
-                  priority={index === 0}
+                  preload={index === 0}
                   sizes="100vw"
                   className={`
-          object-cover 
-          object-[72%_center] 
-          sm:object-[70%_center] 
-          md:object-[78%_center] 
-          lg:object-cover
-          ${current === index ? "animate-zoom-out" : ""} 
-        `}
+    object-cover 
+    object-[72%_center] 
+    sm:object-[70%_center] 
+    md:object-[78%_center] 
+    lg:object-cover
+    ${current === index ? "animate-zoom-out" : ""} 
+  `}
                 />
                 <div className="absolute inset-0 bg-black/45" />
               </div>

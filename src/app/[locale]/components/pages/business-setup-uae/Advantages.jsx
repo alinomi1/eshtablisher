@@ -22,8 +22,9 @@ const Advantages = () => {
             <section className='bg-[#F6F6F6] py-12  md:py-14 lg:py-16' >
                 <div className='container-1200 px-5' >
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center'>
-                        <div data-aos="fade-up-left">
-                            <span className='text-black font-bold text-sm sm:text-base lg:text-lg capitalize'>
+                        <div data-aos="fade-down">
+
+                            <span className="inline-flex rounded-full bg-white px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
                                 {t("business_setup_uae.freezone_advantages.badge")}
                             </span>
 
@@ -32,7 +33,7 @@ const Advantages = () => {
                             </h2>
                         </div>
 
-                        <p className='font-[350] text-sm sm:text-base text-black leading-6 sm:leading-7' data-aos="fade-up-right">
+                        <p className='font-[350] text-sm sm:text-base text-black leading-6 sm:leading-7' data-aos="fade-up">
                             {t("business_setup_uae.freezone_advantages.description")}
                         </p>
                     </div>

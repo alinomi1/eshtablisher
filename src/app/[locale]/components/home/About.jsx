@@ -9,17 +9,21 @@ const About = () => {
             <section className="bg-white py-12 sm:py-16 md:py-20 lg:py-24 xl:py-30">
                 <div className="container-1200 px-5 grid  gap-10 sm:gap-12 lg:grid-cols-2">
                     {/* Left */}
-                    <div className="relative w-full lg:max-w-xl aspect-576/729 overflow-hidden order-2 lg:order-1" data-aos="fade-up-right">
+                    <div
+                        className="relative w-full lg:max-w-xl aspect-576/729 overflow-hidden order-2 lg:order-1"
+                        data-aos="zoom-in-down"
+                    >
                         <Image
-                            src="/images/hero-about.png"
+                            src="/images/hero-about.webp"
                             alt="Team meeting"
                             fill
-                            className="object-cover w-full h-full rounded-[20px]"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                            className="object-cover rounded-[20px]"
                         />
                     </div>
 
                     {/* Right */}
-                    <div className='order-1 lg:order-2' data-aos="fade-up-left">
+                    <div className='order-1 lg:order-2' data-aos="zoom-in-up">
                         <span className="inline-flex items-center rounded-full bg-[#F6F6F6] px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base lg:text-lg font-bold text-black">
                             {t("about.badge")}
                         </span>

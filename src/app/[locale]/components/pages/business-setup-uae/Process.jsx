@@ -63,14 +63,14 @@ const Process = () => {
           </h2>
         </div>
 
-        <div className="mt-16" data-aos="fade-up-right">
+        <div className="mt-16" data-aos="fade-up">
           <h3 className="text-[32px] leading-16 font-extrabold capitalizes text-black">
             {t("business_setup_uae.process.required_docs.title")}
           </h3>
           {renderStepList(requiredDocs, "grid-cols-5")}
         </div>
 
-        <div className="mt-16" data-aos="fade-up-left">
+        <div className="mt-16" data-aos="fade-down">
           <h3 className="text-[32px] font-extrabold leading-16 capitalize text-black">
             {t("business_setup_uae.process.incorporation.title")}
           </h3>

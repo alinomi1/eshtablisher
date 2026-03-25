@@ -3,9 +3,11 @@ import Cta from '@/common/Cta';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { getWhatsAppLink } from "@/lib/whatsapp";
 
 const HowWeWork = () => {
     const t = useTranslations("home");
+    const tc = useTranslations("common");
     const [activeStep, setActiveStep] = useState(0);
     const [hoveredStep, setHoveredStep] = useState(null);
 
@@ -41,7 +43,7 @@ const HowWeWork = () => {
     ];
     return (
         <section className='bg-white'>
-            <div className='container-1200 px-5' data-aos="zoom-out-up">
+            <div className='container-1200 px-5' data-aos="zoom-in-up">
                 {/* Top Header Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
                     <div>
@@ -58,7 +60,9 @@ const HowWeWork = () => {
                         <p className="mb-8 sm:mb-9 lg:mb-10 font-[350] text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 text-black">
                             {t("process.description")}
                         </p>
-                        <Cta />
+                        <Cta
+                            text={tc("buttons.book_consultation")}
+                            href={getWhatsAppLink("Hello, I want to book a consultation.")} />
                     </div>
                 </div>
 
@@ -69,7 +73,7 @@ const HowWeWork = () => {
                         <Image
                             width={488}
                             height={440}
-                            src="/images/how-work.png"
+                            src="/images/how-work.webp"
                             alt="Process"
                             className="w-full h-[280px] sm:h-[340px] md:h-[400px] lg:h-[440px] object-cover rounded-[20px]"
                         />
