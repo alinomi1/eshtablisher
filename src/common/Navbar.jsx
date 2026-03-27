@@ -11,6 +11,9 @@ import { useTranslations } from "use-intl";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const normalizedPath =
+    pathname !== "/" ? pathname.replace(/\/+$/, "") : "/";
+
   const t = useTranslations("common");
 
   const serviceLinks = [
@@ -23,7 +26,9 @@ const Navbar = () => {
     { name: t("services_nav.finance"), href: "/finance" },
   ];
 
-  const isServicesActive = serviceLinks.some((link) => usePathname === link.href);
+  const isServicesActive = serviceLinks.some(
+    (link) => normalizedPath === link.href
+  );
 
   const activeLine =
     "after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-18.5px] after:h-[5px] after:w-[125px] after:rounded-t-[20px] after:bg-[#ECD29A]";
@@ -51,13 +56,13 @@ const Navbar = () => {
             </div>
             {/* Links */}
             <nav className="hidden lg:flex items-center gap-8 xl:gap-10 font-normal capitalize text-white text-base leading-[160%]">
-              <div className={`relative flex h-full items-center justify-center ${pathname === "/" ? activeLine : ""}`}>
+              <div className={`relative flex h-full items-center justify-center ${normalizedPath === "/" ? activeLine : ""}`}>
                 <Link href="/" className="hover:text-gray-300 transition-colors px-2 py-4">
                   {t("pages.home")}
                 </Link>
               </div>
 
-              <div className={`relative flex h-full items-center justify-center ${pathname === "/about" ? activeLine : ""}`}>
+              <div className={`relative flex h-full items-center justify-center ${normalizedPath === "/about" ? activeLine : ""}`}>
                 <Link href="/about" className="hover:text-gray-300 transition-colors px-2 py-4">
                   {t("pages.about")}
                 </Link>
@@ -88,7 +93,7 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div className={`relative flex h-full items-center justify-center ${pathname === "/contact" ? activeLine : ""}`}>
+              <div className={`relative flex h-full items-center justify-center ${normalizedPath === "/contact" ? activeLine : ""}`}>
                 <Link href="/contact" className="hover:text-gray-300 transition-colors px-2 py-4">
                   {t("pages.contact")}
                 </Link>

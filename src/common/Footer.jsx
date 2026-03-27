@@ -23,7 +23,7 @@ const Footer = () => {
         {/* Top Grid */}
         <div className="grid gap-y-10 md:grid-cols-12 lg:gap-10">
           {/* Column 1 */}
-          <div className="md:col-span-4 lg:col-span-5 ">
+          <div className="md:col-span-4 lg:col-span-5">
             <Link href="/" className="inline-block">
               <Image
                 src="/images/logoo.png"
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
 
           {/* Right Side Links */}
-          <div className="grid gap-y-8 gap-x-8 md:gap-x-10 md:col-span-8 lg:col-span-7 md:grid-cols-3  lg:gap-10 xl:gap-16">
+          <div className="grid gap-y-8 gap-x-8 md:gap-x-10 md:col-span-8 lg:col-span-7 md:grid-cols-2 lg:gap-10 xl:gap-16">
             {/* Column 2 */}
             {/* <div>
               <h4 className="text-[15px] leading-6 font-bold text-white capitalize">
@@ -62,7 +62,7 @@ const Footer = () => {
             </div> */}
 
             {/* Column 3 */}
-            <div>
+            <div >
               <h4 className="text-[15px] leading-6 font-bold text-white capitalize">
                 {t("footer.pages_title")}
               </h4>
@@ -92,7 +92,7 @@ const Footer = () => {
             </div>
 
             {/* Column 4 */}
-            <div >
+            <div>
               <h4 className="text-[15px] leading-6 font-bold text-white capitalize">
                 {t("footer.reach_title")}
               </h4>
